@@ -10,5 +10,6 @@
   transition: 300ms;
 }
 .abtn {
-  font-size: 20px;
+  font-size: 30px;
+  color: rgb(0, 37, 73);
 }

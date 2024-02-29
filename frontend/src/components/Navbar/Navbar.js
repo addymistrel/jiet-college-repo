@@ -27,12 +27,10 @@ import {
   background,
   Text,
 } from "@chakra-ui/react";
-import { FaUserAlt } from "react-icons/fa";
-import { AiFillHeart } from "react-icons/ai";
-import { TbHomeEco } from "react-icons/tb";
-import { LiaStoreAltSolid } from "react-icons/lia";
-import { FaHandHoldingHeart } from "react-icons/fa";
-import { AiOutlineGold } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { TbBrandYoutubeFilled } from "react-icons/tb";
+import { AiFillInstagram } from "react-icons/ai";
 import { BsHandbagFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
@@ -92,14 +90,14 @@ export default function Navbar() {
       <Box
         color={useColorModeValue("black", "black")}
         px={4}
-        bgColor={"#eddff0"}
+        bgColor={"#de0c0c"}
         minWidth={"-webkit-fit-content"}
       >
         <Flex
           h={20}
           alignItems={"center"}
           justifyContent={"space-between"}
-          bgColor={"#eddff0"}
+          bgColor={"#de0c0c"}
         >
           <HStack spacing={8} alignItems={"center"}>
             <Box
@@ -109,7 +107,7 @@ export default function Navbar() {
               mt={"1%"}
             >
               <Link to={"/"}>
-                <Image src="/assets/images/logo.png" width="42%"></Image>
+                <Image src="/assets/images/logo.jpg" width="42%"></Image>
               </Link>
             </Box>
             <HStack
@@ -158,7 +156,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
-                  color={useColorModeValue("red", "purple")}
+                  color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
                   Career Service
@@ -168,7 +166,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
-                  color={useColorModeValue("red", "purple")}
+                  color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
                   Apply Now 2023
@@ -178,7 +176,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
-                  color={useColorModeValue("red", "purple")}
+                  color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
                   Admission
@@ -188,38 +186,32 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
-                  color={useColorModeValue("red", "purple")}
+                  color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
                   Alumini
                 </Button>
               </Link>
-              {/* <Link>
-                <Button
-                  variant={"outline"}
-                  colorScheme="purple"
-                  color={useColorModeValue("purple", "purple")}
-                  display={token ? "flex" : "none"}
-                  onClick={handleSignOut}
-                >
-                  Sign Out
+              <Link>
+                <Button variant={"unstyled"}>
+                  <Icon className="abtn" as={FaFacebook} />
                 </Button>
               </Link>
-              <Button variant={"unstyled"}>
-                <Icon className="abtn" as={AiFillHeart} />
-              </Button>
               <Link to={"/addtocart"}>
                 <Button variant={"unstyled"}>
-                  <Icon className="abtn" as={BsHandbagFill} />
+                  <Icon className="abtn" as={AiFillTwitterCircle} />
                 </Button>
-              </Link> 
-               <Button
-                onClick={toggleColorMode}
-                variant={"unstyled"}
-                className="abtn"
-              >
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button> */}
+              </Link>
+              <Link to={"/addtocart"}>
+                <Button variant={"unstyled"}>
+                  <Icon className="abtn" as={TbBrandYoutubeFilled} />
+                </Button>
+              </Link>
+              <Link to={"/addtocart"}>
+                <Button variant={"unstyled"}>
+                  <Icon className="abtn" as={AiFillInstagram} />
+                </Button>
+              </Link>
             </ButtonGroup>
 
             {/* <Menu>
@@ -371,27 +363,135 @@ export default function Navbar() {
                 HOME
               </Button>
             </Link>
-            <Link to={"/jwellery/Bangle"}>
-              <Button as={Button} className="btn">
+            <Menu>
+              <MenuButton as={Button} className="btn">
                 ABOUT US
-              </Button>
-            </Link>
-            <Link to={"/jwellery/Ring"}>
-              <Button as={Button} className="btn" onClick={handleRing}>
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Overview</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Mission & Vision</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Leadership</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Chairman Message</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Dignitaries Visit</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Govt. Affliations</Button>
+                  </Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+            <Menu>
+              <MenuButton as={Button} className="btn">
                 PROGRAMS
-              </Button>
-            </Link>
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Post Graduate</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Under Graduate</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Diploma</Button>
+                  </Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
 
-            <Link to={"/jwellery/Bracelet"}>
-              <Button as={Button} className="btn" onClick={handleBrac}>
+            <Menu>
+              <MenuButton as={Button} className="btn">
                 DEPARTMENTS
-              </Button>
-            </Link>
-            <Link to={`/jwellery/Earrings`}>
-              <Button as={Button} className="btn">
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Computer Science & Engineering</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Electrical Engineering</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Mechanical Engineering</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Civil Engineering</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Management Studies(BBA)</Button>
+                  </Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+            <Menu>
+              <MenuButton as={Button} className="btn">
                 CAMPUS LIFE
-              </Button>
-            </Link>
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Student Centre</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Recreational Room</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Amaya Mess</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Sports at JIET</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Industrial Exposure</Button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/jwellery/Haram"}>
+                    <Button>Admission</Button>
+                  </Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
             <Link to={"/jwellery/Chain"}>
               <Button className="btn">GALLERY</Button>
             </Link>
