@@ -2,14 +2,26 @@ import React from "react";
 import { Box, ChakraProvider, CSSReset } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 
-const animationSpeed = "40s";
+const logos = [
+  { id: 1, src: "path/to/logo1.png", alt: "Logo 1" },
+  { id: 2, src: "path/to/logo2.png", alt: "Logo 2" },
+  { id: 3, src: "path/to/logo3.png", alt: "Logo 3" },
+  { id: 4, src: "path/to/logo4.png", alt: "Logo 4" },
+  { id: 5, src: "path/to/logo5.png", alt: "Logo 5" },
+  { id: 6, src: "path/to/logo6.png", alt: "Logo 6" },
+  { id: 7, src: "path/to/logo7.png", alt: "Logo 7" },
+];
+
+const logosLoop = Array.from({ length: 100 }, () => logos).flat();
+
+const animationSpeed = `500s`;
 
 const scroll = keyframes`
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7))}
+  100% { transform: translateX(calc(-250px * ${logosLoop.length})); }
 `;
 
-const ImageSlider = () => {
+const BrandLogoSlider = () => {
   return (
     <ChakraProvider>
       <CSSReset />
@@ -23,20 +35,15 @@ const ImageSlider = () => {
       >
         <Box
           display="flex"
-          width="calc(250px * 14)"
+          width={`calc(250px * ${logosLoop.length})`}
           css={{
             animation: `${scroll} ${animationSpeed} linear infinite`,
           }}
           className="slide-track"
         >
-          {[1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7].map((index) => (
-            <Box key={index} height="100px" width="250px" className="slide">
-              <img
-                src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/${index}.png`}
-                height="100"
-                width="250"
-                alt=""
-              />
+          {logosLoop.map((logo) => (
+            <Box key={logo.id} height="100px" width="250px" className="slide">
+              <img src={logo.src} height="100" width="250" alt={logo.alt} />
             </Box>
           ))}
         </Box>
@@ -45,4 +52,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default BrandLogoSlider;
