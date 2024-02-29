@@ -154,6 +154,7 @@ export default function Navbar() {
             <ButtonGroup display={{ base: "none", md: "none", lg: "flex" }}>
               <Link to={"/signin"}>
                 <Button
+                  className="abovebtn"
                   variant={"outline"}
                   colorScheme="purple"
                   color={useColorModeValue("white", "purple")}
