@@ -7,7 +7,6 @@ export const sliderData = [
   {
     image: "https://wallpapercave.com/dwp2x/wp11043086.jpg",
     heading: "Chains of Grace",
-
     desc: " As women wear jewelry, delicate chains of grace intertwine with their spirit, elevating their beauty and empowering their confidence.",
   },
   {
@@ -15,7 +14,6 @@ export const sliderData = [
     heading: "Gems of Strength",
     desc: "Women don jewelry as a reminder of their resilience and tenacity, for like precious gems, they withstand life's pressures and shine with strength.",
   },
-
   {
     image: "https://wallpapercave.com/dwp2x/wp8302412.jpg",
     heading: "Pearls of Wisdom",
@@ -26,7 +24,6 @@ export const sliderData = [
     heading: "Cherished Trinkets",
     desc: "Every cherished jewelry piece holds a story, a memory, or a sentiment, making it more than an accessory—it becomes a part of who she is.",
   },
-  ,
   {
     image: "https://wallpaperaccess.com/full/3715059.jpg",
     heading: "The Sparkling Soul",

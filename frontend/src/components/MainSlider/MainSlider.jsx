@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "./slider-data";
-import "./Slider.css";
 import { useNavigate } from "react-router-dom";
+import "./MainSlider.css";
 
-const Slider = () => {
+const MainSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = sliderData.length;
 
@@ -52,7 +52,8 @@ const Slider = () => {
           <div
             onClick={() => handleClick()}
             className={index === currentSlide ? "slide current" : "slide"}
-            key={index}>
+            key={index}
+          >
             {index === currentSlide && (
               <div>
                 <img src={slide.image} alt="slide" className="image" />
@@ -60,7 +61,7 @@ const Slider = () => {
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
                   <hr />
-                  <button className="--btn --btn-primary">Get Started</button>
+                  {/* <button className="--btn --btn-primary">Get Started</button> */}
                 </div>
               </div>
             )}
@@ -71,4 +72,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default MainSlider;
