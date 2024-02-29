@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Input, InputGroup, InputLeftAddon, Stack } from "@chakra-ui/react";
 
 function Home() {
   return (
@@ -17,6 +18,12 @@ function Home() {
         >
           Learn React
         </a>
+        <Stack spacing={4}>
+          <InputGroup>
+            <InputLeftAddon background={"black"}>+91</InputLeftAddon>
+            <Input type="tel" placeholder="Enter Phone Number" />
+          </InputGroup>
+        </Stack>
       </header>
     </div>
   );
