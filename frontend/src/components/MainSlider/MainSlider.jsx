@@ -14,9 +14,9 @@ const MainSlider = () => {
 
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/jwellery/Bestseller");
-  };
+  // const handleClick = () => {
+  //   navigate("/jwellery/Bestseller");
+  // };
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
@@ -50,7 +50,7 @@ const MainSlider = () => {
       {sliderData.map((slide, index) => {
         return (
           <div
-            onClick={() => handleClick()}
+            // onClick={() => handleClick()}
             className={index === currentSlide ? "slide current" : "slide"}
             key={index}
           >
