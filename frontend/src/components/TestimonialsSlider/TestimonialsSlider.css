@@ -1,0 +1,39 @@
+/* TestimonialsSlider.css */
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to fill the viewport */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 45px;
+  color: gray;
+}
+
+.slick-prev {
+  left: -50px; /* Adjust the positioning as needed */
+}
+
+.slick-next {
+  right: -50px; /* Adjust the positioning as needed */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333; /* Change the color on hover as desired */
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust the dots' position */
+}
+
+.slick-dots li button {
+  font-size: 10px; /* Adjust the dots' size */
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent; 
+  border-radius: 50;/* Change the active dot's color */
+}
