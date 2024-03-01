@@ -9,9 +9,6 @@ function Homepage() {
   return (
     <>
       <Navbar />
-      {/* <MainSlider /> */}
-      {/* <BrandLogoSlider /> */}
-      <TestimonialsSlider />
     </>
   );
 }

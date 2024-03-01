@@ -31,7 +31,7 @@ const TestimonialsSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
   };
@@ -61,25 +61,25 @@ const Card = ({ img }) => {
         color: "gray",
       }}
     >
-      <RxAvatar
-        imgProps={{ style: { borderRadius: "50%" } }}
+      <img
         src={img}
+        alt="Client"
         style={{
           width: 120,
           height: 120,
+          borderRadius: "50%",
           border: "1px solid lightgray",
-          padding: 7,
           marginBottom: 20,
         }}
       />
       <p>
-        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
-        Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
-        tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
-        fringilla massa. Etiam hendrerit dolor eget rutrum
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et,
+        adipisci veritatis odit perferendis nulla ratione maxime commodi cumque
+        velit ipsum magnam doloremque? A, commodi obcaecati laudantium possimus
+        error natus?
       </p>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,
+        <span style={{ fontWeight: 500, color: "red" }}>PAULA WILSON</span> ,
         Media Analyst
       </p>
     </div>
