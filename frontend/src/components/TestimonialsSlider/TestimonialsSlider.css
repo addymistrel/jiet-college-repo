@@ -1,26 +1,39 @@
-.testimonial .slick-arrow.slick-prev,
-.testimonial .slick-arrow.slick-next {
-  width: 40px;
-  height: 40px;
+/* TestimonialsSlider.css */
+.testimonial {
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1;
-  border-radius: 5px;
+  align-items: center;
+  height: 100vh; /* Set the height to fill the viewport */
 }
-.testimonial .slick-prev::before,
-.testimonial .slick-next::before {
-  display: none;
+
+.slick-prev,
+.slick-next {
+  font-size: 45px;
+  color: gray;
 }
-.testimonial .slick-arrow.slick-next {
-  right: -70px;
+
+.slick-prev {
+  left: -50px; /* Adjust the positioning as needed */
 }
-.testimonial .slick-arrow.slick-prev {
-  left: -70px;
+
+.slick-next {
+  right: -50px; /* Adjust the positioning as needed */
 }
-.testimonial .slick-dots li button:before {
-  font-size: 15px;
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333; /* Change the color on hover as desired */
 }
-.testimonial .slick-dots li {
-  top: 15px;
+
+.slick-dots {
+  bottom: -30px; /* Adjust the dots' position */
+}
+
+.slick-dots li button {
+  font-size: 10px; /* Adjust the dots' size */
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent; 
+  border-radius: 50;/* Change the active dot's color */
 }

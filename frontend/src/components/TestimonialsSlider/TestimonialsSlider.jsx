@@ -30,8 +30,8 @@ const TestimonialsSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // This enables automatic sliding
-    autoplaySpeed: 3000, // Adjust speed as needed
+    autoplay: true,
+    autoplaySpeed: 3000,
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
   };
