@@ -1,3 +1,4 @@
+/* Container for the brand logo slider */
 .brand-logo-slider {
   margin-top: 70px;
   margin-bottom: 30px;
@@ -5,35 +6,39 @@
   overflow: hidden;
 }
 
+/* Optional title styling */
 .title {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Center the slider */
 .slick-slider {
   margin: 0 auto;
 }
 
+/* Adjust the margin for the slick-list */
 .slick-list {
   margin: 0 -15px;
 }
 
+/* Style for individual slides */
 .slick-slide {
-  padding: 0 15px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
+/* Wrapper for the image with a smooth transition effect */
 .image-wrapper {
   transition: transform 0.3s ease-in-out;
 }
 
+/* Style for the images */
 .image-wrapper img {
   width: 100%;
-  max-width: 20rem; /* Adjust the max-width based on your design */
+  max-width: 8rem;
   height: auto;
-  border-radius: 8px; /* Add a border radius for a more polished look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* Responsive styles */
@@ -54,7 +59,7 @@
 
 @media (max-width: 768px) {
   .brand-logo-slider {
-    margin-top: 125px;
+    margin-top: 200px;
   }
   .title {
     font-size: 20px;
