@@ -37,6 +37,7 @@ export default function Footer() {
                     </div>
                   </div>
                   <div
+                    id="get-touch"
                     style={{
                       paddingTop: "2%",
                       display: "flex",
@@ -48,16 +49,15 @@ export default function Footer() {
                       <IoCall />
                     </div>
                     <div>
-                      <b>
-                        +91-9996135006
-                        <br />
-                        +91-9896948004 (Admin)
-                        <br />
-                        +91-9896948005 (Admission)
-                      </b>
+                      <b>+91-9996135006</b>
+                      <br />
+                      <b>+91-9896948004 (Admin)</b>
+                      <br />
+                      <b>+91-9896948005 (Admission)</b>
                     </div>
                   </div>
                   <div
+                    id="get-touch"
                     style={{
                       paddingTop: "2%",
                       display: "flex",
@@ -73,6 +73,7 @@ export default function Footer() {
                     </div>
                   </div>
                   <div
+                    id="get-touch"
                     style={{
                       paddingTop: "2%",
                       display: "flex",
@@ -110,7 +111,7 @@ export default function Footer() {
             <div class="xl:w-1/3 pr-4 pl-4 md:w-1/3 pr-4 pl-4 mb-30">
               <div class="single-cta">
                 <i class="far fa-envelope-open"></i>
-                <div class="cta-text">
+                <div class="cta-text" id="dept">
                   <h4>Departments</h4>
                   <span>
                     <b>Computer Science & Engineering</b>
