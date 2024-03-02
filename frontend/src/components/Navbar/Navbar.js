@@ -56,6 +56,13 @@ export default function Navbar() {
 
   const [AllDataArr, setAllDataArr] = useState([]);
   const [searchData, setSearchData] = useState([]);
+  const [toggle, setToggle] = useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+  });
+  console.log(toggle);
 
   const handlePara = (id) => {
     console.log(id);
@@ -158,6 +165,7 @@ export default function Navbar() {
                   variant={"outline"}
                   colorScheme="purple"
                   color={useColorModeValue("white", "purple")}
+                  _hover={{ background: "black", color: "white" }}
                   display={token ? "none" : "flex"}
                 >
                   Career Service
@@ -167,6 +175,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
@@ -177,6 +186,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
@@ -187,6 +197,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
                 >
@@ -282,7 +293,6 @@ export default function Navbar() {
                 variant={"unstyled"}
                 display={"flex"}
                 flexDirection={"column"}
-                onClick={isOpen ? onClose : onOpen}
               >
                 <Spacer />
                 <Link>
@@ -291,24 +301,112 @@ export default function Navbar() {
                   </Button>
                 </Link>
                 <Link>
-                  <Button as={Button} className="btn">
+                  <Button
+                    as={Button}
+                    className="btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setToggle((prev) => ({
+                        ...prev,
+                        1: !toggle[1],
+                        2: false,
+                        3: false,
+                        4: false,
+                      }));
+                    }}
+                  >
                     About Us
                   </Button>
+                  {toggle[1] && (
+                    <ul className="internal-nav">
+                      <li>Overview</li>
+                      <li>Mission & Vision</li>
+                      <li>Leadership</li>
+                      <li>Chairman Meessage</li>
+                      <li>Dignitaries Visit</li>
+                      <li>Govt. Affliations</li>
+                    </ul>
+                  )}
                 </Link>
                 <Link>
-                  <Button as={Button} className="btn">
+                  <Button
+                    as={Button}
+                    className="btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setToggle((prev) => ({
+                        ...prev,
+                        2: !toggle[2],
+                        1: false,
+                        3: false,
+                        4: false,
+                      }));
+                    }}
+                  >
                     Programs
                   </Button>
+                  {toggle[2] && (
+                    <ul className="internal-nav">
+                      <li>Post Graduate</li>
+                      <li>Under Graduate</li>
+                      <li>Diploma</li>
+                    </ul>
+                  )}
                 </Link>
                 <Link>
-                  <Button as={Button} className="btn">
+                  <Button
+                    as={Button}
+                    className="btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setToggle((prev) => ({
+                        ...prev,
+                        3: !toggle[3],
+                        2: false,
+                        1: false,
+                        4: false,
+                      }));
+                    }}
+                  >
                     Departments
                   </Button>
+                  {toggle[3] && (
+                    <ul className="internal-nav">
+                      <li>Computer Science & Engineering</li>
+                      <li>Electrical Engineering</li>
+                      <li>Mechanical Engineering</li>
+                      <li>Civil Engineering</li>
+                      <li>Management Studies(BBA)</li>
+                    </ul>
+                  )}
                 </Link>
                 <Link>
-                  <Button as={Button} className="btn">
+                  <Button
+                    as={Button}
+                    className="btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setToggle((prev) => ({
+                        ...prev,
+                        4: !toggle[4],
+                        2: false,
+                        3: false,
+                        1: false,
+                      }));
+                    }}
+                  >
                     Campus Life
                   </Button>
+                  {toggle[4] && (
+                    <ul className="internal-nav">
+                      <li>Student Centre</li>
+                      <li>Recreational Room</li>
+                      <li>Amaya Mess</li>
+                      <li>Sports at JIET</li>
+                      <li>industrial Exposure</li>
+                      <li>Admission</li>
+                    </ul>
+                  )}
                 </Link>
                 <Link>
                   <Button as={Button} className="btn">
