@@ -10,7 +10,7 @@ const MainSlider = () => {
 
   const autoScroll = true;
   let slideInterval;
-  let intervalTime = 5000;
+  let intervalTime = 3000;
 
   const navigate = useNavigate();
 
@@ -58,9 +58,10 @@ const MainSlider = () => {
               <div>
                 <img src={slide.image} alt="slide" className="image" />
                 <div className="content">
-                  <h2>{slide.heading}</h2>
-                  <p>{slide.desc}</p>
-                  <hr />
+                  {/* if want to add */}
+                  {/* <h2>{slide.heading}</h2> */}
+                  {/* <p>{slide.desc}</p> */}
+                  {/* <hr /> */}
                   {/* <button className="--btn --btn-primary">Get Started</button> */}
                 </div>
               </div>
