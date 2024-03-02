@@ -1,54 +1,63 @@
 import React from "react";
-import { Box, ChakraProvider, CSSReset } from "@chakra-ui/react";
-import { keyframes } from "@emotion/react";
-
-const logos = [
-  { id: 1, src: "path/to/logo1.png", alt: "Logo 1" },
-  { id: 2, src: "path/to/logo2.png", alt: "Logo 2" },
-  { id: 3, src: "path/to/logo3.png", alt: "Logo 3" },
-  { id: 4, src: "path/to/logo4.png", alt: "Logo 4" },
-  { id: 5, src: "path/to/logo5.png", alt: "Logo 5" },
-  { id: 6, src: "path/to/logo6.png", alt: "Logo 6" },
-  { id: 7, src: "path/to/logo7.png", alt: "Logo 7" },
-];
-
-const logosLoop = Array.from({ length: 100 }, () => logos).flat();
-
-const animationSpeed = `500s`;
-
-const scroll = keyframes`
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * ${logosLoop.length})); }
-`;
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./BrandLogoSlider.css";
 
 const BrandLogoSlider = () => {
+  const images = [
+    "./assets/images/upload/tata.png",
+    "./assets/images/upload/Whirlpool.png",
+    "./assets/images/upload/hcl.png",
+    "./assets/images/upload/herohonda.png",
+    "./assets/images/upload/ibm.png",
+    "./assets/images/upload/tcs.png",
+    "./assets/images/upload/amazon.png",
+    "./assets/images/upload/Vmware.png",
+    "./assets/images/upload/dell.png",
+    "./assets/images/upload/Fortinet.png",
+  ];
+
+  const settings = {
+    infinite: true,
+    slidesToShow: 4, // Adjust the number of visible slides
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000, // Adjust the sliding speed
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <ChakraProvider>
-      <CSSReset />
-      <Box
-        height="100px"
-        margin="auto"
-        overflow="hidden"
-        position="relative"
-        width="auto"
-        className="slider"
-      >
-        <Box
-          display="flex"
-          width={`calc(250px * ${logosLoop.length})`}
-          css={{
-            animation: `${scroll} ${animationSpeed} linear infinite`,
-          }}
-          className="slide-track"
-        >
-          {logosLoop.map((logo) => (
-            <Box key={logo.id} height="100px" width="250px" className="slide">
-              <img src={logo.src} height="100" width="250" alt={logo.alt} />
-            </Box>
-          ))}
-        </Box>
-      </Box>
-    </ChakraProvider>
+    <div className="brand-logo-slider">
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index} className="image-wrapper">
+            <img src={image} alt="" />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 

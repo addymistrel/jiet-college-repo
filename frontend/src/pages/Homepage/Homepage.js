@@ -13,7 +13,7 @@ function Homepage() {
       <MainSlider />
       <Midsection />
       <TestimonialsSlider />
-      {/* <BrandLogoSlider /> */}
+      <BrandLogoSlider />
       <Footer />
     </>
   );

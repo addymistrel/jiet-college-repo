@@ -53,16 +53,16 @@ const TestimonialsSlider = () => {
             name="DEEPAK SINGHLA"
             jobProfile="INCOME TAX DEPARTMENT,GOI"
           />
-          <Card
+          {/* <Card
             img="./assets/images/upload/okesh.png"
             testimonial={testimonial3}
             name="OKESH GOYAL"
             jobProfile="ASSISTANT MANAGER AT SARVA HARYANA GRAMIN BANK"
-          />
+          /> */}
           <Card
             img="./assets/images/upload/paryag.png"
             testimonial={testimonial4}
-            name="PARYAG kUMAR"
+            name="PARYAG KUMAR"
             jobProfile="ADVISORY SYSTEM ANALYST AT IBM"
           />
           <Card
@@ -130,13 +130,13 @@ const testimonial2 = (
   </p>
 );
 
-const testimonial3 = (
-  <p>
-    JIET has a very nice environment and away from politics, I am happy that i
-    have taken admission in CS branch in such a well disciplined. Student and
-    Staff are very cooperative.
-  </p>
-);
+// const testimonial3 = (
+//   <p>
+//     JIET has a very nice environment and away from politics, I am happy that i
+//     have taken admission in CS branch in such a well disciplined. Student and
+//     Staff are very cooperative.
+//   </p>
+// );
 
 const testimonial4 = (
   <p>
