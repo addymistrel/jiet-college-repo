@@ -58,10 +58,8 @@ const MainSlider = () => {
               <div>
                 <img src={slide.image} alt="slide" className="image" />
                 <div className="content">
-                  {/* if want to add */}
                   {/* <h2>{slide.heading}</h2> */}
                   {/* <p>{slide.desc}</p> */}
-                  {/* <hr /> */}
                   {/* <button className="--btn --btn-primary">Get Started</button> */}
                 </div>
               </div>
