@@ -11,6 +11,7 @@ function Homepage() {
     <>
       <Navbar />
       <MainSlider />
+      <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider />
       <Footer />
