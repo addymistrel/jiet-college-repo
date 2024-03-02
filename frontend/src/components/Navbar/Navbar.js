@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   IconButton,
   Button,
@@ -21,17 +20,12 @@ import {
   Icon,
   ButtonGroup,
   Spacer,
-  Input,
-  InputGroup,
-  InputRightElement,
-  background,
   Text,
 } from "@chakra-ui/react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { AiFillInstagram } from "react-icons/ai";
-import { BsHandbagFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -50,6 +44,10 @@ import { Image } from "@chakra-ui/react";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [menu1, setmenu1] = useState(false);
+  const [menu2, setmenu2] = useState(false);
+  const [menu3, setmenu3] = useState(false);
+  const [menu4, setmenu4] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
 
   const token = JSON.parse(localStorage.getItem("token"));
@@ -500,7 +498,12 @@ export default function Navbar() {
               </MenuList>
             </Menu>
             <Menu>
-              <MenuButton as={Button} className="btn">
+              <MenuButton
+                as={Button}
+                className="btn"
+                onMouseEnter={() => setmenu2(true)}
+                onMouseLeave={() => setmenu2(false)}
+              >
                 PROGRAMS
               </MenuButton>
               <MenuList>
@@ -523,7 +526,12 @@ export default function Navbar() {
             </Menu>
 
             <Menu>
-              <MenuButton as={Button} className="btn">
+              <MenuButton
+                as={Button}
+                className="btn"
+                onMouseEnter={() => setmenu3(true)}
+                onMouseLeave={() => setmenu3(false)}
+              >
                 DEPARTMENTS
               </MenuButton>
               <MenuList>
@@ -555,7 +563,12 @@ export default function Navbar() {
               </MenuList>
             </Menu>
             <Menu>
-              <MenuButton as={Button} className="btn">
+              <MenuButton
+                as={Button}
+                className="btn"
+                onMouseEnter={() => setmenu4(true)}
+                onMouseLeave={() => setmenu4(false)}
+              >
                 CAMPUS LIFE
               </MenuButton>
               <MenuList>

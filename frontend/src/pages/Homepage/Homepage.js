@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import MainSlider from "../../components/MainSlider/MainSlider";
+import Midsection from "../../components/midsection/Midsection";
+// import Footer from "../../components/Footer/Footer"
 
 function Homepage() {
   return (
     <>
       <Navbar />
-      <MainSlider />
       <Footer />
     </>
   );
