@@ -47,3 +47,9 @@
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+@media screen and (max-width: 600px) {
+  .std-review-h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+}

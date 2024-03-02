@@ -1,46 +1,66 @@
-/*NOT REQ NOW*/
-
-/* h2 {
+.brand-logo-slider {
+  margin-top: 70px;
+  margin-bottom: 30px;
   text-align: center;
-  padding: 20px;
-}
-
-
-.box-container {
-  max-width: 900px;
-  margin: auto;
   overflow: hidden;
-  border-radius: md;
-  box-shadow: md;
-  border-width: 1px;
-  position: relative;
 }
 
-.logo-slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.logo-box {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.logo-box img {
-  width: 100%;
-  height: auto;
-}
-
-.logo-controls {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 4;
-  color: white;
+.title {
+  margin-bottom: 20px;
   font-size: 24px;
-  cursor: pointer;
-} */
+  font-weight: bold;
+}
+
+.slick-slider {
+  margin: 0 auto;
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+.slick-slide {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.image-wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 20rem; /* Adjust the max-width based on your design */
+  height: auto;
+  border-radius: 8px; /* Add a border radius for a more polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .slick-slide {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brand-logo-slider {
+    margin-top: 125px;
+  }
+  .slick-slide {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-logo-slider {
+    margin-top: 125px;
+  }
+  .title {
+    font-size: 20px;
+  }
+
+  .slick-slide {
+    padding: 0 5px;
+  }
+}
