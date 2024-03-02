@@ -18,3 +18,10 @@
   background-color: black;
   color: white;
 }
+
+.internal-nav li {
+  height: 40px;
+  color: white;
+  font-size: medium;
+  padding-left: 5%;
+}

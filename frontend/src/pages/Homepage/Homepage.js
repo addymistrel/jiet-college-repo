@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import BrandLogoSlider from "../../components/BrandLogoSlider/BrandLogoSlider";
 import MainSlider from "../../components/MainSlider/MainSlider";
 import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
+import Dropdown from "../../components/dropdown/Dropdown";
 
 function Homepage() {
   return (
