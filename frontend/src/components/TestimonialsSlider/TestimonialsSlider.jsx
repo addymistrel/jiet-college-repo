@@ -23,8 +23,6 @@ const NextBtn = (props) => {
   );
 };
 
-// ... (previous code)
-
 const TestimonialsSlider = () => {
   const settings = {
     dots: true,
@@ -46,14 +44,20 @@ const TestimonialsSlider = () => {
           <Card
             img="./assets/images/jietimage/newbanner2.png"
             testimonial={testimonial1}
+            name="Alice Johnson"
+            jobProfile="Graphic Designer"
           />
           <Card
             img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg"
             testimonial={testimonial2}
+            name="Bob Smith"
+            jobProfile="Data Scientist"
           />
           <Card
             img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg"
             testimonial={testimonial3}
+            name="Eva Davis"
+            jobProfile="Marketing Specialist"
           />
         </Slider>
       </div>
@@ -61,7 +65,7 @@ const TestimonialsSlider = () => {
   );
 };
 
-const Card = ({ img, testimonial }) => {
+const Card = ({ img, testimonial, name, jobProfile }) => {
   return (
     <div
       style={{
@@ -85,22 +89,21 @@ const Card = ({ img, testimonial }) => {
       />
       {testimonial}
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "red" }}>PAULA WILSON</span> ,
-        Media Analyst
+        <span style={{ fontWeight: 500, color: "red" }}>{name}</span> ,{" "}
+        {jobProfile}
       </p>
     </div>
   );
 };
 
-
+// Remove the quotes around the testimonial JSX elements
 const testimonial1 = (
   <p>
     Enrolling in courses was one of the best decisions I made for my education
     journey. The Student Reviews section in the TestimonialsSlider provides an
     authentic glimpse into the experiences of others. The slick design and
     smooth navigation with the arrow buttons make it easy to explore these
-    inspiring stories. Kudos to the team for creating such an engaging
-    platform!
+    inspiring stories. Kudos to the team for creating such an engaging platform!
   </p>
 );
 
@@ -117,15 +120,13 @@ const testimonial2 = (
 
 const testimonial3 = (
   <p>
-    The TestimonialsSlider is a dynamic showcase of success stories and
-    positive experiences within the educational community. The well-designed
-    cards, accompanied by engaging narratives and professional endorsements,
-    create a persuasive case for anyone considering joining. The autoplay
-    functionality ensures a continuous flow of inspiration, and the intuitive
-    arrow buttons allow for easy navigation. A fantastic addition to the
-    platform!
+    The TestimonialsSlider is a dynamic showcase of success stories and positive
+    experiences within the educational community. The well-designed cards,
+    accompanied by engaging narratives and professional endorsements, create a
+    persuasive case for anyone considering joining. The autoplay functionality
+    ensures a continuous flow of inspiration, and the intuitive arrow buttons
+    allow for easy navigation. A fantastic addition to the platform!
   </p>
 );
 
 export default TestimonialsSlider;
-
