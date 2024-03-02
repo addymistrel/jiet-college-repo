@@ -29,6 +29,34 @@
   color: #757575;
   font-size: 15px;
 }
+#dept span,
+#get-touch b {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+#dept span::after,
+#get-touch b::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #de0c0c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#dept span:hover::after,
+#get-touch b:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* #dept span:hover {
+  color: #de0c0c;
+} */
 .footer-content {
   position: relative;
   z-index: 2;
