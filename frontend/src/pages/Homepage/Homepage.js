@@ -2,13 +2,17 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Midsection from "../../components/midsection/Midsection";
-// import Footer from "../../components/Footer/Footer"
+import MainSlider from "../../components/MainSlider/MainSlider";
+import BrandLogoSlider from "../../components/BrandLogoSlider/BrandLogoSlider";
+import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
 
 function Homepage() {
   return (
     <>
       <Navbar />
-      <Midsection />
+      <MainSlider />
+      <TestimonialsSlider />
+      {/* <BrandLogoSlider /> */}
       <Footer />
     </>
   );
