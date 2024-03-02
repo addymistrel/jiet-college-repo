@@ -42,22 +42,40 @@ const TestimonialsSlider = () => {
         <h1 className="std-review-h1">STUDENT REVIEWS</h1>
         <Slider {...settings}>
           <Card
-            img="./assets/images/jietimage/newbanner2.png"
+            img="./assets/images/upload/chirag.png"
             testimonial={testimonial1}
-            name="Alice Johnson"
-            jobProfile="Graphic Designer"
+            name="CHIRAG LAKHINA"
+            jobProfile="SOFTWARE ENGINEER AT ACCENTURE HYDERABAD"
           />
           <Card
-            img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg"
+            img="./assets/images/upload/deepak.png"
             testimonial={testimonial2}
-            name="Bob Smith"
-            jobProfile="Data Scientist"
+            name="DEEPAK SINGHLA"
+            jobProfile="INCOME TAX DEPARTMENT,GOI"
           />
           <Card
-            img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg"
+            img="./assets/images/upload/okesh.png"
             testimonial={testimonial3}
-            name="Eva Davis"
-            jobProfile="Marketing Specialist"
+            name="OKESH GOYAL"
+            jobProfile="ASSISTANT MANAGER AT SARVA HARYANA GRAMIN BANK"
+          />
+          <Card
+            img="./assets/images/upload/paryag.png"
+            testimonial={testimonial4}
+            name="PARYAG kUMAR"
+            jobProfile="ADVISORY SYSTEM ANALYST AT IBM"
+          />
+          <Card
+            img="./assets/images/upload/ravneet.png"
+            testimonial={testimonial5}
+            name="RAVNEET SODHI"
+            jobProfile="NAGARRO SOFTWARE"
+          />
+          <Card
+            img="./assets/images/upload/prerna.png"
+            testimonial={testimonial6}
+            name="PRERNA KOHLI"
+            jobProfile="S/W DEVELOPER COGNIZANT PUNE"
           />
         </Slider>
       </div>
@@ -80,8 +98,8 @@ const Card = ({ img, testimonial, name, jobProfile }) => {
         src={img}
         alt="Client"
         style={{
-          width: 120,
-          height: 120,
+          width: 130,
+          height: 130,
           borderRadius: "50%",
           border: "1px solid lightgray",
           marginBottom: 20,
@@ -96,36 +114,51 @@ const Card = ({ img, testimonial, name, jobProfile }) => {
   );
 };
 
-// Remove the quotes around the testimonial JSX elements
 const testimonial1 = (
   <p>
-    Enrolling in courses was one of the best decisions I made for my education
-    journey. The Student Reviews section in the TestimonialsSlider provides an
-    authentic glimpse into the experiences of others. The slick design and
-    smooth navigation with the arrow buttons make it easy to explore these
-    inspiring stories. Kudos to the team for creating such an engaging platform!
+    Quality education is the most important factor in a students life and I have
+    realized that jiet is the one who masters in the same. There is no
+    compromise in that.
   </p>
 );
 
 const testimonial2 = (
   <p>
-    As a visual learner, the TestimonialsSlider played a crucial role in
-    influencing my decision to join this educational platform. The captivating
-    images paired with heartfelt testimonials provided me with a real sense of
-    the community and success stories within. The autoplay feature and elegant
-    arrow buttons make the experience seamless and enjoyable. Truly a testament
-    to the excellence of the educational programs.
+    It's really been a great learning experience at JIET... I just loved the way
+    i was thought at JIET and I am very thankful to all the faculty members for
+    their continuous support and valuable guidance.
   </p>
 );
 
 const testimonial3 = (
   <p>
-    The TestimonialsSlider is a dynamic showcase of success stories and positive
-    experiences within the educational community. The well-designed cards,
-    accompanied by engaging narratives and professional endorsements, create a
-    persuasive case for anyone considering joining. The autoplay functionality
-    ensures a continuous flow of inspiration, and the intuitive arrow buttons
-    allow for easy navigation. A fantastic addition to the platform!
+    JIET has a very nice environment and away from politics, I am happy that i
+    have taken admission in CS branch in such a well disciplined. Student and
+    Staff are very cooperative.
+  </p>
+);
+
+const testimonial4 = (
+  <p>
+    JIET is a leading institute of technical as well as professional studies
+    with elite class faculty and placement opportunities for all, event oriented
+    good exposure in competing with optimism beautiful campus and lovely
+    environment provided by fellow student!
+  </p>
+);
+
+const testimonial5 = (
+  <p>
+    I am glad to be part of the JIET . It's a pleasure for me to be a part of
+    the JIET family. Such a supportive environment and a bunch of talented
+    faculty. It's always wonderful remembering moments spent there.
+  </p>
+);
+
+const testimonial6 = (
+  <p>
+    The college has great modern facilities which promotes a great learning
+    environment and flexible schedule that suit the needs of a student like me.
   </p>
 );
 
