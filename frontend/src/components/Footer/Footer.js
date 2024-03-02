@@ -142,7 +142,7 @@ export default function Footer() {
             <div class="xl:w-1/3 pr-4 pl-4 lg:w-1/3 pr-4 pl-4 mb-50">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img
                       src="/assets/images/aicte.png"
                       class="max-w-full h-auto"
