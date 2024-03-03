@@ -5,7 +5,6 @@ import Midsection from "../../components/midsection/Midsection";
 import MainSlider from "../../components/MainSlider/MainSlider";
 import BrandLogoSlider from "../../components/BrandLogoSlider/BrandLogoSlider";
 import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
-import Overview from "../AboutUs/Overview/Overview";
 
 function Homepage() {
   return (
@@ -15,7 +14,6 @@ function Homepage() {
       <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider />
-      <Overview />
       <Footer />
     </>
   );
