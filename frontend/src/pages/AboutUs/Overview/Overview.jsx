@@ -10,15 +10,11 @@ import {
 import { FaGithub } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
 import "./Overview.css";
+
 const Overview = () => {
   return (
-    <Box pb={8}>
-      <Stack
-        pos="relative"
-        // bgGradient={`linear(to-l, red.500, red.400 , red.500)`}
-        height="200px"
-        w="100%"
-      ></Stack>
+    <Box pb={8} textAlign="center">
+      <Stack pos="relative" height="200px" w="100%"></Stack>
       <Box
         maxW="8xl"
         p={4}
@@ -36,14 +32,9 @@ const Overview = () => {
           p={{ base: 4, sm: 8 }}
           overflow="hidden"
           rounded="2xl"
+          mx="auto" // Center the box
         >
-          <Stack
-            pos="relative"
-            zIndex={1}
-            direction="column"
-            spacing={5}
-            textAlign="center"
-          >
+          <Stack pos="relative" zIndex={1} direction="column" spacing={5}>
             {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
               Explore TemplatesKart
             </chakra.h1> */}
@@ -61,6 +52,7 @@ const Overview = () => {
               fontSize="xl"
               maxW="600px"
               lineHeight={1.2}
+              mx="auto"
             >
               TemplatesKart is a set of more than 100 responsive components
               built with chakraUI. All components support dark/light color
@@ -68,7 +60,11 @@ const Overview = () => {
               for everyone.
             </chakra.h2>
 
-            <Stack direction={{ base: "column", md: "row" }} spacing={3}>
+            <Stack
+              direction={{ base: "column", md: "row" }}
+              spacing={3}
+              mx="auto"
+            >
               <chakra.button
                 h={10}
                 px={6}
