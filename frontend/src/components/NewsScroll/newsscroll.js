@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   chakra,
@@ -12,7 +12,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaRegNewspaper } from "react-icons/fa";
-
 const articles = [
   {
     id: 1,
@@ -42,17 +41,54 @@ const articles = [
     content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     created_at: "July 30, 2022",
   },
+  {
+    id: 5,
+    categories: ["Web Dev", "Article"],
+    title: "The Complete Guide to Ruby on Rails",
+    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    created_at: "July 30, 2022",
+  },
+  {
+    id: 6,
+    categories: ["Web Dev", "Article"],
+    title: "The Complete Guide to Ruby on Rails",
+    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    created_at: "July 30, 2022",
+  },
+  {
+    id: 7,
+    categories: ["Web Dev", "Article"],
+    title: "The Complete Guide to Ruby on Rails",
+    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    created_at: "July 30, 2022",
+  },
 ];
 
 const NewsScroll = () => {
+  const [scrollIndex, setScrollIndex] = useState(0);
+
+  useEffect(() => {
+    const scrollInterval = setInterval(() => {
+      setScrollIndex((prevIndex) => {
+        if (prevIndex === articles.length ) {
+          return 0; // Reset to the beginning if at the end
+        }
+        return prevIndex + 1;
+      });
+    }, 500); // Adjust the interval (in milliseconds) for a smoother continuous scroll
+
+    return () => clearInterval(scrollInterval);
+  }, [scrollIndex]);
+
   return (
-    <Container maxWidth="4xl" p={{ base: 2, sm: 10 }} height="200px">
+    <Container maxWidth="4xl" p={{ base: 2, sm: 10 }} height="500px">
       <Box height="100%" overflow="hidden" position="relative">
         <Box
-          animation="scroll 30s linear infinite"
           position="absolute"
           top="0"
           left="0"
+          transform={`translateY(${-scrollIndex * 100}%)`}
+          transition="transform 20s linear, opacity 20s linear"
         >
           {articles.map((article, index) => (
             <Flex key={index} mb="10px">
