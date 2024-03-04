@@ -39,7 +39,7 @@ const statData = [
     label: "Programs",
     score: "10+",
     icon: GiNotebook,
-    percentage: "",
+    percentage: "2%",
   },
 ];
 
@@ -99,7 +99,7 @@ const Card = ({ data }) => {
               {data.label}
             </Text>
             <HStack spacing={2}>
-              <Text as="h2" fontSize="lg" color="#e20c0c">
+              <Text as="h2" fontSize="lg" color="green.400">
                 {data.score}
               </Text>
               <Flex>

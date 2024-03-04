@@ -6,6 +6,7 @@ import BrandLogoSlider from "../../components/BrandLogoSlider/BrandLogoSlider";
 import MainSlider from "../../components/MainSlider/MainSlider";
 import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
 import Unique from "../../components/Unique/unique";
+import NewsScroll from "../../components/NewsScroll/newsscroll";
 
 function Homepage() {
   return (
