@@ -28,7 +28,6 @@ const Overview = () => {
 
     typeText(institution, setInstitutionText);
 
-    // Delay before typing AICTE after institution
     setTimeout(() => {
       setAICTEText(""); // Reset AICTE text before typing
       typeText(aicte, setAICTEText);

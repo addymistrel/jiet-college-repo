@@ -5,6 +5,7 @@ const NewsScroller = () => {
   const [newsIndex, setNewsIndex] = useState(0);
   const [scrolling, setScrolling] = useState(true);
 
+  //can use useMemo hook to stop escess rerendering
   const news = [
     "Breaking News: React App Launched!",
     "New Features Added to our Website",
