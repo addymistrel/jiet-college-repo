@@ -18,8 +18,8 @@ function Homepage() {
       <MainSlider />
       <Unique />
       <BranchCards />
-      <TextVideo />
-      <Gallery />
+      {/* <TextVideo />
+      <Gallery /> */}
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
