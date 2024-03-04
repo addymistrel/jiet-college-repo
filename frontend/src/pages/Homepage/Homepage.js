@@ -8,6 +8,8 @@ import TestimonialsSlider from "../../components/TestimonialsSlider/Testimonials
 import Unique from "../../components/Unique/unique";
 import NewsScroll from "../../components/NewsScroll/newsscroll";
 import BranchCards from "../../components/branchCards/branchCards";
+import TextVideo from "../../components/TextVideo/TextVideo";
+import Gallery from "../../components/gallery/gallery";
 
 function Homepage() {
   return (
@@ -16,6 +18,8 @@ function Homepage() {
       <MainSlider />
       <Unique />
       <BranchCards />
+      <TextVideo />
+      <Gallery />
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
