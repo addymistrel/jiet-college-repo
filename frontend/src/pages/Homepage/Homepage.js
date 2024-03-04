@@ -7,6 +7,7 @@ import MainSlider from "../../components/MainSlider/MainSlider";
 import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
 import Unique from "../../components/Unique/unique";
 import NewsScroll from "../../components/NewsScroll/newsscroll";
+import BranchCards from "../../components/branchCards/branchCards";
 
 function Homepage() {
   return (
@@ -14,6 +15,7 @@ function Homepage() {
       <Navbar />
       <MainSlider />
       <Unique />
+      <BranchCards />
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
