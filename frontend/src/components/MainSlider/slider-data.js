@@ -1,4 +1,4 @@
-export const sliderData = [
+export const slides = [
   {
     image: "./assets/images/jietimage/comp1.png",
     heading: "Eternal Sparkle",
