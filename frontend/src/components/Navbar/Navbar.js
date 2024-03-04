@@ -446,208 +446,85 @@ export default function Navbar() {
           minWidth={"-moz-fit-content"}
           display={{ base: "none", md: "none", lg: "block" }}
         >
-          <ButtonGroup
-            justifyContent={"space-around"}
-            display={"flex"}
-            variant={"unstyled"}
-            ml={"10rem"}
-            mr={"10rem"}
-            flexWrap={"wrap"}
-            color={useColorModeValue("black", "white")}
+          <ul
+            class="hList"
+            style={{ display: "flex", justifyContent: "center" }}
           >
-            <Link to={"/jwellery/Bestseller"}>
-              <Button as={Button} className="btn">
-                HOME
-              </Button>
-            </Link>
-            <Menu>
-              <MenuButton as={Button} className="btn">
-                ABOUT US
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Overview</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Mission & Vision</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Leadership</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Chairman Message</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Dignitaries Visit</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Govt. Affliations</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Menu>
-              <MenuButton
-                as={Button}
-                className="btn"
-                onMouseEnter={() => setmenu2(true)}
-                onMouseLeave={() => setmenu2(false)}
-              >
-                PROGRAMS
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Post Graduate</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Under Graduate</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Diploma</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-
-            <Menu>
-              <MenuButton
-                as={Button}
-                className="btn"
-                onMouseEnter={() => setmenu3(true)}
-                onMouseLeave={() => setmenu3(false)}
-              >
-                DEPARTMENTS
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Computer Science & Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Electrical Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Mechanical Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Civil Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Management Studies(BBA)</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Menu>
-              <MenuButton
-                as={Button}
-                className="btn"
-                onMouseEnter={() => setmenu4(true)}
-                onMouseLeave={() => setmenu4(false)}
-              >
-                CAMPUS LIFE
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Student Centre</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Recreational Room</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Amaya Mess</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Sports at JIET</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Industrial Exposure</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Admission</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Link to={"/jwellery/Chain"}>
-              <Button className="btn">GALLERY</Button>
-            </Link>
-            <Link to={"/jwellery/Kada"}>
-              <Button className="btn">JIND GENIUS</Button>
-            </Link>
-            {/* <Menu>
-              <MenuButton as={Button} className="btn">
-                OTHER JEWELLERY
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>HARAM</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Jewellery Set"}>
-                    <Button>JEWELLERY SET</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Maang Tikka"}>
-                    <Button>MAANG TIKKA</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Mangalsutra"}>
-                    <Button>MANGALSUTRAS</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Necklace"}>
-                    <Button>NECKLACES</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Pendant"}>
-                    <Button>PENDENT</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu> */}
-          </ButtonGroup>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title">Home</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_2nd">About Us</h2>
+                <ul class="menu-dropdown">
+                  <li>Overview</li>
+                  <li>Mission & Vision</li>
+                  <li>Leadership</li>
+                  <li>Chairman Visit</li>
+                  <li>Dignitaries Visit</li>
+                  <li>Govt. Affiliation</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_3rd">Programs</h2>
+                <ul class="menu-dropdown">
+                  <li>Post Graduate</li>
+                  <li>Under Graduate</li>
+                  <li>Diploma</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_4th">Departments</h2>
+                <ul class="menu-dropdown">
+                  <li>Godzilla</li>
+                  <li>Man on Wire</li>
+                  <li>Spirited Away</li>
+                  <li>Interstellar</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_4th">Departments</h2>
+                <ul class="menu-dropdown">
+                  <li>Computer Science & Engineering</li>
+                  <li>Electrical Engineering</li>
+                  <li>Mechanical Engineering</li>
+                  <li>Civil Engineering</li>
+                  <li>Management Studies (BBA)</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_4th">Campus Life</h2>
+                <ul class="menu-dropdown">
+                  <li>Student Centre</li>
+                  <li>Recreational Room</li>
+                  <li>Amaya Mess</li>
+                  <li>Sports at JIET</li>
+                  <li>Industrial Exposure</li>
+                  <li>Admission</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_4th">Gallery</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#click" class="menu">
+                <h2 class="menu-title menu-title_4th">JIND GENIUS</h2>
+              </a>
+            </li>
+          </ul>
         </Box>
         <Box
           pt={"1%"}

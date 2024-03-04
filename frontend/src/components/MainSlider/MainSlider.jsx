@@ -106,7 +106,7 @@ export default function MainSlider() {
                 boxSize="full"
                 backgroundSize="cover"
               />
-              <Stack
+              {/* <Stack
                 p="8px 12px"
                 pos="absolute"
                 bottom="24px"
@@ -117,7 +117,7 @@ export default function MainSlider() {
               >
                 <Text fontSize="2xl">{slide.heading}</Text>
                 <Text fontSize="lg">{slide.desc}</Text>
-              </Stack>
+              </Stack> */}
             </Box>
           ))}
         </Flex>
