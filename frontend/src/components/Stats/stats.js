@@ -22,7 +22,7 @@ import { GiNotebook } from "react-icons/gi";
 const statData = [
   {
     id: 1,
-    label: "Companies For Placement",
+    label: "Placements",
     score: "900+",
     icon: IoBusinessSharp,
     percentage: "10%",

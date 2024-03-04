@@ -23,6 +23,7 @@ function Homepage() {
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
+      <NewsScroll />
       <Footer />
     </>
   );
