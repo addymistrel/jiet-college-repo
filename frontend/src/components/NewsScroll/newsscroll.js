@@ -34,15 +34,11 @@ const NewsScroller = () => {
   return (
     <Box
       overflow="hidden"
-      height="200px"
-      width="300px"
+      height="300px"
+      width="500px"
       borderRadius="md"
       boxShadow="lg"
       transition="box-shadow 0.3s ease-in-out"
-      _hover={{ boxShadow: "xl", cursor: "pointer" }}
-      onMouseEnter={() => setScrolling(false)}
-      onMouseLeave={() => setScrolling(true)}
-      onClick={() => (window.location.href = "/news")} // Redirect to another page when the box is clicked
     >
       <Text
         backgroundColor="teal.500"
@@ -55,30 +51,44 @@ const NewsScroller = () => {
         Latest News
       </Text>
       <Box
-        display="flex"
-        flexDirection="column"
-        transition="transform 0.5s ease-in-out"
-        transform={`translateY(${-newsIndex * 50}px)`}
+        overflow="hidden"
+        height="300px"
+        width="500px"
+        borderRadius="md"
+        boxShadow="lg"
+        transition="box-shadow 0.3s ease-in-out"
+        _hover={{ boxShadow: "xl", cursor: "pointer" }}
+        onMouseEnter={() => setScrolling(false)}
+        onMouseLeave={() => setScrolling(true)}
       >
-        {news.map((headline, index) => (
-          <Link
-            key={index}
-            href="/news" // Change the actual URL for redirection
-            textDecoration="none"
-          >
-            <Box
-              height="50px"
-              lineHeight="50px"
-              borderBottom="1px solid #ccc"
-              paddingX="4"
-              fontSize="sm"
-              fontWeight="medium"
-              _hover={{ background: "#f0f0f0" }}
+        <Box
+          display="flex"
+          flexDirection="column"
+          style={{
+            transition: "transform 0.5s ease-in-out",
+            transform: `translateY(${-newsIndex * 50}px)`,
+          }}
+        >
+          {news.map((headline, index) => (
+            <Link
+              key={index}
+              href="/news" // Change the actual URL for redirection
+              textDecoration="none"
             >
-              {headline}
-            </Box>
-          </Link>
-        ))}
+              <Box
+                height="50px"
+                lineHeight="50px"
+                borderBottom="1px solid #ccc"
+                paddingX="4"
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ background: "#f0f0f0" }}
+              >
+                {headline}
+              </Box>
+            </Link>
+          ))}
+        </Box>
       </Box>
     </Box>
   );
