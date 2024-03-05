@@ -10,6 +10,8 @@ import NewsScroll from "../../components/NewsScroll/newsscroll";
 import BranchCards from "../../components/branchCards/branchCards";
 import TextVideo from "../../components/TextVideo/TextVideo";
 import Gallery from "../../components/gallery/gallery";
+import WithSpeechBubbles from "../../components/TestimonialsSlider/TestimonialsSlider";
+import PaginationContainer from "../../components/Pagination/Pagination";
 
 function Homepage() {
   return (
@@ -18,12 +20,13 @@ function Homepage() {
       <MainSlider />
       <Unique />
       <BranchCards />
-      {/* <TextVideo />
-      <Gallery /> */}
+      {/* <TextVideo />*/}
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
-      <NewsScroll />
+      {/* <NewsScroll /> */}
+      <WithSpeechBubbles />
+      {/* <PaginationContainer /> */}
       <Footer />
     </>
   );
