@@ -12,6 +12,7 @@ import TextVideo from "../../components/TextVideo/TextVideo";
 import GallerySlider from "../../components/GallerySlider/GallerySlider";
 import WithSpeechBubbles from "../../components/TestimonialsSlider/TestimonialsSlider";
 import PaginationContainer from "../../components/Pagination/Pagination";
+import HomeGallery from "../../components/HomeGallery/HomeGallery";
 
 function Homepage() {
   return (
@@ -27,6 +28,7 @@ function Homepage() {
       {/* <NewsScroll /> */}
       <WithSpeechBubbles />
       {/* <PaginationContainer /> */}
+      <HomeGallery />
     </>
   );
 }
