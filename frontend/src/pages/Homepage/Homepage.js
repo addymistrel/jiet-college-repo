@@ -6,10 +6,10 @@ import BrandLogoSlider from "../../components/BrandLogoSlider/BrandLogoSlider";
 import MainSlider from "../../components/MainSlider/MainSlider";
 import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
 import Unique from "../../components/Unique/unique";
-import NewsScroll from "../../components/NewsScroll/newsscroll";
+import NewsScroll from "../../components/NewsScroller/NewsScroller";
 import BranchCards from "../../components/branchCards/branchCards";
 import TextVideo from "../../components/TextVideo/TextVideo";
-import Gallery from "../../components/gallery/gallery";
+import GallerySlider from "../../components/GallerySlider/GallerySlider";
 import WithSpeechBubbles from "../../components/TestimonialsSlider/TestimonialsSlider";
 import PaginationContainer from "../../components/Pagination/Pagination";
 
@@ -19,7 +19,8 @@ function Homepage() {
       <MainSlider />
       <Unique />
       <BranchCards />
-      {/* <TextVideo />*/}
+      {/* <TextVideo />
+      <Gallery /> */}
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
