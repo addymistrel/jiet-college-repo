@@ -26,6 +26,11 @@ const NewsScroller = () => {
       "Tech Company Acquires Startup for Billions",
       "Weather Update: Sunny Skies Expected",
       "Global Economy on the Rise",
+      "Breaking News: React App Launched!",
+      "New Features Added to Our Website",
+      "Tech Company Acquires Startup for Billions",
+      "Weather Update: Sunny Skies Expected",
+      "Global Economy on the Rise",
     ],
     []
   );
@@ -39,7 +44,7 @@ const NewsScroller = () => {
           const newIndex = (prevIndex + 1) % news.length;
           return newIndex < news.length / 2 ? newIndex : news.length - 1;
         });
-      }, 3000);
+      }, 5000);
     };
 
     const stopScrolling = () => clearInterval(intervalId);
@@ -84,7 +89,7 @@ const NewsScroller = () => {
         <Box
           overflow="hidden"
           height={{ base: "150px", md: "300px" }}
-          width={{base: "100%", lg:"100%"}}
+          width={{ base: "100%", lg: "100%" }}
           borderRadius="md"
           boxShadow="lg"
           transition="box-shadow 0.3s ease-in-out"
