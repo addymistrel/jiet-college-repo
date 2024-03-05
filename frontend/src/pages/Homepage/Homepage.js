@@ -16,7 +16,6 @@ import PaginationContainer from "../../components/Pagination/Pagination";
 function Homepage() {
   return (
     <>
-      <Navbar />
       <MainSlider />
       <Unique />
       <BranchCards />
@@ -27,7 +26,6 @@ function Homepage() {
       {/* <NewsScroll /> */}
       <WithSpeechBubbles />
       {/* <PaginationContainer /> */}
-      <Footer />
     </>
   );
 }
