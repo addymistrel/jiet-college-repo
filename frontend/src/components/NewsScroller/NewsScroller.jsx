@@ -52,12 +52,15 @@ const NewsScroller = () => {
   }, [news, scrolling]);
 
   return (
-    <Flex>
-      {/* Gallery Slider on the left */}
-      <Box flex={1} pr={4}>
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      justify="center"
+      align="center"
+    >
+      <Box flex={{ base: "none", md: 1 }} p={2}>
         <Box
           position="relative"
-          height="300px"
+          height={{ base: "200px", md: "300px" }}
           rounded="2xl"
           boxShadow="2xl"
           overflow="hidden"
@@ -77,39 +80,58 @@ const NewsScroller = () => {
           <GallerySlider />
         </Box>
       </Box>
-
-      {/* News section on the right */}
-      <Box flex={1} pl={4}>
+      <Box p={2} flex={{ base: 1, md: 1 }}>
         <Box
           overflow="hidden"
-          height="300px"
+          height={{ base: "150px", md: "300px" }}
+          width={{base: "100%", lg:"100%"}}
           borderRadius="md"
           boxShadow="lg"
           transition="box-shadow 0.3s ease-in-out"
         >
-          <Box
-            display="flex"
-            flexDirection="column"
-            style={{
-              transition: "transform 0.5s ease-in-out",
-              transform: `translateY(-${newsIndex * 50}px)`,
-            }}
+          <Text
+            backgroundColor="teal.500"
+            color="white"
+            textAlign="center"
+            fontSize="lg"
+            fontWeight="bold"
+            paddingY="2"
           >
-            {news.map((headline, index) => (
-              <Link key={index} href="/news" textDecoration="none">
-                <Box
-                  height="50px"
-                  lineHeight="50px"
-                  borderBottom="1px solid #ccc"
-                  paddingX="4"
-                  fontSize="sm"
-                  fontWeight="medium"
-                  _hover={{ background: "#f0f0f0" }}
-                >
-                  {headline}
-                </Box>
-              </Link>
-            ))}
+            Latest News
+          </Text>
+          <Box flex={1}>
+            <Box
+              overflow="hidden"
+              height="100%"
+              borderRadius="md"
+              boxShadow="lg"
+              transition="box-shadow 0.3s ease-in-out"
+            >
+              <Box
+                display="flex"
+                flexDirection="column"
+                style={{
+                  transition: "transform 0.5s ease-in-out",
+                  transform: `translateY(-${newsIndex * 50}px)`,
+                }}
+              >
+                {news.map((headline, index) => (
+                  <Link key={index} href="/news" textDecoration="none">
+                    <Box
+                      height="50px"
+                      lineHeight="50px"
+                      borderBottom="1px solid #ccc"
+                      paddingX="4"
+                      fontSize="sm"
+                      fontWeight="medium"
+                      _hover={{ background: "#f0f0f0" }}
+                    >
+                      {headline}
+                    </Box>
+                  </Link>
+                ))}
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>
