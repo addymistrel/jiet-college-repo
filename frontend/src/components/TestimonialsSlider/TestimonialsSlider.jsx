@@ -1,165 +1,129 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./TestimonialsSlider.css";
-import { RxAvatar } from "react-icons/rx";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import React, { useState } from "react";
+import { testimonialData } from "./testimonial-data";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  Container,
+  Avatar,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import PaginationContainer from "../Pagination/Pagination";
 
-const PreviousBtn = (props) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <IoIosArrowBack style={{ color: "gray", fontSize: "45px" }} />
-    </div>
-  );
+const Testimonial = (props) => {
+  const { children } = props;
+
+  return <Box>{children}</Box>;
 };
 
-const NextBtn = (props) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <IoIosArrowForward style={{ color: "gray", fontSize: "45px" }} />
-    </div>
-  );
-};
-
-const TestimonialsSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: <PreviousBtn />,
-    nextArrow: <NextBtn />,
-  };
+const TestimonialContent = (props) => {
+  const { children } = props;
 
   return (
-    <div className="testimonial">
-      <div style={{ width: "50%", textAlign: "center" }}>
-        <h1 className="std-review-h1">STUDENT REVIEWS</h1>
-        <Slider {...settings}>
-          <Card
-            img="./assets/images/upload/chirag.png"
-            testimonial={testimonial1}
-            name="CHIRAG LAKHINA"
-            jobProfile="SOFTWARE ENGINEER AT ACCENTURE HYDERABAD"
-          />
-          <Card
-            img="./assets/images/upload/deepak.png"
-            testimonial={testimonial2}
-            name="DEEPAK SINGHLA"
-            jobProfile="INCOME TAX DEPARTMENT,GOI"
-          />
-          {/* <Card
-            img="./assets/images/upload/okesh.png"
-            testimonial={testimonial3}
-            name="OKESH GOYAL"
-            jobProfile="ASSISTANT MANAGER AT SARVA HARYANA GRAMIN BANK"
-          /> */}
-          <Card
-            img="./assets/images/upload/paryag.png"
-            testimonial={testimonial4}
-            name="PARYAG KUMAR"
-            jobProfile="ADVISORY SYSTEM ANALYST AT IBM"
-          />
-          <Card
-            img="./assets/images/upload/ravneet.png"
-            testimonial={testimonial5}
-            name="RAVNEET SODHI"
-            jobProfile="NAGARRO SOFTWARE"
-          />
-          <Card
-            img="./assets/images/upload/prerna.png"
-            testimonial={testimonial6}
-            name="PRERNA KOHLI"
-            jobProfile="S/W DEVELOPER COGNIZANT PUNE"
-          />
-        </Slider>
-      </div>
-    </div>
-  );
-};
-
-const Card = ({ img, testimonial, name, jobProfile }) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "gray",
+    <Stack
+      bg={useColorModeValue("white", "gray.800")}
+      boxShadow={"lg"}
+      p={8}
+      rounded={"xl"}
+      align={"center"}
+      pos={"relative"}
+      _after={{
+        content: `""`,
+        w: 0,
+        h: 0,
+        borderLeft: "solid transparent",
+        borderLeftWidth: 16,
+        borderRight: "solid transparent",
+        borderRightWidth: 16,
+        borderTop: "solid",
+        borderTopWidth: 16,
+        borderTopColor: useColorModeValue("white", "gray.800"),
+        pos: "absolute",
+        bottom: "-16px",
+        left: "50%",
+        transform: "translateX(-50%)",
       }}
     >
-      <img
-        src={img}
-        alt="Client"
-        style={{
-          width: 130,
-          height: 130,
-          borderRadius: "50%",
-          border: "1px solid lightgray",
-          marginBottom: 20,
-        }}
-      />
-      {testimonial}
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "red" }}>{name}</span> ,{" "}
-        {jobProfile}
-      </p>
-    </div>
+      {children}
+    </Stack>
   );
 };
 
-const testimonial1 = (
-  <p>
-    Quality education is the most important factor in a students life and I have
-    realized that jiet is the one who masters in the same. There is no
-    compromise in that.
-  </p>
-);
+const TestimonialHeading = (props) => {
+  const { children } = props;
 
-const testimonial2 = (
-  <p>
-    It's really been a great learning experience at JIET... I just loved the way
-    i was thought at JIET and I am very thankful to all the faculty members for
-    their continuous support and valuable guidance.
-  </p>
-);
+  return (
+    <Heading as={"h3"} fontSize={"xl"}>
+      {children}
+    </Heading>
+  );
+};
 
-// const testimonial3 = (
-//   <p>
-//     JIET has a very nice environment and away from politics, I am happy that i
-//     have taken admission in CS branch in such a well disciplined. Student and
-//     Staff are very cooperative.
-//   </p>
-// );
+const TestimonialText = (props) => {
+  const { children } = props;
 
-const testimonial4 = (
-  <p>
-    JIET is a leading institute of technical as well as professional studies
-    with elite class faculty and placement opportunities for all, event oriented
-    good exposure in competing with optimism beautiful campus and lovely
-    environment provided by fellow student!
-  </p>
-);
+  return (
+    <Text
+      textAlign={"center"}
+      color={useColorModeValue("gray.600", "gray.400")}
+      fontSize={"sm"}
+    >
+      {children}
+    </Text>
+  );
+};
 
-const testimonial5 = (
-  <p>
-    I am glad to be part of the JIET . It's a pleasure for me to be a part of
-    the JIET family. Such a supportive environment and a bunch of talented
-    faculty. It's always wonderful remembering moments spent there.
-  </p>
-);
+const TestimonialAvatar = ({ src, name, title }) => {
+  return (
+    <Flex align={"center"} mt={8} direction={"column"}>
+      <Avatar src={src} mb={2} />
+      <Stack spacing={-1} align={"center"}>
+        <Text fontWeight={600}>{name}</Text>
+        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
+          {title}
+        </Text>
+      </Stack>
+    </Flex>
+  );
+};
 
-const testimonial6 = (
-  <p>
-    The college has great modern facilities which promotes a great learning
-    environment and flexible schedule that suit the needs of a student like me.
-  </p>
-);
-
-export default TestimonialsSlider;
+export default function WithSpeechBubbles() {
+  console.log(testimonialData);
+  const [currIndex, setCurrIndex] = useState(0);
+  return (
+    <>
+      <Box bg={useColorModeValue("gray.100", "gray.700")}>
+        <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+          <Stack spacing={0} align={"center"}>
+            <Heading>Student Reviews</Heading>
+          </Stack>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            spacing={{ base: 10, md: 4, lg: 10 }}
+          >
+            {testimonialData
+              .slice(currIndex * 3, currIndex * 3 + 3)
+              .map((item) => {
+                return (
+                  <Testimonial>
+                    <TestimonialContent>
+                      {/* <TestimonialHeading>{item.job}</TestimonialHeading> */}
+                      <TestimonialText>{item.testimonial}</TestimonialText>
+                    </TestimonialContent>
+                    <TestimonialAvatar
+                      src={item.img}
+                      name={item.name}
+                      title={item.jobProfile}
+                    />
+                  </Testimonial>
+                );
+              })}
+          </Stack>
+        </Container>
+      </Box>
+      <PaginationContainer currIndex={currIndex} setCurrIndex={setCurrIndex} />
+    </>
+  );
+}
