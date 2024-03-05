@@ -14,25 +14,36 @@ import "./Overview.css";
 const Overview = () => {
   const [institutionText, setInstitutionText] = useState("");
   const [aicteText, setAICTEText] = useState("");
-
+  const [ind, setInd] = useState(0);
+  const [toStart, setStart] = useState(false);
   useEffect(() => {
     const institution = "JIET GROUP OF INSTITUTION";
-    const aicte = "APPROVED BY AICTE";
-
-    const typeText = (text, setTextCallback, index = 0) => {
-      if (index < text.length) {
-        setTextCallback((prevText) => prevText + text[index]);
-        setTimeout(() => typeText(text, setTextCallback, index + 1), 100);
-      }
-    };
-
-    typeText(institution, setInstitutionText);
+    var insLength = institution.length;
 
     setTimeout(() => {
-      setAICTEText(""); // Reset AICTE text before typing
-      typeText(aicte, setAICTEText);
-    }, institution.length * 100 + 1000); // Adjust timing based on your preference
-  }, []);
+      if (ind !== insLength) {
+        setInstitutionText(institutionText + institution[ind]);
+        setInd(ind + 1);
+      }
+    }, 100);
+    if (institutionText.length === 25) {
+      setStart(true);
+      setInd(0);
+    }
+  }, [institutionText]);
+
+  useEffect(() => {
+    if (toStart === true) {
+      const aicte = "APPROVED BY AICTE";
+      const aicLength = aicte.length;
+      setTimeout(() => {
+        if (ind !== aicLength) {
+          setAICTEText(aicteText + aicte[ind]);
+          setInd(ind + 1);
+        }
+      }, 100);
+    }
+  }, [aicteText, toStart]);
 
   return (
     <Box pb={8} textAlign="center">
