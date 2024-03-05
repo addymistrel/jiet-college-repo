@@ -46,7 +46,6 @@ const HomeGallery = () => {
               height="400px"
               objectFit="cover"
               _hover={{ width: "300px", transform: "scale(1.2)" }}
-              onClick={onOpen}
               transition="transform 1s"
             />
 
