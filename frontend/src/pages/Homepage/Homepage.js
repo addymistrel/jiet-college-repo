@@ -25,7 +25,7 @@ function Homepage() {
       {/* <Midsection />
       <TestimonialsSlider />
       <BrandLogoSlider /> */}
-      {/* <NewsScroll /> */}
+      <NewsScroll />
       <WithSpeechBubbles />
       {/* <PaginationContainer /> */}
       <HomeGallery />
