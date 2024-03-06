@@ -90,7 +90,7 @@ const NewsScroller = () => {
         <Box
           overflow="hidden"
           height={{ base: "300px", md: "300px" }}
-          width={{ base: "100%", lg: "100%" }}
+          width={{ base: "40rem", lg: "100%" }}
           borderRadius="md"
           boxShadow="lg"
           transition="box-shadow 0.3s ease-in-out"
