@@ -17,7 +17,11 @@ const TextVideo = () => {
   return (
     <Container maxW="6xl" px={{ base: 6, md: 3 }} py={14}>
       <Stack direction={{ base: "column", md: "row" }} justifyContent="center">
-        <Box mr={{ base: 0, md: 5 }} pos="relative">
+        <Box
+          mr={{ base: 0, md: 5 }}
+          pos="relative"
+          paddingBottom={{ base: "30%" }}
+        >
           <DottedBox />
           <Box
             boxShadow="lg"
