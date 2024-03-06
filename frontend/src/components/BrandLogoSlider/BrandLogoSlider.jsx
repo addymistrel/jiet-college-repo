@@ -1,9 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./BrandLogoSlider.css";
-
 const BrandLogoSlider = () => {
   const images = [
     "./assets/images/upload/tata.png",
@@ -18,45 +14,17 @@ const BrandLogoSlider = () => {
     "./assets/images/upload/Fortinet.png",
   ];
 
-  const settings = {
-    infinite: true,
-    slidesToShow: 4, // Adjust the number of visible slides
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000, // Adjust the sliding speed
-    autoplaySpeed: 0, // Set to 0 for continuous sliding
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
   return (
-    <div className="brand-logo-slider">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="image-wrapper">
-            <img src={image} alt="" />
-          </div>
-        ))}
-      </Slider>
+    <div class="slider-area">
+      <div class="brandwrapper">
+        {images.map((item) => {
+          return (
+            <div class="item">
+              <img alt="" src={item} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

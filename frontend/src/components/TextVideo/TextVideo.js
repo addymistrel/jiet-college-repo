@@ -34,7 +34,7 @@ const TextVideo = () => {
               <iframe
                 style={{ borderRadius: "25px" }}
                 title="naruto"
-                src="https://www.youtube.com/embed/QhBnZ6NPOY0"
+                src="/assets/images/jietimage/video.mp4"
                 allowFullScreen
               />
             </AspectRatio>

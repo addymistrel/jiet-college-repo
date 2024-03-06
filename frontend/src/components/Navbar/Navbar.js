@@ -482,17 +482,6 @@ export default function Navbar() {
               <a href="#click" class="menu">
                 <h2 class="menu-title menu-title_4th">Departments</h2>
                 <ul class="menu-dropdown">
-                  <li>Godzilla</li>
-                  <li>Man on Wire</li>
-                  <li>Spirited Away</li>
-                  <li>Interstellar</li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#click" class="menu">
-                <h2 class="menu-title menu-title_4th">Departments</h2>
-                <ul class="menu-dropdown">
                   <li>Computer Science & Engineering</li>
                   <li>Electrical Engineering</li>
                   <li>Mechanical Engineering</li>

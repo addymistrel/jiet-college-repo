@@ -20,6 +20,7 @@ function Homepage() {
       <MainSlider />
       <Unique />
       <BranchCards />
+      <TextVideo />
       {/* <TextVideo />
       <Gallery /> */}
       {/* <Midsection />
@@ -29,6 +30,7 @@ function Homepage() {
       <WithSpeechBubbles />
       {/* <PaginationContainer /> */}
       <HomeGallery />
+      <BrandLogoSlider />
     </>
   );
 }

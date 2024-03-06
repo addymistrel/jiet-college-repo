@@ -1,71 +1,45 @@
-/* Container for the brand logo slider */
-.brand-logo-slider {
-  margin-top: 70px;
-  margin-bottom: 30px;
-  text-align: center;
-  overflow: hidden;
+.slider-area {
+  padding: 3% 2% 3% 2%;
 }
-
-/* Optional title styling */
-.title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Center the slider */
-.slick-slider {
-  margin: 0 auto;
-}
-
-/* Adjust the margin for the slick-list */
-.slick-list {
-  margin: 0 -15px;
-}
-
-/* Style for individual slides */
-.slick-slide {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-/* Wrapper for the image with a smooth transition effect */
-.image-wrapper {
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Style for the images */
-.image-wrapper img {
+.brandwrapper {
+  display: flex;
   width: 100%;
-  max-width: 8rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.5rem;
+  background: #ddd;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item {
+  animation: animate 25s alternate linear infinite;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.item img {
+  display: block;
+  max-width: 200px;
+  max-height: 90px;
+  width: auto;
   height: auto;
 }
-
-/* Responsive styles */
-@media (max-width: 1200px) {
-  .slick-slide {
-    padding: 0 10px;
+.container:hover .item {
+  animation-play-state: paused;
+}
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1100px, 0, 0);
   }
 }
-
-@media (max-width: 992px) {
-  .brand-logo-slider {
-    margin-top: 125px;
+@media (max-width: 767px) {
+  .slider-area h2 {
+    font-size: 30px;
   }
-  .slick-slide {
-    padding: 0 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  .brand-logo-slider {
-    margin-top: 200px;
-  }
-  .title {
-    font-size: 20px;
-  }
-
-  .slick-slide {
-    padding: 0 5px;
+  .brandwrapper {
+    width: 95%;
+    border-radius: 0;
+    padding: 0;
   }
 }
