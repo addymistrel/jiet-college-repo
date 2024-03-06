@@ -8,6 +8,7 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 import GallerySlider from "../GallerySlider/GallerySlider";
+import NewsSideSlider from "../NewsSideSlider/NewsSideSlider";
 
 const PlayIcon = createIcon({
   displayName: "PlayIcon",
@@ -82,13 +83,13 @@ const NewsScroller = () => {
             top="50%"
             transform="translateX(-50%) translateY(-50%)"
           />
-          <GallerySlider />
+          <NewsSideSlider />
         </Box>
       </Box>
       <Box p={2} flex={{ base: 1, md: 1 }}>
         <Box
           overflow="hidden"
-          height={{ base: "150px", md: "300px" }}
+          height={{ base: "300px", md: "300px" }}
           width={{ base: "100%", lg: "100%" }}
           borderRadius="md"
           boxShadow="lg"

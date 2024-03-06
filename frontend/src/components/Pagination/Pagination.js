@@ -16,7 +16,7 @@ const PaginationContainer = ({ currIndex, setCurrIndex }) => {
       d="flex"
       maxWidth="7xl"
       w="full"
-      h="218px"
+      h="130px"
       justifyContent="space-between"
       alignItems="center"
       p={{ base: 5, sm: 10 }}
