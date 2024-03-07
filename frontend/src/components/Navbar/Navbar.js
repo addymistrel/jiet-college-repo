@@ -502,15 +502,14 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href=""
-                class="menu"
-                onClick={() => navigate("/aboutus/overview")}
-              >
+              <a href="" class="menu">
                 <h2 class="menu-title menu-title_2nd">About Us</h2>
                 <ul class="menu-dropdown">
                   <li onClick={() => navigate("/aboutus/overview")}>
                     Overview
+                  </li>
+                  <li onClick={() => navigate("/aboutus/mission")}>
+                    Mission & Vision
                   </li>
                   <li onClick={() => navigate("/aboutus/leadership")}>
                     Leadership
