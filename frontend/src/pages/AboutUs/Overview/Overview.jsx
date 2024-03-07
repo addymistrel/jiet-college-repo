@@ -49,10 +49,10 @@ const Overview = () => {
   }, [aicteText, toStart]);
 
   const sideData = [
-    { head: "Overview", link: "#" },
-    { head: "Mission & Vision", link: "#" },
+    { head: "Overview", link: "/aboutus/overview" },
+    { head: "Mission & Vision", link: "/aboutus/mission" },
     { head: "Leadership", link: "#" },
-    { head: "Dignitaries Visit", link: "#" },
+    { head: "Chairman Message", link: "/aboutus/cmessage" },
     { head: "Govt. Affiliation", link: "#" },
   ];
 
