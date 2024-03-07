@@ -502,7 +502,11 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="" class="menu">
+              <a
+                href=""
+                class="menu"
+                onClick={() => navigate("/aboutus/overview")}
+              >
                 <h2 class="menu-title menu-title_2nd">About Us</h2>
                 <ul class="menu-dropdown">
                   <li onClick={() => navigate("/aboutus/overview")}>
