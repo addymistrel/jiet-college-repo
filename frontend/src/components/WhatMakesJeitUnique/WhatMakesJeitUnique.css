@@ -1,0 +1,10 @@
+.card{
+    position: absolute;
+    opacity: 0.2;
+    background-color: transparent;
+}
+.card-content{
+    position: relative;
+    background-color: transparent;
+
+}

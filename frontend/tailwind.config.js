@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
       'bg-1': "url('/public/assets/images/whatMakesJeitSpecial.png')",
-      'footer-texture': "url('/img/footer-texture.png')",
+      'ml-card':"url('/public/assets/images/jiet6.png')",
     }},
   },
   plugins: [],
