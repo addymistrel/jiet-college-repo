@@ -106,7 +106,6 @@ const ChairmansMessage = () => {
                         <span>JIET CONVENT SCHOOL</span>
                       </h1>
                     </div> */}
-                    <br />
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <br />
                     <Box display="flex" alignItems="center" ml={12}>

@@ -6,6 +6,7 @@ import Overview from "./pages/AboutUs/Overview/Overview";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ChairmansMessage from "./pages/AboutUs/ChairmansMessage/ChairmansMessage";
+import MissionAndVision from "./pages/AboutUs/MissionAndVision/MissionAndVision";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/aboutus" element={<ChairmansMessage />} />
+        <Route path="/aboutus" element={<MissionAndVision />} />
       </Routes>
       <Footer />
     </BrowserRouter>
