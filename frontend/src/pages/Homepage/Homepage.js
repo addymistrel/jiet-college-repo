@@ -13,6 +13,7 @@ import GallerySlider from "../../components/GallerySlider/GallerySlider";
 import WithSpeechBubbles from "../../components/TestimonialsSlider/TestimonialsSlider";
 import PaginationContainer from "../../components/Pagination/Pagination";
 import HomeGallery from "../../components/HomeGallery/HomeGallery";
+import "./Homepage.css";
 
 function Homepage() {
   return (
@@ -21,14 +22,8 @@ function Homepage() {
       <Unique />
       <BranchCards />
       <TextVideo />
-      {/* <TextVideo />
-      <Gallery /> */}
-      {/* <Midsection />
-      <TestimonialsSlider />
-      <BrandLogoSlider /> */}
       <NewsScroll />
       <WithSpeechBubbles />
-      {/* <PaginationContainer /> */}
       <HomeGallery />
       <BrandLogoSlider />
     </>
