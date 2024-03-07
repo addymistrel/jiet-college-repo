@@ -11,6 +11,7 @@ import ChairmansMessage from "./pages/AboutUs/ChairmansMessage/ChairmansMessage"
 import Leadership from "./pages/AboutUs/Leadership/Leadership";
 import PostGraduate from "./pages/Departments/PostGraduate/Postgraduate";
 import GovtAffiliation from "./pages/AboutUs/GovtAffiliation/GovtAffiliation";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/aboutus/leadership" element={<Leadership />} />
         <Route path="/aboutus/affiliations" element={<GovtAffiliation />} />
         <Route path="/programs/postgraduate" element={<PostGraduate />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
