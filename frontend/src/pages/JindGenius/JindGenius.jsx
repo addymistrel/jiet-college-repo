@@ -1,11 +1,15 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
+import "./JindGenius.css";
 
 const JindGenius = () => (
   <Box p={4}>
-    <Heading as="h2" size="lg" mb={4}>
+    {/* <Heading as="h2" size="lg" mb={4}>
       PDF Viewer Example
-    </Heading>
+    </Heading> */}
+    <div className="heading-css-1">
+      <h1>Jind Genius</h1>
+    </div>
     <Box className="control-section" m={16}>
       <iframe
         title="PDF Viewer"
