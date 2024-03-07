@@ -8,11 +8,11 @@ function Gallery() {
 
   useEffect(() => {
     setData(GalleryData);
-    setCollection([...new Set(GalleryData.map((item) => item.titile))]);
+    setCollection([...new Set(GalleryData.map((item) => item.title))]);
   }, []);
 
   const gallery_filter = (itemData) => {
-    const filterData = GalleryData.filter((item) => item.titile == itemData);
+    const filterData = GalleryData.filter((item) => item.title == itemData);
     setData(filterData);
   };
 
@@ -39,7 +39,7 @@ function Gallery() {
       <div className="galleryContainer">
         {data.map((item) => (
           <div key={item.id} className="galleryItem">
-            <img src={item.image} />
+            <img src={item.image} alt="image error" />
           </div>
         ))}
       </div>

@@ -335,9 +335,9 @@ export default function Navbar() {
                       <Link to={"/aboutus/cmessage"}>
                         <li>Chairman Meessage</li>
                       </Link>
-                      <Link to={"/aboutus/dvisit"}>
+                      {/* <Link to={"/aboutus/dvisit"}>
                         <li>Dignitaries Visit</li>
-                      </Link>
+                      </Link> */}
                       <Link to={"/aboutus/affiliations"}>
                         <li>Govt. Affliations</li>
                       </Link>
@@ -517,9 +517,9 @@ export default function Navbar() {
                   <li>
                     <Link to={"/aboutus/cmessage"}>Chairman Message</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to={"/aboutus/dvisit"}>Dignitaries Visit</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to={"/aboutus/affiliations"}>Govt. Affiliation</Link>
                   </li>
