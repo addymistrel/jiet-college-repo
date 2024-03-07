@@ -193,47 +193,6 @@ const MissionAndVision = () => {
                       building a better nation, rather better world. ❞
                     </chakra.h2>
                     <br />
-                    {/* <Stack
-                      direction={{ base: "column", md: "row" }}
-                      spacing={3}
-                      mx="auto"
-                    >
-                      <chakra.button
-                        h={10}
-                        px={6}
-                        color="white"
-                        fontSize="md"
-                        variant="solid"
-                        rounded="md"
-                        lineHeight={1}
-                        bg="blue.400"
-                        _hover={{ bg: "blue.600" }}
-                      >
-                        View Components
-                      </chakra.button>
-                      <Button
-                        leftIcon={<FaGithub />}
-                        as={Link}
-                        href="#"
-                        rounded="md"
-                        colorScheme="gray"
-                        variant="solid"
-                      >
-                        Github Discussions
-                      </Button>
-                      <Button
-                        leftIcon={<BsDiscord />}
-                        as={Link}
-                        href="#"
-                        rounded="md"
-                        color="white"
-                        variant="solid"
-                        colorScheme="purple"
-                        _hover={{ bg: "purple.600" }}
-                      >
-                        Discord community
-                      </Button>
-                    </Stack> */}
                     <br />
                     <br />
                   </Stack>
