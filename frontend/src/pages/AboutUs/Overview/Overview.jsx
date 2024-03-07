@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import {
   chakra,
-  Link,
   Stack,
   Box,
-  Button,
   useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
-import { BsDiscord } from "react-icons/bs";
 import "./Overview.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
+
+const ColoredDivider = ({ color, thickness }) => {
+  return <Divider borderColor={color} borderWidth={thickness} />;
+};
 
 const Overview = () => {
   const [institutionText, setInstitutionText] = useState("");
@@ -103,13 +104,17 @@ const Overview = () => {
                         <span>JIET CONVENT SCHOOL</span>
                       </h1>
                     </div>
+                    <br />
+                    <ColoredDivider color="red.700" thickness={1.5} />
+                    <br />
                     <chakra.h2
                       color="gray.600"
-                      fontSize="xl"
+                      fontSize="20px"
                       //   maxW="600px"
                       maxW="90%"
                       lineHeight={1.2}
                       mx="auto"
+                      textAlign="left"
                     >
                       JIET since its inception in 1998, has been known to bring
                       innovation in the feld of education. In the current
@@ -120,13 +125,15 @@ const Overview = () => {
                       'Good to Great' philosophy, JIET programs have helped
                       students' career start from where others want to be.
                     </chakra.h2>
+                    <br />
                     <chakra.h2
                       color="gray.600"
-                      fontSize="xl"
+                      fontSize="20px"
                       //   maxW="600px"
                       maxW="90%"
                       lineHeight={1.2}
                       mx="auto"
+                      textAlign="left"
                     >
                       'Good to Great' philosophy is the cornerstone of our
                       thinking from academics to extra curricular activities and
@@ -140,13 +147,15 @@ const Overview = () => {
                       experience with strong mentoring network of top executives
                       from the country.
                     </chakra.h2>
+                    <br />
                     <chakra.h2
                       color="gray.600"
-                      fontSize="xl"
+                      fontSize="20px"
                       //   maxW="600px"
                       maxW="90%"
                       lineHeight={1.2}
                       mx="auto"
+                      textAlign="left"
                     >
                       Jind Institute of Engineering and Technology (JIET),
                       functions under the patronage of Jind Education Trust. It
@@ -162,6 +171,7 @@ const Overview = () => {
                       adorned with impressive buildings, lawns and shaded
                       avenues.
                     </chakra.h2>
+                    <br />
                     {/* <Stack
                       direction={{ base: "column", md: "row" }}
                       spacing={3}
@@ -203,6 +213,8 @@ const Overview = () => {
                         Discord community
                       </Button>
                     </Stack> */}
+                    <br />
+                    <br />
                   </Stack>
                 </Box>
               </Box>

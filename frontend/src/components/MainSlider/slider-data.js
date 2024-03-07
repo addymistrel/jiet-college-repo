@@ -19,14 +19,4 @@ export const slides = [
     heading: "Pearls of Wisdom",
     desc: " Women wear jewelry like pearls of wisdom, embodying the grace and intelligence that illuminates their path to greatness.",
   },
-  // {
-  //   image: "./images/a3.jpg",
-  //   heading: "Cherished Trinkets",
-  //   desc: "Every cherished jewelry piece holds a story, a memory, or a sentiment, making it more than an accessory—it becomes a part of who she is.",
-  // },
-  // {
-  //   image: "./images/a3.jpg",
-  //   heading: "The Sparkling Soul",
-  //   desc: "Women wear jewelry not to hide who they are, but to reflect the sparkling soul within, unapologetically embracing their true selves.",
-  // },
 ];
