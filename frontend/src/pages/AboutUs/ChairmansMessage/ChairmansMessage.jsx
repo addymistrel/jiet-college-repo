@@ -111,10 +111,10 @@ const ChairmansMessage = () => {
                     <Box display="flex" alignItems="center" ml={12}>
                       <Box mr={4}>
                         <Image
-                          src="./assets/images/images/JIET_Chairman.jpg"
-                          alt="Profile"
+                          src="/assets/images/images/chairmanpic.jpg"
+                          alt="Sh. Anil Kr Bansal"
                           borderRadius="full"
-                          boxSize="150px"
+                          boxSize="120px"
                         />
                       </Box>
                       <Box>
