@@ -1,6 +1,6 @@
 import { ReactNode, useContext, useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 import {
   Box,
@@ -505,23 +505,23 @@ export default function Navbar() {
               <a href="" class="menu">
                 <h2 class="menu-title menu-title_2nd">About Us</h2>
                 <ul class="menu-dropdown">
-                  <li onClick={() => navigate("/aboutus/overview")}>
-                    Overview
+                  <li>
+                    <Link to={"/aboutus/overview"}>Overview</Link>
                   </li>
-                  <li onClick={() => navigate("/aboutus/mission")}>
-                    Mission & Vision
+                  <li>
+                    <Link to={"/aboutus/mission"}>Mission & Vision</Link>
                   </li>
-                  <li onClick={() => navigate("/aboutus/leadership")}>
-                    Leadership
+                  <li>
+                    <Link to={"/aboutus/leadership"}>Leadership</Link>
                   </li>
-                  <li onClick={() => navigate("/aboutus/cmessage")}>
-                    Chairman Message
+                  <li>
+                    <Link to={"/aboutus/cmessage"}>Chairman Message</Link>
                   </li>
-                  <li onClick={() => navigate("/aboutus/dvisit")}>
-                    Dignitaries Visit
+                  <li>
+                    <Link to={"/aboutus/dvisit"}>Dignitaries Visit</Link>
                   </li>
-                  <li onClick={() => navigate("/aboutus/affiliations")}>
-                    Govt. Affiliation
+                  <li>
+                    <Link to={"/aboutus/affiliations"}>Govt. Affiliation</Link>
                   </li>
                 </ul>
               </a>
@@ -530,13 +530,15 @@ export default function Navbar() {
               <a href="" class="menu">
                 <h2 class="menu-title menu-title_3rd">Programs</h2>
                 <ul class="menu-dropdown">
-                  <li onClick={() => navigate("/programs/postgraduate")}>
-                    Post Graduate
+                  <li>
+                    <Link to={"/programs/postgraduate"}>Post Graduate</Link>
                   </li>
-                  <li onClick={() => navigate("/programs/undergraduate")}>
-                    Under Graduate
+                  <li>
+                    <Link to={"/programs/undergraduate"}>Under Graduate</Link>
                   </li>
-                  <li onClick={() => navigate("/programs/diploma")}>Diploma</li>
+                  <li>
+                    <Link to={"/programs/diploma"}>Diploma</Link>
+                  </li>
                 </ul>
               </a>
             </li>
@@ -544,20 +546,24 @@ export default function Navbar() {
               <a href="" class="menu">
                 <h2 class="menu-title menu-title_4th">Departments</h2>
                 <ul class="menu-dropdown">
-                  <li onClick={() => navigate("/departments/cse")}>
-                    Computer Science & Engineering
+                  <li>
+                    <Link to={"/departments/cse"}>
+                      Computer Science & Engineering
+                    </Link>
                   </li>
-                  <li onClick={() => navigate("/departments/ee")}>
-                    Electrical Engineering
+                  <li>
+                    <Link to={"/departments/ee"}>Electrical Engineering</Link>
                   </li>
-                  <li onClick={() => navigate("/departments/me")}>
-                    Mechanical Engineering
+                  <li>
+                    <Link to={"/departments/me"}>Mechanical Engineering</Link>
                   </li>
-                  <li onClick={() => navigate("/departments/ce")}>
-                    Civil Engineering
+                  <li>
+                    <Link to={"/departments/ce"}>Civil Engineering</Link>
                   </li>
-                  <li onClick={() => navigate("/departments/bba")}>
-                    Management Studies (BBA)
+                  <li>
+                    <Link to={"/departments/bba"}>
+                      Management Studies (BBA)
+                    </Link>
                   </li>
                 </ul>
               </a>
@@ -566,20 +572,24 @@ export default function Navbar() {
               <a href="" class="menu">
                 <h2 class="menu-title menu-title_4th">Campus Life</h2>
                 <ul class="menu-dropdown">
-                  <li onClick={() => navigate("/campus/scentre")}>
-                    Student Centre
+                  <li>
+                    <Link to={"/campus/scentre"}>Student Centre</Link>
                   </li>
-                  <li onClick={() => navigate("/campus/rroom")}>
-                    Recreational Room
+                  <li>
+                    <Link to={"/campus/rroom"}>Recreational Room</Link>
                   </li>
-                  <li onClick={() => navigate("/campus/mess")}>Amaya Mess</li>
-                  <li onClick={() => navigate("/campus/sports")}>
-                    Sports at JIET
+                  <li>
+                    <Link to={"/campus/mess"}>Amaya Mess</Link>
                   </li>
-                  <li onClick={() => navigate("/campus/iexposure")}>
-                    Industrial Exposure
+                  <li>
+                    <Link to={"/campus/sports"}>Sports at JIET</Link>
                   </li>
-                  <li onClick={() => navigate("/addmission")}>Admission</li>
+                  <li>
+                    <Link to={"/campus/iexposure"}>Industrial Exposure</Link>
+                  </li>
+                  <li>
+                    <Link to={"/admission"}>Admission</Link>
+                  </li>
                 </ul>
               </a>
             </li>
