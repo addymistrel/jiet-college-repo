@@ -5,18 +5,17 @@ import {
   Box,
   useColorModeValue,
   Divider,
-  Text,
-  Image,
 } from "@chakra-ui/react";
-import "./ChairmansMessage.css";
+import "./Postgraduate.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
+import StatsSec from "../../../components/StatsSec/StatsSec";
 
 const ColoredDivider = ({ color, thickness }) => {
   return <Divider borderColor={color} borderWidth={thickness} />;
 };
 
-const ChairmansMessage = () => {
+const PostGraduate = () => {
   const [institutionText, setInstitutionText] = useState("");
   const [aicteText, setAICTEText] = useState("");
   const [ind, setInd] = useState(0);
@@ -51,18 +50,16 @@ const ChairmansMessage = () => {
   }, [aicteText, toStart]);
 
   const sideData = [
-    { head: "Overview", link: "/aboutus/overview" },
-    { head: "Mission & Vision", link: "/aboutus/mission" },
-    { head: "Leadership", link: "#" },
-    { head: "Chairman Message", link: "/aboutus/cmessage" },
-    { head: "Govt. Affiliation", link: "#" },
+    { head: "Post Graduate", link: "/programs/postgraduate" },
+    { head: "Under Graduate", link: "/programs/undergraduate" },
+    { head: "Diploma", link: "/programs/diploma" },
   ];
 
   return (
     <>
       <TopHeader text1={institutionText} text2={aicteText} />
-      <div className="main-box">
-        <div className="child-1">
+      <div className="main-box1">
+        <div className="child-11">
           <Box pb={8} textAlign="center">
             <div>
               <Stack pos="relative" height="200px" w="100%"></Stack>
@@ -96,47 +93,14 @@ const ChairmansMessage = () => {
                     {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
               Explore TemplatesKart
             </chakra.h1> */}
-                    {/* <div className="heading-css-1">
-                      <h1>JIND EDUCATION TRUST</h1>
+                    <div className="heading-css-1">
+                      <h1>Post Graduate</h1>
                     </div>
                     <div class="heading-css-2">
-                      <h1>
-                        JIND INSTITUTE OF ENGINEERING & TECHNOLOGY
-                        <span>JIND POLYTECHNIC COLLEGE</span>
-                        <span>JIET CONVENT SCHOOL</span>
-                      </h1>
-                    </div> */}
+                      <h1>M-TECH (2 Years)</h1>
+                    </div>
                     <ColoredDivider color="red.700" thickness={1.5} />
-                    <br />
-                    <Box display="flex" alignItems="center" ml={12}>
-                      <Box mr={4}>
-                        <Image
-                          src="/assets/images/images/chairmanpic.jpg"
-                          alt="Sh. Anil Kr Bansal"
-                          borderRadius="full"
-                          boxSize="120px"
-                        />
-                      </Box>
-                      <Box>
-                        <Text fontWeight="bold">Sh. Anil Kr Bansal</Text>
-                        <Text fontStyle="italic">
-                          CHAIRMAN, JIET Group of Institutions
-                        </Text>
-                      </Box>
-                    </Box>
-                    <chakra.h2
-                      color="gray.600"
-                      fontSize="25px"
-                      //   maxW="600px"
-                      maxW="90%"
-                      lineHeight={1.2}
-                      mx="auto"
-                      textAlign="left"
-                    >
-                      "The vision of 1998 has been soaring excellence and JIET
-                      dedication since then"
-                    </chakra.h2>
-                    <br />
+                    <StatsSec />
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -146,47 +110,15 @@ const ChairmansMessage = () => {
                       mx="auto"
                       textAlign="left"
                     >
-                      In 1998, perseverance and high goals of founder Shri Anil
-                      Kumar Bansal establishes JIND Education Trust Under his
-                      dynamic leadership, in a span of over 2 decades, JIET
-                      Group of Institutions has become one of the nation's most
-                      trusted educational group. These institutions have
-                      broadened the horizons of youth and enriched them with
-                      their culture of excellence, social service and
-                      inclusiveness. It was in the early 1990s that I was deeply
-                      concerned about the regional imbalance in the facilities
-                      available for Technical Education. No doubt there were
-                      quite a few Engineering Colleges in our state and our
-                      students were deprived of the fruits of Technical
-                      Education. Jind Education Trust laid the foundation of
-                      Jind Institute of Engineering & Technology (JIET) in 1998,
-                      Jind Polytechnic College in 2007 (JPC) and JIET Convent
-                      School in 2018.
+                      Passed Bachelor's Degree in Engineering & Technology or
+                      equivalent in the relevant field. Obtained at least 50%
+                      marks (42.75% in case of candidates belonging to reserved
+                      category) in the qualifying Examination.
                     </chakra.h2>
                     <br />
-                    <chakra.h2
-                      color="gray.600"
-                      fontSize="20px"
-                      //   maxW="600px"
-                      maxW="90%"
-                      lineHeight={1.2}
-                      mx="auto"
-                      textAlign="left"
-                    >
-                      Our Promise is to provide our students the best institute
-                      which not only makes them financially independent, but
-                      also a dignified and honourable Indian citizen. To provide
-                      suitable placement to students college has established a
-                      Training & Placement cell, so that, we can fulfil our aim
-                      of 100% placement in the corporate world. In this regard,
-                      Institute has also signed some MOU's with reputed
-                      Corporate Houses. “I am endowing this institution to help
-                      young men and-women to prepare themselves for a life of
-                      usefulness in this competitive world and to help them to
-                      build a foundation of a strong character and responsible
-                      citizen & quot; I wish our students the best in their
-                      endeavours in every walk of their life.
-                    </chakra.h2>
+
+                    <br />
+
                     <br />
                     {/* <Stack
                       direction={{ base: "column", md: "row" }}
@@ -237,7 +169,7 @@ const ChairmansMessage = () => {
             </div>
           </Box>
         </div>
-        <div className="child-2">
+        <div className="child-21">
           <Siders sideData={sideData} />
         </div>
       </div>
@@ -245,4 +177,4 @@ const ChairmansMessage = () => {
   );
 };
 
-export default ChairmansMessage;
+export default PostGraduate;
