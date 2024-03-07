@@ -1,11 +1,10 @@
 import { ReactNode, useContext, useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   IconButton,
   Button,
@@ -21,17 +20,12 @@ import {
   Icon,
   ButtonGroup,
   Spacer,
-  Input,
-  InputGroup,
-  InputRightElement,
-  background,
   Text,
 } from "@chakra-ui/react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { AiFillInstagram } from "react-icons/ai";
-import { BsHandbagFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -50,6 +44,10 @@ import { Image } from "@chakra-ui/react";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [menu1, setmenu1] = useState(false);
+  const [menu2, setmenu2] = useState(false);
+  const [menu3, setmenu3] = useState(false);
+  const [menu4, setmenu4] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
 
   const token = JSON.parse(localStorage.getItem("token"));
@@ -159,7 +157,7 @@ export default function Navbar() {
           </HStack>
           <Flex alignItems={"center"}>
             <ButtonGroup display={{ base: "none", md: "none", lg: "flex" }}>
-              <Link to={"/signin"}>
+              <Link to={"/career"}>
                 <Button
                   className="abovebtn"
                   variant={"outline"}
@@ -171,7 +169,7 @@ export default function Navbar() {
                   Career Service
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/apply"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -182,7 +180,7 @@ export default function Navbar() {
                   Apply Now 2023
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/admission"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -193,7 +191,7 @@ export default function Navbar() {
                   Admission
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/alumini"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -204,22 +202,28 @@ export default function Navbar() {
                   Alumini
                 </Button>
               </Link>
-              <Link>
+              <Link to={"https://www.facebook.com/jindjiet/"}>
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={FaFacebook} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link to={"https://twitter.com/jind_jiet"}>
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillTwitterCircle} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link
+                to={"https://www.youtube.com/channel/UCYaozWawBXCa0TNz_wN494A"}
+              >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={TbBrandYoutubeFilled} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link
+                to={
+                  "https://www.instagram.com/jiet_group_of_institutions/?igshid=mdltrpknbha0"
+                }
+              >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillInstagram} />
                 </Button>
@@ -295,7 +299,7 @@ export default function Navbar() {
                 flexDirection={"column"}
               >
                 <Spacer />
-                <Link>
+                <Link to={"/"}>
                   <Button as={Button} className="btn">
                     Home
                   </Button>
@@ -319,12 +323,24 @@ export default function Navbar() {
                   </Button>
                   {toggle[1] && (
                     <ul className="internal-nav">
-                      <li>Overview</li>
-                      <li>Mission & Vision</li>
-                      <li>Leadership</li>
-                      <li>Chairman Meessage</li>
-                      <li>Dignitaries Visit</li>
-                      <li>Govt. Affliations</li>
+                      <Link to={"/aboutus/overview"}>
+                        <li>Overview</li>
+                      </Link>
+                      <Link to={"/aboutus/mission"}>
+                        <li>Mission & Vision</li>
+                      </Link>
+                      <Link to={"/aboutus/leadership"}>
+                        <li>Leadership</li>
+                      </Link>
+                      <Link to={"/aboutus/cmessage"}>
+                        <li>Chairman Meessage</li>
+                      </Link>
+                      <Link to={"/aboutus/dvisit"}>
+                        <li>Dignitaries Visit</li>
+                      </Link>
+                      <Link to={"/aboutus/affiliations"}>
+                        <li>Govt. Affliations</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -347,9 +363,15 @@ export default function Navbar() {
                   </Button>
                   {toggle[2] && (
                     <ul className="internal-nav">
-                      <li>Post Graduate</li>
-                      <li>Under Graduate</li>
-                      <li>Diploma</li>
+                      <Link to={"/programs/postgraduate"}>
+                        <li>Post Graduate</li>
+                      </Link>
+                      <Link to={"/programs/undergraduate"}>
+                        <li>Under Graduate</li>
+                      </Link>
+                      <Link to={"/programs/diploma"}>
+                        <li>Diploma</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -372,11 +394,21 @@ export default function Navbar() {
                   </Button>
                   {toggle[3] && (
                     <ul className="internal-nav">
-                      <li>Computer Science & Engineering</li>
-                      <li>Electrical Engineering</li>
-                      <li>Mechanical Engineering</li>
-                      <li>Civil Engineering</li>
-                      <li>Management Studies(BBA)</li>
+                      <Link to={"/departments/cse"}>
+                        <li>Computer Science & Engineering</li>
+                      </Link>
+                      <Link to={"/departments/ee"}>
+                        <li>Electrical Engineering</li>
+                      </Link>
+                      <Link to={"/departments/me"}>
+                        <li>Mechanical Engineering</li>
+                      </Link>
+                      <Link to={"/departments/ce"}>
+                        <li>Civil Engineering</li>
+                      </Link>
+                      <Link to={"/departments/bba"}>
+                        <li>Management Studies(BBA)</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -399,37 +431,49 @@ export default function Navbar() {
                   </Button>
                   {toggle[4] && (
                     <ul className="internal-nav">
-                      <li>Student Centre</li>
-                      <li>Recreational Room</li>
-                      <li>Amaya Mess</li>
-                      <li>Sports at JIET</li>
-                      <li>industrial Exposure</li>
-                      <li>Admission</li>
+                      <Link to={"/campus/scentre"}>
+                        <li>Student Centre</li>
+                      </Link>
+                      <Link to={"/campus/rroom"}>
+                        <li>Recreational Room</li>
+                      </Link>
+                      <Link to={"/campus/mess"}>
+                        <li>Amaya Mess</li>
+                      </Link>
+                      <Link to={"/campus/sports"}>
+                        <li>Sports at JIET</li>
+                      </Link>
+                      <Link to={"/campus/iexposure"}>
+                        <li>industrial Exposure</li>
+                      </Link>
+                      <Link to={"/admission"}>
+                        <li>Admission</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
-                <Link>
+                <Link to={"/jindgenius"}>
                   <Button as={Button} className="btn">
                     JIND Genius
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/career"}>
                   <Button as={Button} className="btn">
                     Career Service
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/apply"}>
                   <Button as={Button} className="btn">
                     Apply Now 2023
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/admission"}>
                   <Button as={Button} className="btn">
                     Admission
                   </Button>
                 </Link>
 
-                <Link to={"/jwellery/Bestseller"}>
+                <Link to={"/alumini"}>
                   <Button as={Button} className="btn">
                     Alumini
                   </Button>
@@ -448,193 +492,118 @@ export default function Navbar() {
           minWidth={"-moz-fit-content"}
           display={{ base: "none", md: "none", lg: "block" }}
         >
-          <ButtonGroup
-            justifyContent={"space-around"}
-            display={"flex"}
-            variant={"unstyled"}
-            ml={"10rem"}
-            mr={"10rem"}
-            flexWrap={"wrap"}
-            color={useColorModeValue("black", "white")}
+          <ul
+            class="hList"
+            style={{ display: "flex", justifyContent: "center" }}
           >
-            <Link to={"/jwellery/Bestseller"}>
-              <Button as={Button} className="btn">
-                HOME
-              </Button>
-            </Link>
-            <Menu>
-              <MenuButton as={Button} className="btn">
-                ABOUT US
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Overview</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Mission & Vision</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Leadership</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Chairman Message</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Dignitaries Visit</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Govt. Affliations</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Menu>
-              <MenuButton as={Button} className="btn">
-                PROGRAMS
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Post Graduate</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Under Graduate</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Diploma</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-
-            <Menu>
-              <MenuButton as={Button} className="btn">
-                DEPARTMENTS
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Computer Science & Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Electrical Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Mechanical Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Civil Engineering</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Management Studies(BBA)</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Menu>
-              <MenuButton as={Button} className="btn">
-                CAMPUS LIFE
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Student Centre</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Recreational Room</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Amaya Mess</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Sports at JIET</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Industrial Exposure</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>Admission</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-            <Link to={"/jwellery/Chain"}>
-              <Button className="btn">GALLERY</Button>
-            </Link>
-            <Link to={"/jwellery/Kada"}>
-              <Button className="btn">JIND GENIUS</Button>
-            </Link>
-            {/* <Menu>
-              <MenuButton as={Button} className="btn">
-                OTHER JEWELLERY
-              </MenuButton>
-              <MenuList>
-                <MenuItem>
-                  <Link to={"/jwellery/Haram"}>
-                    <Button>HARAM</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Jewellery Set"}>
-                    <Button>JEWELLERY SET</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Maang Tikka"}>
-                    <Button>MAANG TIKKA</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Mangalsutra"}>
-                    <Button>MANGALSUTRAS</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Necklace"}>
-                    <Button>NECKLACES</Button>
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to={"/jwellery/Pendant"}>
-                    <Button>PENDENT</Button>
-                  </Link>
-                </MenuItem>
-              </MenuList>
-            </Menu> */}
-          </ButtonGroup>
+            <li>
+              <a href="/" class="menu">
+                <h2 class="menu-title">Home</h2>
+              </a>
+            </li>
+            <li>
+              <a href="" class="menu">
+                <h2 class="menu-title menu-title_2nd">About Us</h2>
+                <ul class="menu-dropdown">
+                  <li>
+                    <Link to={"/aboutus/overview"}>Overview</Link>
+                  </li>
+                  <li>
+                    <Link to={"/aboutus/mission"}>Mission & Vision</Link>
+                  </li>
+                  <li>
+                    <Link to={"/aboutus/leadership"}>Leadership</Link>
+                  </li>
+                  <li>
+                    <Link to={"/aboutus/cmessage"}>Chairman Message</Link>
+                  </li>
+                  <li>
+                    <Link to={"/aboutus/dvisit"}>Dignitaries Visit</Link>
+                  </li>
+                  <li>
+                    <Link to={"/aboutus/affiliations"}>Govt. Affiliation</Link>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="" class="menu">
+                <h2 class="menu-title menu-title_3rd">Programs</h2>
+                <ul class="menu-dropdown">
+                  <li>
+                    <Link to={"/programs/postgraduate"}>Post Graduate</Link>
+                  </li>
+                  <li>
+                    <Link to={"/programs/undergraduate"}>Under Graduate</Link>
+                  </li>
+                  <li>
+                    <Link to={"/programs/diploma"}>Diploma</Link>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="" class="menu">
+                <h2 class="menu-title menu-title_4th">Departments</h2>
+                <ul class="menu-dropdown">
+                  <li>
+                    <Link to={"/departments/cse"}>
+                      Computer Science & Engineering
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/departments/ee"}>Electrical Engineering</Link>
+                  </li>
+                  <li>
+                    <Link to={"/departments/me"}>Mechanical Engineering</Link>
+                  </li>
+                  <li>
+                    <Link to={"/departments/ce"}>Civil Engineering</Link>
+                  </li>
+                  <li>
+                    <Link to={"/departments/bba"}>
+                      Management Studies (BBA)
+                    </Link>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="" class="menu">
+                <h2 class="menu-title menu-title_4th">Campus Life</h2>
+                <ul class="menu-dropdown">
+                  <li>
+                    <Link to={"/campus/scentre"}>Student Centre</Link>
+                  </li>
+                  <li>
+                    <Link to={"/campus/rroom"}>Recreational Room</Link>
+                  </li>
+                  <li>
+                    <Link to={"/campus/mess"}>Amaya Mess</Link>
+                  </li>
+                  <li>
+                    <Link to={"/campus/sports"}>Sports at JIET</Link>
+                  </li>
+                  <li>
+                    <Link to={"/campus/iexposure"}>Industrial Exposure</Link>
+                  </li>
+                  <li>
+                    <Link to={"/admission"}>Admission</Link>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="/gallery" class="menu">
+                <h2 class="menu-title menu-title_4th">Gallery</h2>
+              </a>
+            </li>
+            <li>
+              <a href="/jindgenius" class="menu">
+                <h2 class="menu-title menu-title_4th">JIND GENIUS</h2>
+              </a>
+            </li>
+          </ul>
         </Box>
         <Box
           pt={"1%"}

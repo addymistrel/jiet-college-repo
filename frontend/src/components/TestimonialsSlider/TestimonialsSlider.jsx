@@ -1,89 +1,129 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./TestimonialsSlider.css";
-import { RxAvatar } from "react-icons/rx";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import React, { useState } from "react";
+import { testimonialData } from "./testimonial-data";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  Container,
+  Avatar,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import PaginationContainer from "../Pagination/Pagination";
 
-const PreviousBtn = (props) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <IoIosArrowBack style={{ color: "gray", fontSize: "45px" }} />
-    </div>
-  );
+const Testimonial = (props) => {
+  const { children } = props;
+
+  return <Box>{children}</Box>;
 };
 
-const NextBtn = (props) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <IoIosArrowForward style={{ color: "gray", fontSize: "45px" }} />
-    </div>
-  );
-};
-
-const TestimonialsSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    prevArrow: <PreviousBtn />,
-    nextArrow: <NextBtn />,
-  };
+const TestimonialContent = (props) => {
+  const { children } = props;
 
   return (
-    <div className="testimonial">
-      <div style={{ width: "50%", textAlign: "center" }}>
-        <h1 style={{ marginBottom: 20 }}>TESTIMONIALS</h1>
-        <Slider {...settings}>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" />
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
-        </Slider>
-      </div>
-    </div>
-  );
-};
-
-const Card = ({ img }) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "gray",
+    <Stack
+      bg={useColorModeValue("white", "gray.800")}
+      boxShadow={"lg"}
+      p={8}
+      rounded={"xl"}
+      align={"center"}
+      pos={"relative"}
+      _after={{
+        content: `""`,
+        w: 0,
+        h: 0,
+        borderLeft: "solid transparent",
+        borderLeftWidth: 16,
+        borderRight: "solid transparent",
+        borderRightWidth: 16,
+        borderTop: "solid",
+        borderTopWidth: 16,
+        borderTopColor: useColorModeValue("white", "gray.800"),
+        pos: "absolute",
+        bottom: "-16px",
+        left: "50%",
+        transform: "translateX(-50%)",
       }}
     >
-      <img
-        src={img}
-        alt="Client"
-        style={{
-          width: 120,
-          height: 120,
-          borderRadius: "50%",
-          border: "1px solid lightgray",
-          marginBottom: 20,
-        }}
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et,
-        adipisci veritatis odit perferendis nulla ratione maxime commodi cumque
-        velit ipsum magnam doloremque? A, commodi obcaecati laudantium possimus
-        error natus?
-      </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "red" }}>PAULA WILSON</span> ,
-        Media Analyst
-      </p>
-    </div>
+      {children}
+    </Stack>
   );
 };
 
-export default TestimonialsSlider;
+const TestimonialHeading = (props) => {
+  const { children } = props;
+
+  return (
+    <Heading as={"h3"} fontSize={"xl"}>
+      {children}
+    </Heading>
+  );
+};
+
+const TestimonialText = (props) => {
+  const { children } = props;
+
+  return (
+    <Text
+      textAlign={"center"}
+      color={useColorModeValue("gray.600", "gray.400")}
+      fontSize={"sm"}
+    >
+      {children}
+    </Text>
+  );
+};
+
+const TestimonialAvatar = ({ src, name, title }) => {
+  return (
+    <Flex align={"center"} mt={8} direction={"column"}>
+      <Avatar src={src} mb={2} />
+      <Stack spacing={-1} align={"center"}>
+        <Text fontWeight={600}>{name}</Text>
+        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
+          {title}
+        </Text>
+      </Stack>
+    </Flex>
+  );
+};
+
+export default function WithSpeechBubbles() {
+  console.log(testimonialData);
+  const [currIndex, setCurrIndex] = useState(0);
+  return (
+    <>
+      <Box bg={useColorModeValue("gray.100", "gray.700")}>
+        <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+          <Stack spacing={0} align={"center"}>
+            <Heading>Student Reviews</Heading>
+          </Stack>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            spacing={{ base: 10, md: 4, lg: 10 }}
+          >
+            {testimonialData
+              .slice(currIndex * 3, currIndex * 3 + 3)
+              .map((item) => {
+                return (
+                  <Testimonial>
+                    <TestimonialContent>
+                      {/* <TestimonialHeading>{item.job}</TestimonialHeading> */}
+                      <TestimonialText>{item.testimonial}</TestimonialText>
+                    </TestimonialContent>
+                    <TestimonialAvatar
+                      src={item.img}
+                      name={item.name}
+                      title={item.jobProfile}
+                    />
+                  </Testimonial>
+                );
+              })}
+          </Stack>
+        </Container>
+      </Box>
+      <PaginationContainer currIndex={currIndex} setCurrIndex={setCurrIndex} />
+    </>
+  );
+}

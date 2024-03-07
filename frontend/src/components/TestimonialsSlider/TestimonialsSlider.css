@@ -1,9 +1,10 @@
-/* TestimonialsSlider.css */
 .testimonial {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set the height to fill the viewport */
+  height: 50vh;
+  padding: 2rem;
+  margin-bottom: 3%;
 }
 
 .slick-prev,
@@ -13,27 +14,45 @@
 }
 
 .slick-prev {
-  left: -50px; /* Adjust the positioning as needed */
+  left: -50px;
 }
 
 .slick-next {
-  right: -50px; /* Adjust the positioning as needed */
+  right: -50px;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  color: #333; /* Change the color on hover as desired */
+  color: #333;
 }
 
 .slick-dots {
-  bottom: -30px; /* Adjust the dots' position */
+  bottom: -30px;
 }
 
 .slick-dots li button {
-  font-size: 10px; /* Adjust the dots' size */
+  font-size: 15px;
 }
 
 .slick-dots li.slick-active button {
-  background-color: transparent; 
-  border-radius: 50;/* Change the active dot's color */
+  background-color: transparent;
+  border-radius: 50;
+}
+
+.std-review-h1 {
+  font-size: 40px;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 600px) {
+  .std-review-h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+  .testimonial {
+    margin-top: 40%;
+  }
 }
