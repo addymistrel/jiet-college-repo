@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Link,
   Container,
   Flex,
   Heading,
@@ -11,6 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
+import { Link } from "react-router-dom";
 import {
   FcAbout,
   FcAssistant,
@@ -44,12 +44,15 @@ const Card = ({ heading, description, icon, href }) => {
           rounded={"full"}
           bg={useColorModeValue("gray.100", "gray.700")}
         >
-          {icon}
+          <Link to={href}>{icon}</Link>
         </Flex>
+
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
+          <Heading size="md">
+            <Link to={href}>{heading}</Link>
+          </Heading>
           <Text mt={1} fontSize={"sm"}>
-            {description}
+            <Link to={href}>{description}</Link>
           </Text>
         </Box>
       </Stack>
@@ -59,6 +62,7 @@ const Card = ({ heading, description, icon, href }) => {
 const icons = [FcAssistant, FcCollaboration, FcDonate, FcManager, FcAbout];
 
 export default function Siders({ sideData }) {
+  console.log(sideData);
   return (
     <Box p={4}>
       <Container maxW={"5xl"} mt={12}>
