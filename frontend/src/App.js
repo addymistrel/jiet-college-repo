@@ -6,6 +6,7 @@ import Overview from "./pages/AboutUs/Overview/Overview";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/error";
+import MissionAndVision from "./pages/AboutUs/MissionAndVision/MissionAndVision";
 
 function App() {
   return (
