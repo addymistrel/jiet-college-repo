@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { chakra, Stack, Box, useColorModeValue } from "@chakra-ui/react";
+import {
+  chakra,
+  Stack,
+  Box,
+  useColorModeValue,
+  Divider,
+} from "@chakra-ui/react";
 import "./Overview.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
+
+const ColoredDivider = ({ color, thickness }) => {
+  return <Divider borderColor={color} borderWidth={thickness} />;
+};
 
 const Overview = () => {
   const [institutionText, setInstitutionText] = useState("");
@@ -95,6 +105,7 @@ const Overview = () => {
                       </h1>
                     </div>
                     <br />
+                    <ColoredDivider color="red.700" thickness={1.5} />
                     <br />
                     <chakra.h2
                       color="gray.600"

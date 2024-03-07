@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Overview from "./pages/AboutUs/Overview/Overview";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import ChairmansMessage from "./pages/AboutUs/ChairmansMessage/ChairmansMessage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/aboutus" element={<Overview />} />
+        <Route path="/aboutus" element={<ChairmansMessage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
