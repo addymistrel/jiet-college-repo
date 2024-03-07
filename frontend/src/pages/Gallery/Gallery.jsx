@@ -19,6 +19,11 @@ function Gallery() {
   return (
     <div className="galleryWrapper">
       <div className="filterItem">
+        <div className="heading-css-1">
+          <h1>Gallery</h1>
+          <br />
+          <br />
+        </div>
         <ul>
           <li>
             <button onClick={() => setData(GalleryData)}>All</button>
