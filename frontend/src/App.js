@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/error";
 import MissionAndVision from "./pages/AboutUs/MissionAndVision/MissionAndVision";
 import ChairmansMessage from "./pages/AboutUs/ChairmansMessage/ChairmansMessage";
+import PostGraduate from "./pages/Departments/PostGraduate/Postgraduate";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/aboutus/overview" element={<Overview />} />
         <Route path="/aboutus/cmessage" element={<ChairmansMessage />} />
         <Route path="/aboutus/mission" element={<MissionAndVision />} />
+        <Route path="/programs/postgraduate" element={<PostGraduate />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
