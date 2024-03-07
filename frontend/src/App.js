@@ -5,8 +5,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Overview from "./pages/AboutUs/Overview/Overview";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import ChairmansMessage from "./pages/AboutUs/ChairmansMessage/ChairmansMessage";
-import MissionAndVision from "./pages/AboutUs/MissionAndVision/MissionAndVision";
+import Error from "./pages/Error/error";
 
 function App() {
   return (
@@ -14,7 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/aboutus" element={<MissionAndVision />} />
+        <Route path="/aboutus/overview" element={<Overview />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

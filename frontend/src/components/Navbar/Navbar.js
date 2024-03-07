@@ -157,7 +157,7 @@ export default function Navbar() {
           </HStack>
           <Flex alignItems={"center"}>
             <ButtonGroup display={{ base: "none", md: "none", lg: "flex" }}>
-              <Link to={"/signin"}>
+              <Link to={"/career"}>
                 <Button
                   className="abovebtn"
                   variant={"outline"}
@@ -169,7 +169,7 @@ export default function Navbar() {
                   Career Service
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/apply"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -180,7 +180,7 @@ export default function Navbar() {
                   Apply Now 2023
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/admission"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -191,7 +191,7 @@ export default function Navbar() {
                   Admission
                 </Button>
               </Link>
-              <Link to={"/signin"}>
+              <Link to={"/alumini"}>
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
@@ -202,22 +202,28 @@ export default function Navbar() {
                   Alumini
                 </Button>
               </Link>
-              <Link>
+              <Link to={"https://www.facebook.com/jindjiet/"}>
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={FaFacebook} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link to={"https://twitter.com/jind_jiet"}>
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillTwitterCircle} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link
+                to={"https://www.youtube.com/channel/UCYaozWawBXCa0TNz_wN494A"}
+              >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={TbBrandYoutubeFilled} />
                 </Button>
               </Link>
-              <Link to={"/addtocart"}>
+              <Link
+                to={
+                  "https://www.instagram.com/jiet_group_of_institutions/?igshid=mdltrpknbha0"
+                }
+              >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillInstagram} />
                 </Button>
@@ -293,7 +299,7 @@ export default function Navbar() {
                 flexDirection={"column"}
               >
                 <Spacer />
-                <Link>
+                <Link to={"/"}>
                   <Button as={Button} className="btn">
                     Home
                   </Button>
@@ -317,12 +323,24 @@ export default function Navbar() {
                   </Button>
                   {toggle[1] && (
                     <ul className="internal-nav">
-                      <li>Overview</li>
-                      <li>Mission & Vision</li>
-                      <li>Leadership</li>
-                      <li>Chairman Meessage</li>
-                      <li>Dignitaries Visit</li>
-                      <li>Govt. Affliations</li>
+                      <Link to={"/aboutus/overview"}>
+                        <li>Overview</li>
+                      </Link>
+                      <Link to={"/aboutus/mission"}>
+                        <li>Mission & Vision</li>
+                      </Link>
+                      <Link to={"/aboutus/leadership"}>
+                        <li>Leadership</li>
+                      </Link>
+                      <Link to={"/aboutus/cmessage"}>
+                        <li>Chairman Meessage</li>
+                      </Link>
+                      <Link to={"/aboutus/dvisit"}>
+                        <li>Dignitaries Visit</li>
+                      </Link>
+                      <Link to={"/aboutus/affiliations"}>
+                        <li>Govt. Affliations</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -345,9 +363,15 @@ export default function Navbar() {
                   </Button>
                   {toggle[2] && (
                     <ul className="internal-nav">
-                      <li>Post Graduate</li>
-                      <li>Under Graduate</li>
-                      <li>Diploma</li>
+                      <Link to={"/programs/postgraduate"}>
+                        <li>Post Graduate</li>
+                      </Link>
+                      <Link to={"/programs/undergraduate"}>
+                        <li>Under Graduate</li>
+                      </Link>
+                      <Link to={"/programs/diploma"}>
+                        <li>Diploma</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -370,11 +394,21 @@ export default function Navbar() {
                   </Button>
                   {toggle[3] && (
                     <ul className="internal-nav">
-                      <li>Computer Science & Engineering</li>
-                      <li>Electrical Engineering</li>
-                      <li>Mechanical Engineering</li>
-                      <li>Civil Engineering</li>
-                      <li>Management Studies(BBA)</li>
+                      <Link to={"/departments/cse"}>
+                        <li>Computer Science & Engineering</li>
+                      </Link>
+                      <Link to={"/departments/ee"}>
+                        <li>Electrical Engineering</li>
+                      </Link>
+                      <Link to={"/departments/me"}>
+                        <li>Mechanical Engineering</li>
+                      </Link>
+                      <Link to={"/departments/ce"}>
+                        <li>Civil Engineering</li>
+                      </Link>
+                      <Link to={"/departments/bba"}>
+                        <li>Management Studies(BBA)</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
@@ -397,37 +431,49 @@ export default function Navbar() {
                   </Button>
                   {toggle[4] && (
                     <ul className="internal-nav">
-                      <li>Student Centre</li>
-                      <li>Recreational Room</li>
-                      <li>Amaya Mess</li>
-                      <li>Sports at JIET</li>
-                      <li>industrial Exposure</li>
-                      <li>Admission</li>
+                      <Link to={"/campus/scentre"}>
+                        <li>Student Centre</li>
+                      </Link>
+                      <Link to={"/campus/rroom"}>
+                        <li>Recreational Room</li>
+                      </Link>
+                      <Link to={"/campus/mess"}>
+                        <li>Amaya Mess</li>
+                      </Link>
+                      <Link to={"/campus/sports"}>
+                        <li>Sports at JIET</li>
+                      </Link>
+                      <Link to={"/campus/iexposure"}>
+                        <li>industrial Exposure</li>
+                      </Link>
+                      <Link to={"/admission"}>
+                        <li>Admission</li>
+                      </Link>
                     </ul>
                   )}
                 </Link>
-                <Link>
+                <Link to={"/jindgenius"}>
                   <Button as={Button} className="btn">
                     JIND Genius
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/career"}>
                   <Button as={Button} className="btn">
                     Career Service
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/apply"}>
                   <Button as={Button} className="btn">
                     Apply Now 2023
                   </Button>
                 </Link>
-                <Link>
+                <Link to={"/admission"}>
                   <Button as={Button} className="btn">
                     Admission
                   </Button>
                 </Link>
 
-                <Link to={"/jwellery/Bestseller"}>
+                <Link to={"/alumini"}>
                   <Button as={Button} className="btn">
                     Alumini
                   </Button>
@@ -451,65 +497,100 @@ export default function Navbar() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <li>
-              <a href="#click" class="menu">
+              <a href="/" class="menu">
                 <h2 class="menu-title">Home</h2>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a
+                href=""
+                class="menu"
+                onClick={() => navigate("/aboutus/overview")}
+              >
                 <h2 class="menu-title menu-title_2nd">About Us</h2>
                 <ul class="menu-dropdown">
-                  <li>Overview</li>
-                  <li>Mission & Vision</li>
-                  <li>Leadership</li>
-                  <li>Chairman Visit</li>
-                  <li>Dignitaries Visit</li>
-                  <li>Govt. Affiliation</li>
+                  <li onClick={() => navigate("/aboutus/overview")}>
+                    Overview
+                  </li>
+                  <li onClick={() => navigate("/aboutus/leadership")}>
+                    Leadership
+                  </li>
+                  <li onClick={() => navigate("/aboutus/cmessage")}>
+                    Chairman Message
+                  </li>
+                  <li onClick={() => navigate("/aboutus/dvisit")}>
+                    Dignitaries Visit
+                  </li>
+                  <li onClick={() => navigate("/aboutus/affiliations")}>
+                    Govt. Affiliation
+                  </li>
                 </ul>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a href="" class="menu">
                 <h2 class="menu-title menu-title_3rd">Programs</h2>
                 <ul class="menu-dropdown">
-                  <li>Post Graduate</li>
-                  <li>Under Graduate</li>
-                  <li>Diploma</li>
+                  <li onClick={() => navigate("/programs/postgraduate")}>
+                    Post Graduate
+                  </li>
+                  <li onClick={() => navigate("/programs/undergraduate")}>
+                    Under Graduate
+                  </li>
+                  <li onClick={() => navigate("/programs/diploma")}>Diploma</li>
                 </ul>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a href="" class="menu">
                 <h2 class="menu-title menu-title_4th">Departments</h2>
                 <ul class="menu-dropdown">
-                  <li>Computer Science & Engineering</li>
-                  <li>Electrical Engineering</li>
-                  <li>Mechanical Engineering</li>
-                  <li>Civil Engineering</li>
-                  <li>Management Studies (BBA)</li>
+                  <li onClick={() => navigate("/departments/cse")}>
+                    Computer Science & Engineering
+                  </li>
+                  <li onClick={() => navigate("/departments/ee")}>
+                    Electrical Engineering
+                  </li>
+                  <li onClick={() => navigate("/departments/me")}>
+                    Mechanical Engineering
+                  </li>
+                  <li onClick={() => navigate("/departments/ce")}>
+                    Civil Engineering
+                  </li>
+                  <li onClick={() => navigate("/departments/bba")}>
+                    Management Studies (BBA)
+                  </li>
                 </ul>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a href="" class="menu">
                 <h2 class="menu-title menu-title_4th">Campus Life</h2>
                 <ul class="menu-dropdown">
-                  <li>Student Centre</li>
-                  <li>Recreational Room</li>
-                  <li>Amaya Mess</li>
-                  <li>Sports at JIET</li>
-                  <li>Industrial Exposure</li>
-                  <li>Admission</li>
+                  <li onClick={() => navigate("/campus/scentre")}>
+                    Student Centre
+                  </li>
+                  <li onClick={() => navigate("/campus/rroom")}>
+                    Recreational Room
+                  </li>
+                  <li onClick={() => navigate("/campus/mess")}>Amaya Mess</li>
+                  <li onClick={() => navigate("/campus/sports")}>
+                    Sports at JIET
+                  </li>
+                  <li onClick={() => navigate("/campus/iexposure")}>
+                    Industrial Exposure
+                  </li>
+                  <li onClick={() => navigate("/addmission")}>Admission</li>
                 </ul>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a href="/gallery" class="menu">
                 <h2 class="menu-title menu-title_4th">Gallery</h2>
               </a>
             </li>
             <li>
-              <a href="#click" class="menu">
+              <a href="/jindgenius" class="menu">
                 <h2 class="menu-title menu-title_4th">JIND GENIUS</h2>
               </a>
             </li>
