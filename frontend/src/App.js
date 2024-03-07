@@ -12,6 +12,7 @@ import Leadership from "./pages/AboutUs/Leadership/Leadership";
 import PostGraduate from "./pages/Departments/PostGraduate/Postgraduate";
 import GovtAffiliation from "./pages/AboutUs/GovtAffiliation/GovtAffiliation";
 import Gallery from "./pages/Gallery/Gallery";
+import JindGenius from "./pages/JindGenius/JindGenius";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/aboutus/affiliations" element={<GovtAffiliation />} />
         <Route path="/programs/postgraduate" element={<PostGraduate />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/jindgenius" element={<JindGenius />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
