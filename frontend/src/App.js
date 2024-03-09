@@ -14,6 +14,7 @@ import GovtAffiliation from "./pages/AboutUs/GovtAffiliation/GovtAffiliation";
 import Gallery from "./pages/Gallery/Gallery";
 import JindGenius from "./pages/JindGenius/JindGenius";
 import UnderGraduate from "./pages/Departments/UnderGraduate/Undergraduate";
+import Diploma from "./pages/Departments/Diploma/Diploma";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/jindgenius" element={<JindGenius />} />
         <Route path="/programs/undergraduate" element={<UnderGraduate />} />
+        <Route path="/programs/diploma" element={<Diploma />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

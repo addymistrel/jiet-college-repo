@@ -12,6 +12,7 @@ import "./UnderGraduate.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
 import StatsSec from "../../../components/StatsSec/StatsSec";
+import ScrollToTopOnMount from "../../../components/ScrollTop/ScrollToTopOnMount";
 
 const ColoredDivider = ({ color, thickness }) => {
   return <Divider borderColor={color} borderWidth={thickness} />;
@@ -59,6 +60,7 @@ const UnderGraduate = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
       <div className="main-box1">
         <div className="child-11">
@@ -358,7 +360,7 @@ const UnderGraduate = () => {
                         className="int-grid"
                       >
                         <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
-                          <h1>Computer Science & Engiineering</h1>
+                          <h1>Computer Science & Engineering</h1>
                         </GridItem>
                         <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
                           <h1>Electrical Engineering</h1>
