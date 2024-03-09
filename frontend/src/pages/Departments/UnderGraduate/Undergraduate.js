@@ -62,7 +62,7 @@ const UnderGraduate = () => {
       <TopHeader text1={institutionText} text2={aicteText} />
       <div className="main-box1">
         <div className="child-11">
-          <Box pb={8} textAlign="center">
+          <Box textAlign="center">
             <div>
               <Stack pos="relative" height="200px" w="100%"></Stack>
               <Box
@@ -109,32 +109,359 @@ const UnderGraduate = () => {
                       gap={4}
                     >
                       <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
-                        temp
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#1a3c80"}
+                          fontSize={"large"}
+                        >
+                          Computer Science & Engineering
+                        </chakra.h2>
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#000000"}
+                          fontSize={"large"}
+                        >
+                          Specialization in :
+                        </chakra.h2>
+                        <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Software Development Program
+                        </chakra.h4>
+                        <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Cloud Technology & Information Science
+                        </chakra.h4>
+                        <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Data Science
+                        </chakra.h4>
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
-                        temp
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#1a3c80"}
+                          fontSize={"large"}
+                        >
+                          Electrical Engineering
+                        </chakra.h2>
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#000000"}
+                          fontSize={"large"}
+                        >
+                          Specialization in :
+                        </chakra.h2>
+                        <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Internet of Things
+                        </chakra.h4>
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
-                        temp
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#1a3c80"}
+                          fontSize={"large"}
+                        >
+                          Mechanical Engineering
+                        </chakra.h2>
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#000000"}
+                          fontSize={"large"}
+                        >
+                          Specialization in :
+                        </chakra.h2>
+                        <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Automobile Engineering
+                        </chakra.h4>
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
-                        temp
+                        <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#1a3c80"}
+                          fontSize={"large"}
+                        >
+                          Civil Engineering
+                        </chakra.h2>
+                        {/* <chakra.h2
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          fontWeight={"700"}
+                          color={"#000000"}
+                          fontSize={"large"}
+                        >
+                          Specialization in :
+                        </chakra.h2> */}
+                        {/* <chakra.h4
+                          textAlign={"start"}
+                          paddingLeft={"4%"}
+                          color={"#000000"}
+                        >
+                          <span
+                            style={{
+                              fontSize: "x-large",
+                              color: "green",
+                              fontWeight: "600",
+                            }}
+                          >
+                            &#8680;
+                          </span>{" "}
+                          Software Development Program
+                        </chakra.h4> */}
                       </GridItem>
                     </Grid>
-                    <chakra.h2
-                      color="gray.600"
-                      fontSize="20px"
-                      //   maxW="600px"
-                      maxW="90%"
-                      lineHeight={1.2}
-                      mx="auto"
-                      textAlign="left"
-                    >
-                      Passed Bachelor's Degree in Engineering & Technology or
-                      equivalent in the relevant field. Obtained at least 50%
-                      marks (42.75% in case of candidates belonging to reserved
-                      category) in the qualifying Examination.
-                    </chakra.h2>
+                    <br />
+                    <br />
+                    <div>
+                      <chakra.h1
+                        style={{
+                          color: "#1a3c80",
+                          textAlign: "center",
+                          fontSize: "x-large",
+                          fontWeight: "600",
+                        }}
+                        marginTop={{ base: "40%", md: "1%" }}
+                      >
+                        Eligibility Criteria
+                      </chakra.h1>
+                      <br />
+                      <chakra.h2
+                        color="gray.600"
+                        fontSize="20px"
+                        //   maxW="600px"
+                        maxW="90%"
+                        lineHeight={1.2}
+                        mx="auto"
+                        textAlign="left"
+                      >
+                        The Candidate should have passed 10+2 examination with
+                        Physics, Mathematics and Chemistry as compulsory
+                        subjects along with one of the English/ Biotechnology/
+                        Biology/ Technical Vocational subject. Obtained at least
+                        50% marks (42.75% in case of candidates belonging to
+                        reserved category) in the above subjects taken together.
+                      </chakra.h2>
+                      <br />
+                      <br />
+                      <h1
+                        style={{
+                          color: "#000000",
+                          textAlign: "center",
+                          fontSize: "x-large",
+                          fontWeight: "600",
+                        }}
+                      >
+                        OR
+                      </h1>
+                      <br />
+                      <chakra.h2
+                        color="gray.600"
+                        fontSize="20px"
+                        //   maxW="600px"
+                        maxW="90%"
+                        lineHeight={1.2}
+                        mx="auto"
+                        textAlign="left"
+                      >
+                        Passed Diploma examination with at least 50% marks (40%
+                        in case of candidates belonging to reserved category),
+                        subject to vacancies in the First Year, in case the
+                        vacancies at lateral entry are exhausted.
+                      </chakra.h2>
+                      <br />
+                      <div class="heading-css-2">
+                        <h1>B-TECH (Lateral Entry 2nd Year)</h1>
+                      </div>
+                      <br />
+                      <ColoredDivider color="red.700" thickness={1.5} />
+                      <br />
+                      <Grid
+                        h="200px"
+                        templateRows="repeat(2, 0.3fr)"
+                        templateColumns="repeat(4, 1fr)"
+                        gap={4}
+                        className="int-grid"
+                      >
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                          <h1>Computer Science & Engiineering</h1>
+                        </GridItem>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                          <h1>Electrical Engineering</h1>
+                        </GridItem>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                          <h1>Mechanical Engineering</h1>
+                        </GridItem>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                          <h1>Civil Engineering</h1>
+                        </GridItem>
+                      </Grid>
+                      <h1
+                        style={{
+                          color: "#1a3c80",
+                          textAlign: "center",
+                          fontSize: "x-large",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Eligibility Criteria
+                      </h1>
+                      <chakra.h4
+                        textAlign={"start"}
+                        paddingLeft={"4%"}
+                        color={"#000000"}
+                      >
+                        <span
+                          style={{
+                            fontSize: "x-large",
+                            color: "green",
+                            fontWeight: "600",
+                          }}
+                        >
+                          &#8680;
+                        </span>{" "}
+                        Passed Diploma examination with at least 50% marks
+                        (42.75% in case of candidates belonging to reserved
+                        category) in appropriate branch of Engineering and
+                        Technology.
+                      </chakra.h4>
+                      <br />
+                      <chakra.h4
+                        textAlign={"start"}
+                        paddingLeft={"4%"}
+                        color={"#000000"}
+                      >
+                        <span
+                          style={{
+                            fontSize: "x-large",
+                            color: "green",
+                            fontWeight: "600",
+                          }}
+                        >
+                          &#8680;
+                        </span>{" "}
+                        Passed B.Sc. Degree from a recognised college as defined
+                        by UGC, with at least 45% marks (40% in case of
+                        candidates belonging to reserved category) and passed
+                        10+2 examination with Mathematics as a subject.
+                      </chakra.h4>
+                      <br />
+                      <chakra.h4
+                        textAlign={"start"}
+                        paddingLeft={"4%"}
+                        color={"#000000"}
+                      >
+                        <span
+                          style={{
+                            fontSize: "x-large",
+                            color: "green",
+                            fontWeight: "600",
+                          }}
+                        >
+                          &#8680;
+                        </span>{" "}
+                        Provided that the students belonging to B.Sc. Stream,
+                        shall clear the subjects Engineering Graphics/
+                        Engineering Drawing and Engineering Mechanics of the
+                        First Year Engineering Programme along with the Second
+                        year subjects.
+                      </chakra.h4>
+                      <br />
+                      <chakra.h4
+                        textAlign={"start"}
+                        paddingLeft={"4%"}
+                        color={"#000000"}
+                      >
+                        <span
+                          style={{
+                            fontSize: "x-large",
+                            color: "green",
+                            fontWeight: "600",
+                          }}
+                        >
+                          &#8680;
+                        </span>{" "}
+                        Provided that the students belonging to B.Sc. Stream
+                        shall be considered only after filling the supernumerary
+                        seats in this category with students belonging to the
+                        Diploma stream.
+                      </chakra.h4>
+                      <br />
+                    </div>
                     <br />
 
                     <br />
