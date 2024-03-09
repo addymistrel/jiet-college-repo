@@ -10,6 +10,7 @@ import "./Postgraduate.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
 import StatsSec from "../../../components/StatsSec/StatsSec";
+import ScrollToTopOnMount from "../../../components/ScrollTop/ScrollToTopOnMount";
 
 const ColoredDivider = ({ color, thickness }) => {
   return <Divider borderColor={color} borderWidth={thickness} />;
@@ -57,6 +58,7 @@ const PostGraduate = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
       <div className="main-box1">
         <div className="child-11">

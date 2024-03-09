@@ -12,6 +12,7 @@ import {
 import "./GovtAffiliation.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
+import ScrollToTopOnMount from "../../../components/ScrollTop/ScrollToTopOnMount";
 
 const ColoredDivider = ({ color, thickness }) => {
   return <Divider borderColor={color} borderWidth={thickness} />;
@@ -62,6 +63,7 @@ const GovtAffiliation = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
       <Box p={4} flex="2">
         <ColoredDivider color="red.700" thickness={1.5} />

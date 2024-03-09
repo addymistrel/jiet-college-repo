@@ -11,6 +11,7 @@ import {
 import "./Leadership.css";
 import Siders from "../../../components/Siders/siders";
 import TopHeader from "../../../components/TopHeaderAbout/topHeaderAbout";
+import ScrollToTopOnMount from "../../../components/ScrollTop/ScrollToTopOnMount";
 
 const ColoredDivider = ({ color, thickness }) => (
   <Divider borderColor={color} borderWidth={thickness} />
@@ -63,6 +64,7 @@ const Leadership = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
       <div className="main-box">
         <div className="child-1">
