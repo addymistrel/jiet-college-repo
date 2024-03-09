@@ -117,7 +117,7 @@ h1 em {
 }
 
 @media only screen and (max-width: 768px) {
-  .main-box {
+  .main-box1 {
     flex-direction: column;
   }
 }

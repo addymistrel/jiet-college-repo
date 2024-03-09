@@ -13,6 +13,7 @@ import PostGraduate from "./pages/Departments/PostGraduate/Postgraduate";
 import GovtAffiliation from "./pages/AboutUs/GovtAffiliation/GovtAffiliation";
 import Gallery from "./pages/Gallery/Gallery";
 import JindGenius from "./pages/JindGenius/JindGenius";
+import UnderGraduate from "./pages/Departments/UnderGraduate/Undergraduate";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/programs/postgraduate" element={<PostGraduate />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/jindgenius" element={<JindGenius />} />
+        <Route path="/programs/undergraduate" element={<UnderGraduate />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
