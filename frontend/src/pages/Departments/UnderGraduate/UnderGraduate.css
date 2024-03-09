@@ -121,3 +121,9 @@ h1 em {
     flex-direction: column;
   }
 }
+
+.int-grid h1 {
+  color: #1a3c80;
+  font-weight: 600;
+  padding-top: 2%;
+}
