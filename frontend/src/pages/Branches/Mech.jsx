@@ -56,15 +56,17 @@ const MechDepartment = () => {
         mx="auto"
       >
         <Heading as="h1" size="xl" mb={4} color="teal.500">
-          Department of Management Studies
+          Department of Mechanical Engineering
         </Heading>
 
         <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
-          Department of Management Studies offers Graduation in Business
-          Administration. It is a 3 year degree course including Management and
-          Organization Behavior along with Business Studies and Economics as the
-          main subjects. It is the course which lays foundation for Masters in
-          Management, Finance Control, International Business, Retail Management
+          One of the founding departments of JIET Jind, the mechanical
+          engineering department played a leading role in evolving in
+          engineering science based curriculum and served as a role model for
+          many academic institutes in the country. The academic activities are
+          supported by 17 laboratories. Department believes in the philosophy
+          that student can apply the theoretical knowledge to practice and
+          experimental learning and overall personality development of student.
           etc.
         </Text>
         <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
@@ -166,7 +168,7 @@ const MechDepartment = () => {
 
           <VStack align="start" spacing={4}>
             <Heading as="h4" size="lg" color="teal.500">
-              Scope for Computer Engineers
+              Major Projects And R&D
             </Heading>
             <List spacing={2}>
               <ListItem>
