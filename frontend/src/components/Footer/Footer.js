@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -114,23 +115,34 @@ export default function Footer() {
                 <div class="cta-text" id="dept">
                   <h4>Departments</h4>
                   <span>
-                    <b>Computer Science & Engineering</b>
+                    <Link to={"/departments/cse"}>
+                      {" "}
+                      <b>Computer Science & Engineering</b>
+                    </Link>
                   </span>
                   <br />
                   <span>
-                    <b>Electrical Engineering</b>
+                    <Link to={"/departments/ee"}>
+                      <b>Electrical Engineering</b>
+                    </Link>
                   </span>
                   <br />
                   <span>
-                    <b>Mechanical Engineering</b>
+                    <Link to={"/departments/me"}>
+                      <b>Mechanical Engineering</b>
+                    </Link>
                   </span>
                   <br />
                   <span>
-                    <b>Civil Engineering</b>
+                    <Link to={"/departments/ce"}>
+                      <b>Civil Engineering</b>
+                    </Link>
                   </span>
                   <br />
                   <span>
-                    <b>Management Studies (BBA)</b>
+                    <Link to={"/departments/bba"}>
+                      <b>Management Studies (BBA)</b>
+                    </Link>
                   </span>
                 </div>
               </div>
