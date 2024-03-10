@@ -162,7 +162,10 @@ export default function Footer() {
                 <div class="footer-social-icon">
                   <span>Follow us</span>
                   <div style={{ display: "flex" }}>
-                    <a href="#">
+                    <a
+                      href="https://www.facebook.com/jindjiet/"
+                      target="_blank"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -181,7 +184,7 @@ export default function Footer() {
                         ></path>
                       </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/jind_jiet" target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -200,7 +203,10 @@ export default function Footer() {
                         ></path>
                       </svg>
                     </a>
-                    <a href="#">
+                    <a
+                      href="https://www.instagram.com/jiet_group_of_institutions/?igshid=mdltrpknbha0"
+                      target="_blank"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -209,28 +215,64 @@ export default function Footer() {
                         height="40"
                         viewBox="0 0 48 48"
                       >
+                        <radialGradient
+                          id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1"
+                          cx="19.38"
+                          cy="42.035"
+                          r="44.899"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#fd5"></stop>
+                          <stop offset=".328" stop-color="#ff543f"></stop>
+                          <stop offset=".348" stop-color="#fc5245"></stop>
+                          <stop offset=".504" stop-color="#e64771"></stop>
+                          <stop offset=".643" stop-color="#d53e91"></stop>
+                          <stop offset=".761" stop-color="#cc39a4"></stop>
+                          <stop offset=".841" stop-color="#c837ab"></stop>
+                        </radialGradient>
                         <path
-                          fill="#0288d1"
-                          d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"
+                          fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                          d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
                         ></path>
-                        <rect
-                          width="4"
-                          height="15"
-                          x="14"
-                          y="19"
-                          fill="#fff"
-                        ></rect>
+                        <radialGradient
+                          id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2"
+                          cx="11.786"
+                          cy="5.54"
+                          r="29.813"
+                          gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#4168c9"></stop>
+                          <stop
+                            offset=".999"
+                            stop-color="#4168c9"
+                            stop-opacity="0"
+                          ></stop>
+                        </radialGradient>
                         <path
-                          fill="#fff"
-                          d="M16,17L16,17c-1.2,0-2-0.9-2-2c0-1.1,0.8-2,2-2c1.2,0,2,0.9,2,2C18,16.1,17.2,17,16,17z"
+                          fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                          d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
                         ></path>
                         <path
                           fill="#fff"
-                          d="M35,24.5c0-3-2.5-5.5-5.5-5.5c-1.9,0-3.5,0.9-4.5,2.3V19h-4v15h4v-8c0-1.7,1.3-3,3-3s3,1.3,3,3v8h4	C35,34,35,24.9,35,24.5z"
+                          d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"
+                        ></path>
+                        <circle
+                          cx="31.5"
+                          cy="16.5"
+                          r="1.5"
+                          fill="#fff"
+                        ></circle>
+                        <path
+                          fill="#fff"
+                          d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"
                         ></path>
                       </svg>
                     </a>
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/channel/UCYaozWawBXCa0TNz_wN494A"
+                      target="_blank"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -257,25 +299,25 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="/aboutus/overview">About Us</a>
                   </li>
                   <li>
-                    <a href="#">Programs</a>
+                    <a href="/programs/postgraduate">Programs</a>
                   </li>
                   <li>
-                    <a href="#">Departments</a>
+                    <a href="/departments/cse">Departments</a>
                   </li>
                   <li>
-                    <a href="#">Campus Life</a>
+                    <a href="/campus/sports">Campus Life</a>
                   </li>
                   <li>
-                    <a href="#">Gallery</a>
+                    <a href="/gallery">Gallery</a>
                   </li>
                   <li>
-                    <a href="#">JIND Genius</a>
+                    <a href="/jindgenius">JIND Genius</a>
                   </li>
                 </ul>
               </div>
