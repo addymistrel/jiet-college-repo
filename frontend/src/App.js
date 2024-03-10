@@ -16,6 +16,7 @@ import JindGenius from "./pages/JindGenius/JindGenius";
 import UnderGraduate from "./pages/Departments/UnderGraduate/Undergraduate";
 import Diploma from "./pages/Departments/Diploma/Diploma";
 import Mess from "./pages/Campus/Mess/Mess";
+import Sports from "./pages/Campus/Sports/Sports";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/programs/undergraduate" element={<UnderGraduate />} />
         <Route path="/programs/diploma" element={<Diploma />} />
         <Route path="/campus/mess" element={<Mess />} />
+        <Route path="/campus/sports" element={<Sports />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
