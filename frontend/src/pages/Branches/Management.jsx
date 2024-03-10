@@ -9,6 +9,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import TopHeader from "../../components/TopHeaderAbout/topHeaderAbout";
+import BranchSider from "./BranchSider";
 
 const ManagementDepartment = () => {
   const [institutionText, setInstitutionText] = useState("");
@@ -46,53 +47,63 @@ const ManagementDepartment = () => {
   return (
     <>
       <TopHeader text1={institutionText} text2={aicteText} />
-      <Box
-        p={8}
-        m={4}
-        boxShadow="lg"
-        borderRadius="md"
-        bg="white"
-        maxW="85%"
-        mx="auto"
-      >
-        <Heading as="h1" size="xl" mb={4} color="teal.500">
-          Department of Management Studies
-        </Heading>
-
-        <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
-          Department of Management Studies offers Graduation in Business
-          Administration. It is a 3 year degree course including Management and
-          Organization Behavior along with Business Studies and Economics as the
-          main subjects. It is the course which lays foundation for Masters in
-          Management, Finance Control, International Business, Retail Management
-          etc.
-        </Text>
-        <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
-          <VStack align="start" spacing={4} mb={8}>
-            <Heading as="h4" size="lg" color="teal.500">
-              Salient Features
+      <div className="main-box1">
+        <div className="child-11">
+          <Box
+            p={8}
+            m={4}
+            boxShadow="lg"
+            borderRadius="md"
+            bg="white"
+            maxW="85%"
+            mx="auto"
+          >
+            <Heading as="h1" size="xl" mb={4} color="teal.500">
+              Department of Management Studies
             </Heading>
-            <List spacing={2}>
-              <ListItem>
-                <span>&#8605;</span> Study through Management Games
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Case Studies
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Industrial Visits
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Expert Lectures from Industries
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Customized events like Leadership Summit,
-                Business Plan Competition etc
-              </ListItem>
-            </List>
-          </VStack>
-        </Flex>
-      </Box>
+
+            <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
+              Department of Management Studies offers Graduation in Business
+              Administration. It is a 3 year degree course including Management
+              and Organization Behavior along with Business Studies and
+              Economics as the main subjects. It is the course which lays
+              foundation for Masters in Management, Finance Control,
+              International Business, Retail Management etc.
+            </Text>
+            <Flex
+              justify="space-between"
+              direction={{ base: "column", md: "row" }}
+            >
+              <VStack align="start" spacing={4} mb={8}>
+                <Heading as="h4" size="lg" color="teal.500">
+                  Salient Features
+                </Heading>
+                <List spacing={2}>
+                  <ListItem>
+                    <span>&#8605;</span> Study through Management Games
+                  </ListItem>
+                  <ListItem>
+                    <span>&#8605;</span> Case Studies
+                  </ListItem>
+                  <ListItem>
+                    <span>&#8605;</span> Industrial Visits
+                  </ListItem>
+                  <ListItem>
+                    <span>&#8605;</span> Expert Lectures from Industries
+                  </ListItem>
+                  <ListItem>
+                    <span>&#8605;</span> Customized events like Leadership
+                    Summit, Business Plan Competition etc
+                  </ListItem>
+                </List>
+              </VStack>
+            </Flex>
+          </Box>
+        </div>
+        <div className="child-21">
+          <BranchSider />
+        </div>
+      </div>
     </>
   );
 };
