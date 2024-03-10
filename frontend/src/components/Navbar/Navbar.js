@@ -202,18 +202,19 @@ export default function Navbar() {
                   Alumini
                 </Button>
               </Link>
-              <Link to={"https://www.facebook.com/jindjiet/"}>
+              <Link to={"https://www.facebook.com/jindjiet/"} target="_blank">
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={FaFacebook} />
                 </Button>
               </Link>
-              <Link to={"https://twitter.com/jind_jiet"}>
+              <Link to={"https://twitter.com/jind_jiet"} target="_blank">
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillTwitterCircle} />
                 </Button>
               </Link>
               <Link
                 to={"https://www.youtube.com/channel/UCYaozWawBXCa0TNz_wN494A"}
+                target="_blank"
               >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={TbBrandYoutubeFilled} />
@@ -223,6 +224,7 @@ export default function Navbar() {
                 to={
                   "https://www.instagram.com/jiet_group_of_institutions/?igshid=mdltrpknbha0"
                 }
+                target="_blank"
               >
                 <Button variant={"unstyled"}>
                   <Icon className="abtn" as={AiFillInstagram} />
