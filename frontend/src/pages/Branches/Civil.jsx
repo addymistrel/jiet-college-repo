@@ -56,18 +56,19 @@ const CivilDepartment = () => {
         mx="auto"
       >
         <Heading as="h1" size="xl" mb={4} color="teal.500">
-          Department of Computer Science & Engineering
+          Department of Civil Engineering
         </Heading>
 
         <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
-          Welcome to the Department of Computer Science & Engineering at Jind
-          Institute of Engineering and Technology, Jind. Established in 1998,
-          our department is committed to training quality engineers. We provide
-          a range of services, including seminars, corporate training, and
-          workshops, all conducted by experts, to prepare our students for
-          successful careers as future software professionals. Our Personality
-          Development Programs (PDP) classes are designed to enhance their
-          technical skills and overall professional growth.
+          With urbanization and infrastructure development there has been urgent
+          need for good designer and construction engineers. So, Civil
+          engineering is a professional engineering discipline that deals with
+          the design, construction, and maintenance of the physical and
+          naturally built environment, including works like roads, bridges,
+          canals, dams, and buildings. Civil engineering takes place in the
+          public sector from municipal through to national governments, and in
+          the private sector from individual home owners through to
+          international companies.
         </Text>
         <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
           <VStack align="start" spacing={4} mb={8}>
@@ -76,31 +77,34 @@ const CivilDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8605;</span> Team of Qualified and Experienced Faculty
-                members.
+                <span>&#8605;</span> CAD Lab for Design of Civil Structures.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Connectivity to Internet through OFC based
-                4Mbps lease line.
+                <span>&#8605;</span> Soil and Water Testing Lab.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> MOU with various Industries like Priya
-                Industries Ltd, Wipro, TCS ION, Allbiz, Cognizant, etc.
+                <span>&#8605;</span> On Site lecture and demonstration of
+                practices.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> More than 600 computers of various brands
-                and reputed companies.
+                <span>&#8605;</span> Mountain and Table Survey for Practical
+                knowledge.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Wi-Fi facility is available for students.
+                <span>&#8605;</span> Collaboration with reputed builders and
+                firms.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Regular Workshop/Seminars.
+                <span>&#8605;</span> Special Lecture from Town and Planning
+                departments.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Visiting Faculties from reputed Institutes
-                like DCE, NIT, NSIT, IIT, and Universities regularly visit the
-                department.
+                <span>&#8605;</span> Environmental Engineering and conservation
+                studies.
+              </ListItem>
+              <ListItem>
+                <span>&#8605;</span> Use of Computerized Total Station for
+                offsite Surveying.
               </ListItem>
             </List>
           </VStack>
@@ -110,16 +114,15 @@ const CivilDepartment = () => {
               Scope for Higher Education
             </Heading>
             <Text fontSize="lg">
-              <span>&#8611;</span> Masters of Technology <br />
-              <span>&#8611;</span> Masters in Control Engineering <br />
-              <span>&#8611;</span> Post Graduate in System Maintenance
-              Engineering
+              <span>&#8611;</span> Masters of Technology in Civil <br />
+              <span>&#8611;</span> Masters in Building Design <br />
+              <span>&#8611;</span> Masters in Construction Engineering
               <br />
-              <span>&#8611;</span> CCNA, MCSE, MCSP <br />
-              <span>&#8611;</span> Web Designer <br />
-              <span>&#8611;</span> Software Developer <br />
-              <span>&#8611;</span> Software Testing, Editing, and Rating <br />
-              <span>&#8611;</span> Language Lab
+              <span>&#8611;</span> Masters in Control Engineering <br />
+              <span>&#8611;</span> Masters in Transport Engineering <br />
+              <span>&#8611;</span> Masters in Soil and Structural Engineering{" "}
+              <br />
+              <span>&#8611;</span> Masters in Environmental Engineering <br />
             </Text>
           </VStack>
         </Flex>
@@ -131,50 +134,75 @@ const CivilDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8618;</span> Software developer/programmer in software
-                companies.
+                <span>&#8618;</span> Survey Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Hardware Engineer in computer manufacturing
-                companies.
+                <span>&#8618;</span> Soil Engineering Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Maintenance/service engineer in units using
-                computers.
+                <span>&#8618;</span> FM Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Network engineer in units using computers.
+                <span>&#8618;</span> Water Testing Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Entrepreneurship opportunities - starting
-                their own company as a service provider for software
-                development, servicing, supplier for computers, and spares.
+                <span>&#8618;</span> RCC Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Concrete lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Irrigation Engineering Lab
+              </ListItem>
+
+              <ListItem>
+                <span>&#8618;</span> Bridge Engineering lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Transportation Engineering Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Railways and Tunnels Lab
               </ListItem>
             </List>
           </VStack>
 
           <VStack align="start" spacing={4}>
             <Heading as="h4" size="lg" color="teal.500">
-              Scope for Computer Engineers
+              Scope for Civil Engineers
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8627;</span> Software developer/programmer in software
-                companies.
+                <span>&#8627;</span> Graduate of Civil engineering has following
+                job avenues in their portfolio:
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Hardware Engineer in computer manufacturing
-                companies.
+                <span>&#8627;</span> Public Works Department (State PWD, CPWD)
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Maintenance/service engineer in units using
-                computers.
+                <span>&#8627;</span> Private Construction Companies
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Network engineer in units using computers.
+                <span>&#8627;</span> Railways, Metro Rail Corporation
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Entrepreneurship opportunities.
+                <span>&#8627;</span> Irrigation Department Public Health
+                Department
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Disaster Management
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Environmental Pollution and Control
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Private Contractor and Developer
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Architecture and Designer
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Surveyor and evaluator
               </ListItem>
             </List>
           </VStack>

@@ -131,24 +131,34 @@ const CseDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8618;</span> Software developer/programmer in software
-                companies.
+                <span>&#8618;</span> General Purpose Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Hardware Engineer in computer manufacturing
-                companies.
+                <span>&#8618;</span> Central Computing Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Maintenance/service engineer in units using
-                computers.
+                <span>&#8618;</span> Advance Technology Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Network engineer in units using computers.
+                <span>&#8618;</span> Programming Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Entrepreneurship opportunities - starting
-                their own company as a service provider for software
-                development, servicing, supplier for computers, and spares.
+                <span>&#8618;</span> Project Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Linux & Unix Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> System Programming Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Network Programming Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Hardware Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Language Lab
               </ListItem>
             </List>
           </VStack>

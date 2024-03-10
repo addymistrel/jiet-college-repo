@@ -56,18 +56,14 @@ const EceDepartment = () => {
         mx="auto"
       >
         <Heading as="h1" size="xl" mb={4} color="teal.500">
-          Department of Computer Science & Engineering
+          Department Of Electrical Engineering
         </Heading>
 
         <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
-          Welcome to the Department of Computer Science & Engineering at Jind
-          Institute of Engineering and Technology, Jind. Established in 1998,
-          our department is committed to training quality engineers. We provide
-          a range of services, including seminars, corporate training, and
-          workshops, all conducted by experts, to prepare our students for
-          successful careers as future software professionals. Our Personality
-          Development Programs (PDP) classes are designed to enhance their
-          technical skills and overall professional growth.
+          The department was established in 1998 with an intake of 60 seats. It
+          is the ever demanding and growing branch with excellent placement
+          record. At present we have 120 seats in B.Tech. and 24 seats in
+          M.Tech. in Electrical Engineering which was started in 2014.
         </Text>
         <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
           <VStack align="start" spacing={4} mb={8}>
@@ -76,31 +72,46 @@ const EceDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8605;</span> Team of Qualified and Experienced Faculty
-                members.
+                <span>&#8605;</span> Teaching beyond curriculum to enhance
+                practical knowledge.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Connectivity to Internet through OFC based
-                4Mbps lease line.
+                <span>&#8605;</span> Workshops, Seminars, Paper presentations
+                are arranged to enhance teaching learning skills as well as
+                knowledge upgradation.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> MOU with various Industries like Priya
-                Industries Ltd, Wipro, TCS ION, Allbiz, Cognizant, etc.
+                <span>&#8605;</span> Industrial visits and continuing education
+                program.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> More than 600 computers of various brands
-                and reputed companies.
+                <span>&#8605;</span> Use of Modern teaching aids like LCD
+                Projectors /OHPs,Power Analyzer and Laptops.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Wi-Fi facility is available for students.
+                <span>&#8605;</span> 24 hrs Internet connectivity.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Regular Workshop/Seminars.
+                <span>&#8605;</span> Wi-Fi system in the department.
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Visiting Faculties from reputed Institutes
-                like DCE, NIT, NSIT, IIT, and Universities regularly visit the
-                department.
+                <span>&#8605;</span> Fully furnished Air-conditioned computer
+                lab.
+              </ListItem>
+              <ListItem>
+                <span>&#8605;</span> Training to students for industrial
+                projects by PRIYA .
+              </ListItem>
+              <ListItem>
+                <span>&#8605;</span> MAT lab with latest version.
+              </ListItem>
+              <ListItem>
+                <span>&#8605;</span> Experts from industries &College to deliver
+                special.
+              </ListItem>
+              <ListItem>
+                <span>&#8605;</span> Special coaching facility for IES/ GATE
+                exams in the institute.
               </ListItem>
             </List>
           </VStack>
@@ -110,16 +121,24 @@ const EceDepartment = () => {
               Scope for Higher Education
             </Heading>
             <Text fontSize="lg">
-              <span>&#8611;</span> Masters of Technology <br />
-              <span>&#8611;</span> Masters in Control Engineering <br />
-              <span>&#8611;</span> Post Graduate in System Maintenance
-              Engineering
+              <span>&#8611;</span> Electrical Engineers can find opportunities
+              in any of the categories: <br />
+              <span>&#8611;</span> Power generation, power electronics,
+              computers, control systems, telecomm. and Bio-Medical,
+              distribution, power & electrical sub stations such as PWD, MES,
+              NTPC, NHPC, Reliance power, etc <br />
+              <span>&#8611;</span> Design, installation and maintenance Engineer
+              for telecommunications networks & wireless transmission systems
+              such as Telecom Industries.
               <br />
-              <span>&#8611;</span> CCNA, MCSE, MCSP <br />
-              <span>&#8611;</span> Web Designer <br />
-              <span>&#8611;</span> Software Developer <br />
-              <span>&#8611;</span> Software Testing, Editing, and Rating <br />
-              <span>&#8611;</span> Language Lab
+              <span>&#8611;</span> Industrial automation, robotics and process
+              control engineer,quality control Engg. in any manufacturing
+              industry.
+              <br />
+              <span>&#8611;</span> Software Engineer in an IT industry Like TCS,
+              WIPRO, HCL, CMC etc. <br />
+              <span>&#8611;</span> Design & Manufacturing Engineer for appliance
+              manufacturers, telecomm., computer industries etc. <br />
             </Text>
           </VStack>
         </Flex>
@@ -131,50 +150,58 @@ const EceDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8618;</span> Software developer/programmer in software
-                companies.
+                <span>&#8618;</span> Electrical Technology Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Hardware Engineer in computer manufacturing
-                companies.
+                <span>&#8618;</span> Electrical Machines & Drives Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Maintenance/service engineer in units using
-                computers.
+                <span>&#8618;</span> Power System Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Network engineer in units using computers.
+                <span>&#8618;</span> Signal & System Lab
               </ListItem>
               <ListItem>
-                <span>&#8618;</span> Entrepreneurship opportunities - starting
-                their own company as a service provider for software
-                development, servicing, supplier for computers, and spares.
+                <span>&#8618;</span> Power Electronics Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Electrical Measurement & Instrument Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Simulation Lab
+              </ListItem>
+              <ListItem>
+                <span>&#8618;</span> Project & Electrical Workshop Lab
               </ListItem>
             </List>
           </VStack>
 
           <VStack align="start" spacing={4}>
             <Heading as="h4" size="lg" color="teal.500">
-              Scope for Computer Engineers
+              Scope for Electrical Engineers
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8627;</span> Software developer/programmer in software
-                companies.
+                <span>&#8627;</span> After graduation as Electrical Engineer one
+                can look for M.Tech in any of the following areas:
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Hardware Engineer in computer manufacturing
-                companies.
+                <span>&#8627;</span> Power system
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Maintenance/service engineer in units using
-                computers.
+                <span>&#8627;</span> Advanced Electrical Engineering
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Network engineer in units using computers.
+                <span>&#8627;</span> Sensor Systems & Signal Processing
               </ListItem>
               <ListItem>
-                <span>&#8627;</span> Entrepreneurship opportunities.
+                <span>&#8627;</span> Industrial automation and Robotics
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Instrumentation & Control Engineering
+              </ListItem>
+              <ListItem>
+                <span>&#8627;</span> Power conversion and systems
               </ListItem>
             </List>
           </VStack>

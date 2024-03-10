@@ -56,18 +56,16 @@ const ManagementDepartment = () => {
         mx="auto"
       >
         <Heading as="h1" size="xl" mb={4} color="teal.500">
-          Department of Computer Science & Engineering
+          Department of Management Studies
         </Heading>
 
         <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
-          Welcome to the Department of Computer Science & Engineering at Jind
-          Institute of Engineering and Technology, Jind. Established in 1998,
-          our department is committed to training quality engineers. We provide
-          a range of services, including seminars, corporate training, and
-          workshops, all conducted by experts, to prepare our students for
-          successful careers as future software professionals. Our Personality
-          Development Programs (PDP) classes are designed to enhance their
-          technical skills and overall professional growth.
+          Department of Management Studies offers Graduation in Business
+          Administration. It is a 3 year degree course including Management and
+          Organization Behavior along with Business Studies and Economics as the
+          main subjects. It is the course which lays foundation for Masters in
+          Management, Finance Control, International Business, Retail Management
+          etc.
         </Text>
         <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
           <VStack align="start" spacing={4} mb={8}>
@@ -76,105 +74,20 @@ const ManagementDepartment = () => {
             </Heading>
             <List spacing={2}>
               <ListItem>
-                <span>&#8605;</span> Team of Qualified and Experienced Faculty
-                members.
+                <span>&#8605;</span> Study through Management Games
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Connectivity to Internet through OFC based
-                4Mbps lease line.
+                <span>&#8605;</span> Case Studies
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> MOU with various Industries like Priya
-                Industries Ltd, Wipro, TCS ION, Allbiz, Cognizant, etc.
+                <span>&#8605;</span> Industrial Visits
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> More than 600 computers of various brands
-                and reputed companies.
+                <span>&#8605;</span> Expert Lectures from Industries
               </ListItem>
               <ListItem>
-                <span>&#8605;</span> Wi-Fi facility is available for students.
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Regular Workshop/Seminars.
-              </ListItem>
-              <ListItem>
-                <span>&#8605;</span> Visiting Faculties from reputed Institutes
-                like DCE, NIT, NSIT, IIT, and Universities regularly visit the
-                department.
-              </ListItem>
-            </List>
-          </VStack>
-
-          <VStack align="start" spacing={4} mb={8}>
-            <Heading as="h4" size="lg" color="teal.500">
-              Scope for Higher Education
-            </Heading>
-            <Text fontSize="lg">
-              <span>&#8611;</span> Masters of Technology <br />
-              <span>&#8611;</span> Masters in Control Engineering <br />
-              <span>&#8611;</span> Post Graduate in System Maintenance
-              Engineering
-              <br />
-              <span>&#8611;</span> CCNA, MCSE, MCSP <br />
-              <span>&#8611;</span> Web Designer <br />
-              <span>&#8611;</span> Software Developer <br />
-              <span>&#8611;</span> Software Testing, Editing, and Rating <br />
-              <span>&#8611;</span> Language Lab
-            </Text>
-          </VStack>
-        </Flex>
-
-        <Flex justify="space-between" direction={{ base: "column", md: "row" }}>
-          <VStack align="start" spacing={4} mb={8}>
-            <Heading as="h4" size="lg" color="teal.500">
-              Major Labs
-            </Heading>
-            <List spacing={2}>
-              <ListItem>
-                <span>&#8618;</span> Software developer/programmer in software
-                companies.
-              </ListItem>
-              <ListItem>
-                <span>&#8618;</span> Hardware Engineer in computer manufacturing
-                companies.
-              </ListItem>
-              <ListItem>
-                <span>&#8618;</span> Maintenance/service engineer in units using
-                computers.
-              </ListItem>
-              <ListItem>
-                <span>&#8618;</span> Network engineer in units using computers.
-              </ListItem>
-              <ListItem>
-                <span>&#8618;</span> Entrepreneurship opportunities - starting
-                their own company as a service provider for software
-                development, servicing, supplier for computers, and spares.
-              </ListItem>
-            </List>
-          </VStack>
-
-          <VStack align="start" spacing={4}>
-            <Heading as="h4" size="lg" color="teal.500">
-              Scope for Computer Engineers
-            </Heading>
-            <List spacing={2}>
-              <ListItem>
-                <span>&#8627;</span> Software developer/programmer in software
-                companies.
-              </ListItem>
-              <ListItem>
-                <span>&#8627;</span> Hardware Engineer in computer manufacturing
-                companies.
-              </ListItem>
-              <ListItem>
-                <span>&#8627;</span> Maintenance/service engineer in units using
-                computers.
-              </ListItem>
-              <ListItem>
-                <span>&#8627;</span> Network engineer in units using computers.
-              </ListItem>
-              <ListItem>
-                <span>&#8627;</span> Entrepreneurship opportunities.
+                <span>&#8605;</span> Customized events like Leadership Summit,
+                Business Plan Competition etc
               </ListItem>
             </List>
           </VStack>
