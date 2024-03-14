@@ -40,6 +40,7 @@ const TextVideo = () => {
                 title="naruto"
                 src="/assets/images/jietimage/video.mp4"
                 allowFullScreen
+                autoplay="false"
               />
             </AspectRatio>
           </Box>

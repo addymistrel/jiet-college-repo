@@ -76,7 +76,7 @@ h1 em {
   flex: 0 0 100%;
   padding: 20px;
   background: var(--white);
-  border: 4px solid #e20c0c;
+  border: 4px solid #ec3237;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
   scroll-snap-align: start;
@@ -179,7 +179,7 @@ h1 em {
 
 /*--------------HEADER----------------*/
 :root {
-  --text-color: #e20c0c;
+  --text-color: #ec3237;
   --background-color: rgb(212, 212, 212);
 }
 .main-wrapper-main {
@@ -206,7 +206,7 @@ h1 em {
 }
 .top {
   clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
-  color: #e20c0c;
+  color: #ec3237;
 }
 .bottom {
   clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);

@@ -19,7 +19,7 @@ export default function TopHeader({ text1, text2 }) {
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
-            color={"#e20c0c"}
+            color={"#ec3237"}
           >
             {text1} <br />
             <Text as={"span"} color={"black"}>

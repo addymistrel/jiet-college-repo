@@ -168,7 +168,7 @@ const Diploma = () => {
                           <span
                             style={{
                               fontSize: "x-large",
-                              color: "#e20c0c",
+                              color: "#ec3237",
                               paddingRight: "1.5%",
                             }}
                           >

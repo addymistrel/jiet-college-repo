@@ -95,14 +95,14 @@ export default function Navbar() {
       <Box
         color={useColorModeValue("black", "black")}
         px={4}
-        bgColor={"#de0c0c"}
+        bgColor={"#ffffff"}
         minWidth={"-webkit-fit-content"}
       >
         <Flex
           h={20}
           alignItems={"center"}
           justifyContent={"space-between"}
-          bgColor={"#de0c0c"}
+          bgColor={"#ffffff"}
         >
           <HStack spacing={8} alignItems={"center"}>
             <Box
@@ -162,6 +162,7 @@ export default function Navbar() {
                   className="abovebtn"
                   variant={"outline"}
                   colorScheme="purple"
+                  background={"#ec3237"}
                   color={useColorModeValue("white", "purple")}
                   _hover={{ background: "black", color: "white" }}
                   display={token ? "none" : "flex"}
@@ -173,6 +174,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  background={"#ec3237"}
                   _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
@@ -184,6 +186,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  background={"#ec3237"}
                   _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
@@ -195,6 +198,7 @@ export default function Navbar() {
                 <Button
                   variant={"outline"}
                   colorScheme="purple"
+                  background={"#ec3237"}
                   _hover={{ background: "black", color: "white" }}
                   color={useColorModeValue("white", "purple")}
                   display={token ? "none" : "flex"}
