@@ -4,6 +4,7 @@ import { slides } from "./slider-data";
 import "./MainSlider.css";
 import Navbar from "../Navbar/Navbar";
 import CardsVid from "../CardsVid/CardsVid";
+import { Select } from "@chakra-ui/react";
 // import videoBg from "../";
 
 export default function MainSlider() {
@@ -82,6 +83,36 @@ export default function MainSlider() {
   //   }, SLIDES_INTERVAL_TIME);
   //   return () => clearInterval(automatedSlide);
   // }, [slidesCount]);
+  const [courseState, setCourse] = useState("");
+  const programs = ["Post Graduate", "Under Graduate", "Diploma"];
+  const course = {
+    post: ["CS Eng.", "Electrical Eng."],
+    under: ["CS Eng.", "Electrical Eng.", "Mechanical Eng.", "Civil Eng"],
+    diploma: ["CS Eng.", "Electrical Eng.", "Mechanical Eng.", "Civil Eng"],
+  };
+  const dd = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+    22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+  ];
+  const mm = [
+    "JANUARY",
+    "FEBRUARY",
+    "MARCH",
+    "APRIL",
+    "MAY",
+    "JUNE",
+    "JULY",
+    "AUGUST",
+    "SEPTEMBER",
+    "OCTOBER",
+    "NOVEMBER",
+    "DECEMBER",
+  ];
+  const yyyy = [
+    1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991,
+    1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004,
+  ];
   return (
     <div className="main-vid">
       <div class="slider">
@@ -124,40 +155,74 @@ export default function MainSlider() {
                 <input type="text" placeholder="Enter City" required />
               </div>
               <div class="input-box">
-                <span class="details">Password</span>
-                <input type="text" placeholder="Enter your password" required />
+                <span class="details" style={{ color: "#790a0d" }}>
+                  Interested Program
+                </span>
+                <Select
+                  placeholder="Select option"
+                  onChange={(e) => {
+                    if (e.target.value === "Post Graduate") setCourse("post");
+                    else if (e.target.value === "Under Graduate")
+                      setCourse("under");
+                    else if (e.target.value === "Diploma") setCourse("diploma");
+                    else setCourse("");
+                  }}
+                >
+                  {programs.map((item) => {
+                    return <option value={item}>{item}</option>;
+                  })}
+                </Select>
               </div>
               <div class="input-box">
-                <span class="details">Confirm Password</span>
-                <input
-                  type="text"
-                  placeholder="Confirm your password"
-                  required
-                />
+                <span class="details" style={{ color: "#790a0d" }}>
+                  Preferred Courses
+                </span>
+                <Select placeholder="Select option">
+                  {courseState === "post" ? (
+                    course.post.map((item) => {
+                      return <option value={item}>{item}</option>;
+                    })
+                  ) : courseState === "under" ? (
+                    course.under.map((item) => {
+                      return <option value={item}>{item}</option>;
+                    })
+                  ) : courseState === "diploma" ? (
+                    course.diploma.map((item) => {
+                      return <option value={item}>{item}</option>;
+                    })
+                  ) : (
+                    <option value="Select Option">No Courses</option>
+                  )}
+                </Select>
               </div>
             </div>
             <div class="gender-details">
               <input type="radio" name="gender" id="dot-1" />
               <input type="radio" name="gender" id="dot-2" />
               <input type="radio" name="gender" id="dot-3" />
-              <span class="gender-title">Gender</span>
+              <span class="gender-title" style={{ color: "#790a0d" }}>
+                How Old Are You
+              </span>
               <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">Male</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">Female</span>
-                </label>
-                <label for="dot-3">
-                  <span class="dot three"></span>
-                  <span class="gender">Prefer not to say</span>
-                </label>
+                <Select placeholder="DD">
+                  {dd.map((item) => {
+                    return <option value="option1">{item}</option>;
+                  })}
+                </Select>
+                <Select placeholder="MM">
+                  {mm.map((item) => {
+                    return <option value="option1">{item}</option>;
+                  })}
+                </Select>
+                <Select placeholder="YYYY">
+                  {yyyy.map((item) => {
+                    return <option value="option1">{item}</option>;
+                  })}
+                </Select>
               </div>
             </div>
             <div class="button-slide">
-              <input type="submit" value="Register" />
+              <input type="submit" value="Apply Now" />
             </div>
           </form>
         </div>
