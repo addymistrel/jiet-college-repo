@@ -151,7 +151,6 @@ form .user-details .input-box {
 }
 form .input-box span.details {
   display: block;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 .user-details .input-box input {
@@ -175,9 +174,9 @@ form .gender-details .gender-title-slid {
 }
 form .category {
   display: flex;
-  width: 80%;
   margin: 14px 0;
-  justify-content: space-between;
+  gap: 4%;
+  justify-content: space-evenly;
 }
 form .category label {
   display: flex;
@@ -217,7 +216,7 @@ form .button-slide input {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: #ec3237;
 }
 form .button-slide input:hover {
   /* transform: scale(0.99); */
