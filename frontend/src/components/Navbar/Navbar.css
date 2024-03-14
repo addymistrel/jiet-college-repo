@@ -48,7 +48,7 @@
   width: 150px;
   height: 40px;
   padding: 12px 0 0;
-  background: #000000;
+  background: #ec3237;
   text-align: center;
   color: #ffffff;
   font-weight: bold;
@@ -60,7 +60,7 @@
   content: "";
   display: block;
   height: 0;
-  border-top: 5px solid #000000;
+  border-top: 5px solid #ec3237;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   border-bottom: 0 solid #dddddd;
@@ -76,7 +76,7 @@
 }
 
 .menu-title:hover:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu:hover > .menu-title:before {
@@ -104,7 +104,7 @@
 }
 
 .menu-title_2nd {
-  background: #000000;
+  background: #ec3237;
 }
 
 .menu-title_2nd:hover {
@@ -112,15 +112,15 @@
 }
 
 .menu-title_2nd:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-title_2nd:hover:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-title_3rd {
-  background: #000000;
+  background: #ec3237;
 }
 
 .menu-title_3rd:hover {
@@ -128,15 +128,15 @@
 }
 
 .menu-title_3rd:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-title_3rd:hover:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-title_4th {
-  background: #000000;
+  background: #ec3237;
 }
 
 .menu-title_4th:hover {
@@ -144,11 +144,11 @@
 }
 
 .menu-title_4th:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-title_4th:hover:before {
-  border-top-color: #000000;
+  border-top-color: #ec3237;
 }
 
 .menu-dropdown {

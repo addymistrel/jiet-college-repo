@@ -84,7 +84,7 @@ const Card = ({ data }) => {
             alignItems="center"
             rounded="lg"
             p={2}
-            bg="#e20c0c"
+            bg="#ec3237"
             position="relative"
             w={12}
             h={12}
