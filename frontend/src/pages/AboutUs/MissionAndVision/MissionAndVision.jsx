@@ -5,6 +5,7 @@ import {
   Box,
   useColorModeValue,
   Divider,
+  Image, // Import Image component from Chakra UI
 } from "@chakra-ui/react";
 import "./MissionAndVision.css";
 import Siders from "../../../components/Siders/siders";
@@ -52,9 +53,9 @@ const MissionAndVision = () => {
   const sideData = [
     { head: "Overview", link: "/aboutus/overview" },
     { head: "Mission & Vision", link: "/aboutus/mission" },
-    { head: "Leadership", link: "#" },
+    { head: "Leadership", link: "/aboutus/leadership" },
     { head: "Chairman Message", link: "/aboutus/cmessage" },
-    { head: "Govt. Affiliation", link: "#" },
+    { head: "Govt. Affiliation", link: "/aboutus/affiliations" },
   ];
 
   return (
@@ -93,19 +94,6 @@ const MissionAndVision = () => {
                     spacing={5}
                     maxW="100%"
                   >
-                    {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
-              Explore TemplatesKart
-            </chakra.h1> */}
-                    {/* <div className="heading-css-1">
-                      <h1>JIND EDUCATION TRUST</h1>
-                    </div>
-                    <div class="heading-css-2">
-                      <h1>
-                        JIND INSTITUTE OF ENGINEERING & TECHNOLOGY
-                        <span>JIND POLYTECHNIC COLLEGE</span>
-                        <span>JIET CONVENT SCHOOL</span>
-                      </h1>
-                    </div> */}
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <br />
                     <div className="heading-css-txt">
@@ -129,6 +117,16 @@ const MissionAndVision = () => {
                       to establish ourselves as educators that expands the
                       realms of intelligence and abilities. ❞
                     </chakra.h2>
+                    {/* Image component below Vision */}
+                    <Image
+                      src="/assets/images/gallery/mv1.jpg"
+                      alt="Vision Image"
+                      w="100%"
+                      h="25rem"
+                      borderRadius="md"
+                      boxShadow="md"
+                      mb={4}
+                    />
                     <br />
                     <div className="heading-css-txt">
                       <h1>Mission</h1>
@@ -152,6 +150,16 @@ const MissionAndVision = () => {
                       global standards, we aspire to provide cutting edge
                       training that creates achievers out of every learner.
                     </chakra.h2>
+                    {/* Image component below Mission */}
+                    <Image
+                      src="/assets/images/gallery/mv2.jpg"
+                      alt="Mission Image"
+                      w="100%"
+                      h="25rem"
+                      borderRadius="md"
+                      boxShadow="md"
+                      mb={4}
+                    />
                     <br />
                     <div className="heading-css-txt">
                       <h1>Goals</h1>
@@ -174,6 +182,16 @@ const MissionAndVision = () => {
                       educational environment with edge of corporate experience
                       and well defined industrial exposure. ❞
                     </chakra.h2>
+                    {/* Image component below Goals */}
+                    <Image
+                      src="/assets/images/gallery/mv3.jpg"
+                      alt="Goals Image"
+                      w="100%"
+                      h="25rem"
+                      borderRadius="md"
+                      boxShadow="md"
+                      mb={4}
+                    />
                     <br />
                     <div className="heading-css-txt">
                       <h1>Quality Policy</h1>
@@ -194,6 +212,16 @@ const MissionAndVision = () => {
                       graduates, those are also posses positive attitude in
                       building a better nation, rather better world. ❞
                     </chakra.h2>
+                    {/* Image component below Quality Policy */}
+                    <Image
+                      src="/assets/images/gallery/mv4.jpg"
+                      alt="Quality Policy Image"
+                      w="100%"
+                      h="25rem"
+                      borderRadius="md"
+                      boxShadow="md"
+                      mb={4}
+                    />
                     <br />
                     <br />
                     <br />

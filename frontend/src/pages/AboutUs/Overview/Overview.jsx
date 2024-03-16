@@ -52,9 +52,9 @@ const Overview = () => {
   const sideData = [
     { head: "Overview", link: "/aboutus/overview" },
     { head: "Mission & Vision", link: "/aboutus/mission" },
-    { head: "Leadership", link: "#" },
+    { head: "Leadership", link: "/aboutus/leadership" },
     { head: "Chairman Message", link: "/aboutus/cmessage" },
-    { head: "Govt. Affiliation", link: "#" },
+    { head: "Govt. Affiliation", link: "/aboutus/affiliations" },
   ];
 
   return (

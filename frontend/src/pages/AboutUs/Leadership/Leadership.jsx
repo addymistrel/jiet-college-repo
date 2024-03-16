@@ -55,11 +55,11 @@ const Leadership = () => {
   }, [aicteText, toStart]);
 
   const sideData = [
-    { head: "Overview", link: "#" },
-    { head: "Mission & Vision", link: "#" },
-    { head: "Leadership", link: "#" },
-    { head: "Dignitaries Visit", link: "#" },
-    { head: "Govt. Affiliation", link: "#" },
+    { head: "Overview", link: "/aboutus/overview" },
+    { head: "Mission & Vision", link: "/aboutus/mission" },
+    { head: "Leadership", link: "/aboutus/leadership" },
+    { head: "Chairman Message", link: "/aboutus/cmessage" },
+    { head: "Govt. Affiliation", link: "/aboutus/affiliations" },
   ];
 
   return (
