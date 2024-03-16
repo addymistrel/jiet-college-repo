@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   chakra,
   Container,
@@ -15,6 +15,12 @@ import {
 import "./TextVideo.css";
 
 const TextVideo = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <div className="main-text-vid">
       <div className="vid-block">
@@ -31,12 +37,14 @@ const TextVideo = () => {
             fallback={<Skeleton />}
           >
             <AspectRatio>
-              <iframe
+              <video
                 style={{ borderRadius: "25px" }}
                 title="naruto"
                 src="/assets/images/jietimage/video.mp4"
                 allowFullScreen
                 muted
+                controls={!isPlaying}
+                onClick={handlePlay}
               />
             </AspectRatio>
           </Box>
@@ -54,11 +62,11 @@ const TextVideo = () => {
         <Box color="gray.700">
           <Content>
             JIET since its inception in 1998, has been known to bring innovation
-            in the feld of education. In the current education environment, JIET
-            has gone out of its way to bring the best practices in the feld of
-            education. As a progressive promoter, JIET group has been at the
-            forefront of innovating its course content and pedagogy. With its
-            'Good to Great' philosophy, JIET programs have helped students'
+            in the field of education. In the current education environment,
+            JIET has gone out of its way to bring the best practices in the
+            field of education. As a progressive promoter, JIET group has been
+            at the forefront of innovating its course content and pedagogy. With
+            its 'Good to Great' philosophy, JIET programs have helped students'
             career start from where others want to be.
           </Content>
           <Content>

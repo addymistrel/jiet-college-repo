@@ -1,0 +1,65 @@
+.sticky-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+  left: -8%; 
+  background-color: red;
+  color: #ffffff;
+  padding: 20px 50px; 
+  border-radius: 15px; 
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 9;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sticky-bar:hover {
+  -webkit-transform: translateY(-50%) rotate(-90deg) scale(1.1);
+  -ms-transform: translateY(-50%) rotate(-90deg) scale(1.1);
+  transform: translateY(-50%) rotate(-90deg) scale(1.1);
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  25% {
+    -webkit-transform: translateY(-50%) rotate(-95deg);
+    -ms-transform: translateY(-50%) rotate(-95deg);
+    transform: translateY(-50%) rotate(-95deg);
+  }
+  50% {
+    -webkit-transform: translateY(-50%) rotate(-85deg);
+    -ms-transform: translateY(-50%) rotate(-85deg);
+    transform: translateY(-50%) rotate(-85deg);
+  }
+  75% {
+    -webkit-transform: translateY(-50%) rotate(-95deg);
+    -ms-transform: translateY(-50%) rotate(-95deg);
+    transform: translateY(-50%) rotate(-95deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(-85deg);
+    -ms-transform: translateY(-50%) rotate(-85deg);
+    transform: translateY(-50%) rotate(-85deg);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .sticky-bar {
+    left: -20%;
+    padding: 15px 30px;
+    font-size: large;
+  }
+}
