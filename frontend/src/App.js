@@ -22,6 +22,7 @@ import CivilDepartment from "./pages/Branches/Civil";
 import ManagementDepartment from "./pages/Branches/Management";
 import Mess from "./pages/Campus/Mess/Mess";
 import Sports from "./pages/Campus/Sports/Sports";
+// import StickyButton from "./components/StickyButtons/StickyButtons";
 
 function App() {
   return (

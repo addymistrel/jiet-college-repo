@@ -329,22 +329,57 @@ export default function Navbar() {
                   </Button>
                   {toggle[1] && (
                     <ul className="internal-nav">
-                      <Link to={"/aboutus/overview"}>
+                      <Link
+                        to={"/aboutus/overview"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Overview</li>
                       </Link>
-                      <Link to={"/aboutus/mission"}>
+                      <Link
+                        to={"/aboutus/mission"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Mission & Vision</li>
                       </Link>
-                      <Link to={"/aboutus/leadership"}>
+                      <Link
+                        to={"/aboutus/leadership"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Leadership</li>
                       </Link>
-                      <Link to={"/aboutus/cmessage"}>
+                      <Link
+                        to={"/aboutus/cmessage"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Chairman Meessage</li>
                       </Link>
                       {/* <Link to={"/aboutus/dvisit"}>
                         <li>Dignitaries Visit</li>
                       </Link> */}
-                      <Link to={"/aboutus/affiliations"}>
+                      <Link
+                        to={"/aboutus/affiliations"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Govt. Affliations</li>
                       </Link>
                     </ul>
@@ -369,13 +404,34 @@ export default function Navbar() {
                   </Button>
                   {toggle[2] && (
                     <ul className="internal-nav">
-                      <Link to={"/programs/postgraduate"}>
+                      <Link
+                        to={"/programs/postgraduate"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Post Graduate</li>
                       </Link>
-                      <Link to={"/programs/undergraduate"}>
+                      <Link
+                        to={"/programs/undergraduate"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Under Graduate</li>
                       </Link>
-                      <Link to={"/programs/diploma"}>
+                      <Link
+                        to={"/programs/diploma"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Diploma</li>
                       </Link>
                     </ul>
@@ -400,19 +456,54 @@ export default function Navbar() {
                   </Button>
                   {toggle[3] && (
                     <ul className="internal-nav">
-                      <Link to={"/departments/cse"}>
+                      <Link
+                        to={"/departments/cse"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Computer Science & Engineering</li>
                       </Link>
-                      <Link to={"/departments/ee"}>
+                      <Link
+                        to={"/departments/ee"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Electrical Engineering</li>
                       </Link>
-                      <Link to={"/departments/me"}>
+                      <Link
+                        to={"/departments/me"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Mechanical Engineering</li>
                       </Link>
-                      <Link to={"/departments/ce"}>
+                      <Link
+                        to={"/departments/ce"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Civil Engineering</li>
                       </Link>
-                      <Link to={"/departments/bba"}>
+                      <Link
+                        to={"/departments/bba"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Management Studies(BBA)</li>
                       </Link>
                     </ul>
@@ -437,49 +528,126 @@ export default function Navbar() {
                   </Button>
                   {toggle[4] && (
                     <ul className="internal-nav">
-                      <Link to={"/campus/scentre"}>
+                      <Link
+                        to={"/campus/scentre"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Student Centre</li>
                       </Link>
-                      <Link to={"/campus/rroom"}>
+                      <Link
+                        to={"/campus/rroom"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Recreational Room</li>
                       </Link>
-                      <Link to={"/campus/mess"}>
+                      <Link
+                        to={"/campus/mess"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Amaya Mess</li>
                       </Link>
-                      <Link to={"/campus/sports"}>
+                      <Link
+                        to={"/campus/sports"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Sports at JIET</li>
                       </Link>
-                      <Link to={"/campus/iexposure"}>
+                      <Link
+                        to={"/campus/iexposure"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>industrial Exposure</li>
                       </Link>
-                      <Link to={"/admission"}>
+                      <Link
+                        to={"/admission"}
+                        onClick={() => {
+                          setToggle({ 1: false, 2: false, 3: false, 4: false });
+                          if (isOpen) onClose();
+                          else onOpen();
+                        }}
+                      >
                         <li>Admission</li>
                       </Link>
                     </ul>
                   )}
                 </Link>
-                <Link to={"/jindgenius"}>
+                <Link
+                  to={"/jindgenius"}
+                  onClick={() => {
+                    setToggle({ 1: false, 2: false, 3: false, 4: false });
+                    if (isOpen) onClose();
+                    else onOpen();
+                  }}
+                >
                   <Button as={Button} className="btn">
                     JIND Genius
                   </Button>
                 </Link>
-                <Link to={"/career"}>
+                <Link
+                  to={"/career"}
+                  onClick={() => {
+                    setToggle({ 1: false, 2: false, 3: false, 4: false });
+                    if (isOpen) onClose();
+                    else onOpen();
+                  }}
+                >
                   <Button as={Button} className="btn">
                     Career Service
                   </Button>
                 </Link>
-                <Link to={"/apply"}>
+                <Link
+                  to={"/apply"}
+                  onClick={() => {
+                    setToggle({ 1: false, 2: false, 3: false, 4: false });
+                    if (isOpen) onClose();
+                    else onOpen();
+                  }}
+                >
                   <Button as={Button} className="btn">
                     Apply Now 2023
                   </Button>
                 </Link>
-                <Link to={"/admission"}>
+                <Link
+                  to={"/admission"}
+                  onClick={() => {
+                    setToggle({ 1: false, 2: false, 3: false, 4: false });
+                    if (isOpen) onClose();
+                    else onOpen();
+                  }}
+                >
                   <Button as={Button} className="btn">
                     Admission
                   </Button>
                 </Link>
 
-                <Link to={"/alumini"}>
+                <Link
+                  to={"/alumini"}
+                  onClick={() => {
+                    setToggle({ 1: false, 2: false, 3: false, 4: false });
+                    if (isOpen) onClose();
+                    else onOpen();
+                  }}
+                >
                   <Button as={Button} className="btn">
                     Alumini
                   </Button>

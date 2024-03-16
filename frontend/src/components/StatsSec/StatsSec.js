@@ -70,7 +70,11 @@ const Card = ({ data }) => {
           py={6}
           px={5}
           spacing={4}
-          bg={useColorModeValue("black", "gray.800")}
+          borderLeft={"4px solid black"}
+          borderBottom={"4px solid #ec3237"}
+          borderTop={"4px solid black"}
+          borderRight={"4px solid #ec3237"}
+          bg={useColorModeValue("transparent", "gray.800")}
           w="100%"
         >
           <Flex
@@ -89,11 +93,17 @@ const Card = ({ data }) => {
             <Icon as={data.icon} w={6} h={6} color="white" />
           </Flex>
           <VStack spacing={0} align="start" maxW="lg" h="100%">
-            <Text as="h3" fontSize="md" noOfLines={2} color="white">
+            <Text
+              as="h3"
+              fontSize="lg"
+              fontWeight={"500"}
+              noOfLines={2}
+              color="black"
+            >
               {data.label}
             </Text>
             <HStack spacing={2}>
-              <Text as="h2" fontSize="lg" color="green.400">
+              <Text as="h2" fontSize="4xl" color="green.400">
                 {data.score}
               </Text>
               {/* <Flex>
