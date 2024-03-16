@@ -12,23 +12,19 @@ import {
   TextProps,
   AspectRatio,
 } from "@chakra-ui/react";
+import "./TextVideo.css";
 
 const TextVideo = () => {
   return (
-    <Container maxW="6xl" px={{ base: 6, md: 3 }} py={14}>
-      <Stack direction={{ base: "column", md: "row" }} justifyContent="center">
-        <Box
-          mr={{ base: 0, md: 5 }}
-          pos="relative"
-          paddingBottom={{ base: "30%" }}
-        >
+    <div className="main-text-vid">
+      <div className="vid-block">
+        <Box mr={{ base: 0, md: 5 }} pos="relative">
           <DottedBox />
           <Box
             boxShadow="lg"
             w="100%"
             h="100%"
             minW={{ base: "auto", md: "30rem" }}
-            maxH="20rem"
             objectFit="cover"
             alignContent="center"
             paddingTop="4%"
@@ -40,43 +36,41 @@ const TextVideo = () => {
                 title="naruto"
                 src="/assets/images/jietimage/video.mp4"
                 allowFullScreen
-                autoplay="false"
               />
             </AspectRatio>
           </Box>
         </Box>
-        <Stack direction="column" spacing={6} justifyContent="center">
-          <chakra.h1
-            fontSize="5xl"
-            lineHeight={1}
-            fontWeight="bold"
-            textAlign="left"
-          >
-            Building Innovators and Leaders for a Changing World
-          </chakra.h1>
-          <Box color="gray.700">
-            <Content>
-              JIET since its inception in 1998, has been known to bring
-              innovation in the feld of education. In the current education
-              environment, JIET has gone out of its way to bring the best
-              practices in the feld of education. As a progressive promoter,
-              JIET group has been at the forefront of innovating its course
-              content and pedagogy. With its 'Good to Great' philosophy, JIET
-              programs have helped students' career start from where others want
-              to be.
-            </Content>
-            <Content>
-              'Good to Great' philosophy is the cornerstone of our thinking from
-              academics to extra curricular activities and every other aspect
-              important in the growth of each and every student. JIET have been
-              at the forefront of industry institute engagement. Apart from
-              regular lectures, we are the only one, hosting Campus Industrial
-              and Placement Park.
-            </Content>
-          </Box>
-        </Stack>
+      </div>
+      <Stack direction="column" spacing={6} justifyContent="center">
+        <chakra.h1
+          fontSize="5xl"
+          lineHeight={1}
+          fontWeight="bold"
+          textAlign="left"
+        >
+          Building Innovators and Leaders for a Changing World
+        </chakra.h1>
+        <Box color="gray.700">
+          <Content>
+            JIET since its inception in 1998, has been known to bring innovation
+            in the feld of education. In the current education environment, JIET
+            has gone out of its way to bring the best practices in the feld of
+            education. As a progressive promoter, JIET group has been at the
+            forefront of innovating its course content and pedagogy. With its
+            'Good to Great' philosophy, JIET programs have helped students'
+            career start from where others want to be.
+          </Content>
+          <Content>
+            'Good to Great' philosophy is the cornerstone of our thinking from
+            academics to extra curricular activities and every other aspect
+            important in the growth of each and every student. JIET have been at
+            the forefront of industry institute engagement. Apart from regular
+            lectures, we are the only one, hosting Campus Industrial and
+            Placement Park.
+          </Content>
+        </Box>
       </Stack>
-    </Container>
+    </div>
   );
 };
 
