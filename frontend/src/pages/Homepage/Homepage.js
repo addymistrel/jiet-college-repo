@@ -19,8 +19,8 @@ import "./Homepage.css";
 function Homepage() {
   return (
     <>
-      <MainSlider />
       <StickyBar />
+      <MainSlider />
       <Unique />
       <BranchCards />
       <TextVideo />
