@@ -83,6 +83,21 @@ export default function MainSlider() {
   //   }, SLIDES_INTERVAL_TIME);
   //   return () => clearInterval(automatedSlide);
   // }, [slidesCount]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Listen to window resize event and update the state
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const [courseState, setCourse] = useState("");
   const programs = ["Post Graduate", "Under Graduate", "Diploma"];
   const course = {
@@ -114,119 +129,233 @@ export default function MainSlider() {
     2004,
   ];
   return (
-    <div className="main-vid">
-      <div class="slider">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-      </div>
-      <div class="container-slide">
-        <div class="title-slid">
-          <div className="upper">
-            <h5>APPLY TODAY FOR</h5>
+    <>
+      <div className="main-vid">
+        <div class="slider">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </div>
+        {windowWidth > 584 && (
+          <div class="container-slide">
+            <div class="title-slid">
+              <div className="upper">
+                <h5>APPLY TODAY FOR</h5>
+              </div>
+              <div className="lower">
+                <h1>JIET COLLEGE PROGRAMS</h1>
+              </div>
+            </div>
+            <div class="content-slide">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    {/* <span class="details">Full Name</span> */}
+                    <input type="text" placeholder="Enter your name" required />
+                  </div>
+                  <div class="input-box">
+                    {/* <span class="details">Username</span> */}
+                    <input
+                      type="email"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    {/* <span class="details">Email</span> */}
+                    <input type="text" placeholder="Enter Mobile No" required />
+                  </div>
+                  <div class="input-box">
+                    {/* <span class="details">Phone Number</span> */}
+                    <input type="text" placeholder="Enter City" required />
+                  </div>
+                  <div class="input-box">
+                    <span class="details" style={{ color: "#790a0d" }}>
+                      Interested Program
+                    </span>
+                    <Select
+                      placeholder="Select option"
+                      onChange={(e) => {
+                        if (e.target.value === "Post Graduate")
+                          setCourse("post");
+                        else if (e.target.value === "Under Graduate")
+                          setCourse("under");
+                        else if (e.target.value === "Diploma")
+                          setCourse("diploma");
+                        else setCourse("");
+                      }}
+                    >
+                      {programs.map((item) => {
+                        return <option value={item}>{item}</option>;
+                      })}
+                    </Select>
+                  </div>
+                  <div class="input-box">
+                    <span class="details" style={{ color: "#790a0d" }}>
+                      Preferred Courses
+                    </span>
+                    <Select placeholder="Select option">
+                      {courseState === "post" ? (
+                        course.post.map((item) => {
+                          return <option value={item}>{item}</option>;
+                        })
+                      ) : courseState === "under" ? (
+                        course.under.map((item) => {
+                          return <option value={item}>{item}</option>;
+                        })
+                      ) : courseState === "diploma" ? (
+                        course.diploma.map((item) => {
+                          return <option value={item}>{item}</option>;
+                        })
+                      ) : (
+                        <option value="Select Option">No Courses</option>
+                      )}
+                    </Select>
+                  </div>
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1" />
+                  <input type="radio" name="gender" id="dot-2" />
+                  <input type="radio" name="gender" id="dot-3" />
+                  <span class="gender-title" style={{ color: "#790a0d" }}>
+                    How Old Are You
+                  </span>
+                  <div class="category">
+                    <Select placeholder="DD">
+                      {dd.map((item) => {
+                        return <option value="option1">{item}</option>;
+                      })}
+                    </Select>
+                    <Select placeholder="MM">
+                      {mm.map((item) => {
+                        return <option value="option1">{item}</option>;
+                      })}
+                    </Select>
+                    <Select placeholder="YYYY">
+                      {yyyy.map((item) => {
+                        return <option value="option1">{item}</option>;
+                      })}
+                    </Select>
+                  </div>
+                </div>
+                <div class="button-slide">
+                  <input type="submit" value="Apply Now" />
+                </div>
+              </form>
+            </div>
           </div>
-          <div className="lower">
-            <h1>JIET COLLEGE PROGRAMS</h1>
+        )}
+      </div>
+      {windowWidth <= 584 && (
+        <div class="container-slide">
+          <div class="title-slid">
+            <div className="upper">
+              <h5>APPLY TODAY FOR</h5>
+            </div>
+            <div className="lower">
+              <h1>JIET COLLEGE PROGRAMS</h1>
+            </div>
+          </div>
+          <div class="content-slide">
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                  {/* <span class="details">Full Name</span> */}
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="input-box">
+                  {/* <span class="details">Username</span> */}
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  {/* <span class="details">Email</span> */}
+                  <input type="text" placeholder="Enter Mobile No" required />
+                </div>
+                <div class="input-box">
+                  {/* <span class="details">Phone Number</span> */}
+                  <input type="text" placeholder="Enter City" required />
+                </div>
+                <div class="input-box">
+                  <span class="details" style={{ color: "#790a0d" }}>
+                    Interested Program
+                  </span>
+                  <Select
+                    placeholder="Select option"
+                    onChange={(e) => {
+                      if (e.target.value === "Post Graduate") setCourse("post");
+                      else if (e.target.value === "Under Graduate")
+                        setCourse("under");
+                      else if (e.target.value === "Diploma")
+                        setCourse("diploma");
+                      else setCourse("");
+                    }}
+                  >
+                    {programs.map((item) => {
+                      return <option value={item}>{item}</option>;
+                    })}
+                  </Select>
+                </div>
+                <div class="input-box">
+                  <span class="details" style={{ color: "#790a0d" }}>
+                    Preferred Courses
+                  </span>
+                  <Select placeholder="Select option">
+                    {courseState === "post" ? (
+                      course.post.map((item) => {
+                        return <option value={item}>{item}</option>;
+                      })
+                    ) : courseState === "under" ? (
+                      course.under.map((item) => {
+                        return <option value={item}>{item}</option>;
+                      })
+                    ) : courseState === "diploma" ? (
+                      course.diploma.map((item) => {
+                        return <option value={item}>{item}</option>;
+                      })
+                    ) : (
+                      <option value="Select Option">No Courses</option>
+                    )}
+                  </Select>
+                </div>
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1" />
+                <input type="radio" name="gender" id="dot-2" />
+                <input type="radio" name="gender" id="dot-3" />
+                <span class="gender-title" style={{ color: "#790a0d" }}>
+                  How Old Are You
+                </span>
+                <div class="category">
+                  <Select placeholder="DD">
+                    {dd.map((item) => {
+                      return <option value="option1">{item}</option>;
+                    })}
+                  </Select>
+                  <Select placeholder="MM">
+                    {mm.map((item) => {
+                      return <option value="option1">{item}</option>;
+                    })}
+                  </Select>
+                  <Select placeholder="YYYY">
+                    {yyyy.map((item) => {
+                      return <option value="option1">{item}</option>;
+                    })}
+                  </Select>
+                </div>
+              </div>
+              <div class="button-slide">
+                <input type="submit" value="Apply Now" />
+              </div>
+            </form>
           </div>
         </div>
-        <div class="content-slide">
-          <form action="#">
-            <div class="user-details">
-              <div class="input-box">
-                {/* <span class="details">Full Name</span> */}
-                <input type="text" placeholder="Enter your name" required />
-              </div>
-              <div class="input-box">
-                {/* <span class="details">Username</span> */}
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                {/* <span class="details">Email</span> */}
-                <input type="text" placeholder="Enter Mobile No" required />
-              </div>
-              <div class="input-box">
-                {/* <span class="details">Phone Number</span> */}
-                <input type="text" placeholder="Enter City" required />
-              </div>
-              <div class="input-box">
-                <span class="details" style={{ color: "#790a0d" }}>
-                  Interested Program
-                </span>
-                <Select
-                  placeholder="Select option"
-                  onChange={(e) => {
-                    if (e.target.value === "Post Graduate") setCourse("post");
-                    else if (e.target.value === "Under Graduate")
-                      setCourse("under");
-                    else if (e.target.value === "Diploma") setCourse("diploma");
-                    else setCourse("");
-                  }}
-                >
-                  {programs.map((item) => {
-                    return <option value={item}>{item}</option>;
-                  })}
-                </Select>
-              </div>
-              <div class="input-box">
-                <span class="details" style={{ color: "#790a0d" }}>
-                  Preferred Courses
-                </span>
-                <Select placeholder="Select option">
-                  {courseState === "post" ? (
-                    course.post.map((item) => {
-                      return <option value={item}>{item}</option>;
-                    })
-                  ) : courseState === "under" ? (
-                    course.under.map((item) => {
-                      return <option value={item}>{item}</option>;
-                    })
-                  ) : courseState === "diploma" ? (
-                    course.diploma.map((item) => {
-                      return <option value={item}>{item}</option>;
-                    })
-                  ) : (
-                    <option value="Select Option">No Courses</option>
-                  )}
-                </Select>
-              </div>
-            </div>
-            <div class="gender-details">
-              <input type="radio" name="gender" id="dot-1" />
-              <input type="radio" name="gender" id="dot-2" />
-              <input type="radio" name="gender" id="dot-3" />
-              <span class="gender-title" style={{ color: "#790a0d" }}>
-                How Old Are You
-              </span>
-              <div class="category">
-                <Select placeholder="DD">
-                  {dd.map((item) => {
-                    return <option value="option1">{item}</option>;
-                  })}
-                </Select>
-                <Select placeholder="MM">
-                  {mm.map((item) => {
-                    return <option value="option1">{item}</option>;
-                  })}
-                </Select>
-                <Select placeholder="YYYY">
-                  {yyyy.map((item) => {
-                    return <option value="option1">{item}</option>;
-                  })}
-                </Select>
-              </div>
-            </div>
-            <div class="button-slide">
-              <input type="submit" value="Apply Now" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
