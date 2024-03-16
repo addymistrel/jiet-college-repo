@@ -13,12 +13,14 @@ import GallerySlider from "../../components/GallerySlider/GallerySlider";
 import WithSpeechBubbles from "../../components/TestimonialsSlider/TestimonialsSlider";
 import PaginationContainer from "../../components/Pagination/Pagination";
 import HomeGallery from "../../components/HomeGallery/HomeGallery";
+import StickyBar from "../../components/StickyBar/StickyBar";
 import "./Homepage.css";
 
 function Homepage() {
   return (
     <>
       <MainSlider />
+      <StickyBar />
       <Unique />
       <BranchCards />
       <TextVideo />
