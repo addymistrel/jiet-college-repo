@@ -100,6 +100,16 @@ const MissionAndVision = () => {
                       <h1>Vision</h1>
                     </div>
                     <br />
+                    {/* Image component below Vision */}
+                    <Image
+                      src="/assets/images/gallery/mv1.jpg"
+                      alt="Vision Image"
+                      w="100%"
+                      h="25rem"
+                      borderRadius="md"
+                      boxShadow="md"
+                      mb={4}
+                    />
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -117,21 +127,22 @@ const MissionAndVision = () => {
                       to establish ourselves as educators that expands the
                       realms of intelligence and abilities. ❞
                     </chakra.h2>
-                    {/* Image component below Vision */}
+
+                    <br />
+                    <div className="heading-css-txt">
+                      <h1>Mission</h1>
+                    </div>
+                    <br />
+                    {/* Image component below Mission */}
                     <Image
-                      src="/assets/images/gallery/mv1.jpg"
-                      alt="Vision Image"
+                      src="/assets/images/gallery/mv2.jpg"
+                      alt="Mission Image"
                       w="100%"
                       h="25rem"
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
                     />
-                    <br />
-                    <div className="heading-css-txt">
-                      <h1>Mission</h1>
-                    </div>
-                    <br />
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -150,21 +161,22 @@ const MissionAndVision = () => {
                       global standards, we aspire to provide cutting edge
                       training that creates achievers out of every learner.
                     </chakra.h2>
-                    {/* Image component below Mission */}
+
+                    <br />
+                    <div className="heading-css-txt">
+                      <h1>Goals</h1>
+                    </div>
+                    <br />
+                    {/* Image component below Goals */}
                     <Image
-                      src="/assets/images/gallery/mv2.jpg"
-                      alt="Mission Image"
+                      src="/assets/images/gallery/mv3.jpg"
+                      alt="Goals Image"
                       w="100%"
                       h="25rem"
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
                     />
-                    <br />
-                    <div className="heading-css-txt">
-                      <h1>Goals</h1>
-                    </div>
-                    <br />
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -182,21 +194,22 @@ const MissionAndVision = () => {
                       educational environment with edge of corporate experience
                       and well defined industrial exposure. ❞
                     </chakra.h2>
-                    {/* Image component below Goals */}
+
+                    <br />
+                    <div className="heading-css-txt">
+                      <h1>Quality Policy</h1>
+                    </div>
+                    <br />
+                    {/* Image component below Quality Policy */}
                     <Image
-                      src="/assets/images/gallery/mv3.jpg"
-                      alt="Goals Image"
+                      src="/assets/images/gallery/mv4.jpg"
+                      alt="Quality Policy Image"
                       w="100%"
                       h="25rem"
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
                     />
-                    <br />
-                    <div className="heading-css-txt">
-                      <h1>Quality Policy</h1>
-                    </div>
-                    <br />
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -212,16 +225,7 @@ const MissionAndVision = () => {
                       graduates, those are also posses positive attitude in
                       building a better nation, rather better world. ❞
                     </chakra.h2>
-                    {/* Image component below Quality Policy */}
-                    <Image
-                      src="/assets/images/gallery/mv4.jpg"
-                      alt="Quality Policy Image"
-                      w="100%"
-                      h="25rem"
-                      borderRadius="md"
-                      boxShadow="md"
-                      mb={4}
-                    />
+
                     <br />
                     <br />
                     <br />
