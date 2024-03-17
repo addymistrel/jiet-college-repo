@@ -132,7 +132,8 @@ h1 em {
   text-align: center;
   margin: auto;
   white-space: nowrap;
-  padding-bottom: 13px;
+  padding-bottom: 35px;
+  padding-top: 35px;
 }
 .heading-css-txt h1:before {
   background-color: #c50000;
@@ -152,4 +153,26 @@ h1 em {
   height: 3px;
   width: 75px;
   margin-bottom: 0.25em;
+}
+
+.image-to-get-1,
+.image-to-get-2,
+.image-to-get-3,
+.image-to-get-4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.image-to-get-1 {
+  background-image: url("https://www.eternalhospital.com/wp-content/02/mission-vision.jpg");
+}
+.image-to-get-2 {
+  background-image: url("https://static.wixstatic.com/media/907c27_025f0bac6527409fb871d29cca1b1343~mv2.jpg/v1/fill/w_1140,h_408,al_c,lg_1,q_85,enc_auto/907c27_025f0bac6527409fb871d29cca1b1343~mv2.jpg");
+}
+.image-to-get-3 {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220427/pngtree-three-shooters-aim-for-the-target-image_1093077.jpg");
+}
+.image-to-get-4 {
+  background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-color-atmosphere-campus-sports-promotion-poster-background-material-picture-image_1057503.jpg");
 }

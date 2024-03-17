@@ -96,12 +96,12 @@ const MissionAndVision = () => {
                   >
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <br />
-                    <div className="heading-css-txt">
+                    <div className="heading-css-txt image-to-get-1">
                       <h1>Vision</h1>
                     </div>
                     <br />
                     {/* Image component below Vision */}
-                    <Image
+                    {/* <Image
                       src="/assets/images/gallery/mv1.jpg"
                       alt="Vision Image"
                       w="100%"
@@ -109,7 +109,7 @@ const MissionAndVision = () => {
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
-                    />
+                    /> */}
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -129,12 +129,12 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt">
+                    <div className="heading-css-txt image-to-get-2">
                       <h1>Mission</h1>
                     </div>
                     <br />
                     {/* Image component below Mission */}
-                    <Image
+                    {/* <Image
                       src="/assets/images/gallery/mv2.jpg"
                       alt="Mission Image"
                       w="100%"
@@ -142,7 +142,7 @@ const MissionAndVision = () => {
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
-                    />
+                    /> */}
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -163,12 +163,12 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt">
+                    <div className="heading-css-txt image-to-get-3">
                       <h1>Goals</h1>
                     </div>
                     <br />
                     {/* Image component below Goals */}
-                    <Image
+                    {/* <Image
                       src="/assets/images/gallery/mv3.jpg"
                       alt="Goals Image"
                       w="100%"
@@ -176,7 +176,7 @@ const MissionAndVision = () => {
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
-                    />
+                    /> */}
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -196,12 +196,12 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt">
+                    <div className="heading-css-txt image-to-get-4">
                       <h1>Quality Policy</h1>
                     </div>
                     <br />
                     {/* Image component below Quality Policy */}
-                    <Image
+                    {/* <Image
                       src="/assets/images/gallery/mv4.jpg"
                       alt="Quality Policy Image"
                       w="100%"
@@ -209,7 +209,7 @@ const MissionAndVision = () => {
                       borderRadius="md"
                       boxShadow="md"
                       mb={4}
-                    />
+                    /> */}
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
