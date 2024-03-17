@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Midsection from "../../components/midsection/Midsection";
@@ -15,8 +15,24 @@ import PaginationContainer from "../../components/Pagination/Pagination";
 import HomeGallery from "../../components/HomeGallery/HomeGallery";
 import StickyBar from "../../components/StickyBar/StickyBar";
 import "./Homepage.css";
+import StudentLife from "../../components/StudentLife/StudentLife";
 
 function Homepage() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Listen to window resize event and update the state
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <StickyBar />
@@ -25,8 +41,11 @@ function Homepage() {
       <BranchCards />
       <TextVideo />
       <NewsScroll />
+      {windowWidth > 767 && <StudentLife />}
       <WithSpeechBubbles />
-      <HomeGallery />
+      <div id="gallery">
+        <HomeGallery />
+      </div>
       <BrandLogoSlider />
     </>
   );
