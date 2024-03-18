@@ -131,6 +131,9 @@ export default function MainSlider() {
   return (
     <>
       <div className="main-vid">
+        {/* <div className="left-panel">
+          <h1>OLDEST COLLEGE</h1>
+        </div> */}
         <div class="slider">
           <div class="slide"></div>
           <div class="slide"></div>

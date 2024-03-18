@@ -24,48 +24,23 @@ export default function NewsSideSlider() {
   };
   const slides = [
     {
-      img: "/assets/images/jietimage/img1.png",
+      img: "/assets/images/gallery/1.png",
       label: "First Slide",
       description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
     {
-      img: "/assets/images/jietimage/img2.png",
+      img: "/assets/images/gallery/2.png",
       label: "Second Slide",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      img: "/assets/images/jietimage/img3.png",
+      img: "/assets/images/gallery/3.png",
       label: "Third Slide",
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     },
     {
-      img: "/assets/images/jietimage/img4.png",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-    {
-      img: "/assets/images/jietimage/img5.png",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-    {
-      img: "/assets/images/jietimage/img6.png",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-    {
-      img: "/assets/images/jietimage/img7.png",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-    {
-      img: "/assets/images/jietimage/img8.png",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-    },
-    {
-      img: "/assets/images/jietimage/img9.png",
+      img: "/assets/images/gallery/4.png",
       label: "Fourth Slide",
       description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
