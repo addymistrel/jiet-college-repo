@@ -131,9 +131,6 @@ export default function MainSlider() {
   return (
     <>
       <div className="main-vid">
-        {/* <div className="left-panel">
-          <h1>OLDEST COLLEGE</h1>
-        </div> */}
         <div class="slider">
           <div class="slide"></div>
           <div class="slide"></div>
@@ -141,6 +138,20 @@ export default function MainSlider() {
           <div class="slide"></div>
           <div class="slide"></div>
         </div>
+        {windowWidth < 584 || windowWidth > 1260 ? (
+          <div className="left-panel">
+            <span className="fancyhead">
+              Transforming education through technology and expertise
+            </span>
+            <br />
+            <br />
+            <span className="fancyhead2">
+              Haryana's one of the oldest Engineering College
+            </span>
+          </div>
+        ) : (
+          <></>
+        )}
         {windowWidth > 584 && (
           <div class="container-slide">
             <div class="title-slid">
