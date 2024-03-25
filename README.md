@@ -44,6 +44,14 @@ For any inquiries or assistance, feel free to reach out to us:
 - **Email:** info@jietjind.ac.in
 - **Website:** [www.jietcollege.edu]([http://www.jietcollege.edu](https://www.jietjind.ac.in/))
 
+<div align="center">
+
+[![Collaborators](https://contrib.rocks/image?repo=addymistrel/jiet-college-repo)](https://github.com/addymistrel/jiet-college-repo/graphs/contributors)
+
+## Thanks to all Collaborators 💪
+
+Thanks a lot for spending your time helping us grow. Thanks a lot! Keep rocking 🍻
+
 ## Contributing
 
 If you're an alumni, faculty member, or student of JIET and would like to contribute to this README file or any other aspect of JIET's documentation, please feel free to submit a pull request.
