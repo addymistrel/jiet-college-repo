@@ -266,8 +266,20 @@ form .button-slide input:hover {
   position: absolute;
   top: 10%;
   left: 5%;
-  right: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); 
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {

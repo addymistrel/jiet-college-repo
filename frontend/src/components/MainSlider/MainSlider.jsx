@@ -1,8 +1,7 @@
 import { Box, Flex, HStack, Stack, Text, Image } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { slides } from "./slider-data";
 import "./MainSlider.css";
-import Navbar from "../Navbar/Navbar";
 import CardsVid from "../CardsVid/CardsVid";
 import { Select } from "@chakra-ui/react";
 // import videoBg from "../";
@@ -124,9 +123,8 @@ export default function MainSlider() {
     "DECEMBER",
   ];
   const yyyy = [
-    1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991,
-    1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
-    2004,
+    1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
+    2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012,
   ];
   return (
     <>
