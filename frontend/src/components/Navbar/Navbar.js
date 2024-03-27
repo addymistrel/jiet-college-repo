@@ -74,22 +74,6 @@ export default function Navbar() {
 
   const navigate = useNavigate();
 
-  /*Search*/
-  const handleSearch = (str) => {
-    console.log(str);
-  };
-
-  const [str, setStr] = useState("");
-  function handleRing() {
-    setStr("Ring");
-    localStorage.setItem("product", JSON.stringify(str));
-  }
-
-  function handleBrac() {
-    setStr("Bracelet");
-    localStorage.setItem("product", JSON.stringify(str));
-  }
-  /* Search Over*/
   return (
     <>
       <Box
@@ -112,7 +96,11 @@ export default function Navbar() {
               mt={"1%"}
             >
               <Link to={"/"}>
-                <Image src="/assets/images/logo.jpg" width="42%" mt={10}></Image>
+                <Image
+                  src="/assets/images/logo.jpg"
+                  width="42%"
+                  mt={10}
+                ></Image>
               </Link>
             </Box>
             <HStack
@@ -789,10 +777,12 @@ export default function Navbar() {
         >
           {searchData.map((el) => {
             return (
-              <Text pb={"0.6%"} onClick={() => handlePara(el._id)}>
-                <SearchIcon pr={"0.4%"} />
-                {el.link}
-              </Text>
+              <Link to={`/details/${el._id}`}>
+                <Text pb={"0.6%"} onClick={() => handlePara(el._id)}>
+                  <SearchIcon pr={"0.4%"} />
+                  {el.link}
+                </Text>
+              </Link>
             );
           })}
         </Box>
