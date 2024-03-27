@@ -125,7 +125,7 @@ const GovtAffiliation = () => {
       <br />
       <br />
       <Heading as="h1" size="2xl" color="green.600" textAlign="center" mt={4}>
-        Welcome to Green Campus
+        Welcome to Green Campus of JIET
       </Heading>
       <br />
       <Box textAlign="center">
