@@ -7,6 +7,7 @@ import {
   Divider,
   Grid,
   GridItem,
+  Image,
 } from "@chakra-ui/react";
 import "./UnderGraduate.css";
 import Siders from "../../../components/Siders/siders";
@@ -97,20 +98,20 @@ const UnderGraduate = () => {
                     {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
               Explore TemplatesKart
             </chakra.h1> */}
-                    <div className="heading-css-1">
+                    <div className="heading-css-1-ug">
                       <h1>Under Graduate</h1>
                     </div>
-                    <div class="heading-css-2">
+                    <div class="heading-css-2-ug">
                       <h1>B-TECH (4 Years)</h1>
                     </div>
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <Grid
-                      h="200px"
+                      h={{ base: "500px", md: "220px" }}
                       templateRows="repeat(2, 1fr)"
                       templateColumns="repeat(4, 1fr)"
                       gap={4}
                     >
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -178,7 +179,7 @@ const UnderGraduate = () => {
                           Data Science
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -214,7 +215,7 @@ const UnderGraduate = () => {
                           Internet of Things
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -250,7 +251,7 @@ const UnderGraduate = () => {
                           Automobile Engineering
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -288,6 +289,16 @@ const UnderGraduate = () => {
                       </GridItem>
                     </Grid>
                     <br />
+                    <Box textAlign="center">
+                      <Image
+                        src="/assets/images/imagesUpdated/undergraduate.png"
+                        alt="campus-img"
+                        maxW={{ base: "90%", md: "50%" }}
+                        mx="auto"
+                        borderRadius="2rem"
+                        mb={4}
+                      />
+                    </Box>
                     <br />
                     <div>
                       <chakra.h1
@@ -346,29 +357,29 @@ const UnderGraduate = () => {
                         vacancies at lateral entry are exhausted.
                       </chakra.h2>
                       <br />
-                      <div class="heading-css-2">
+                      <div class="heading-css-2-ug">
                         <h1>B-TECH (Lateral Entry 2nd Year)</h1>
                       </div>
                       <br />
                       <ColoredDivider color="red.700" thickness={1.5} />
                       <br />
                       <Grid
-                        h="200px"
+                        h={{ base: "500px", md: "220px" }}
                         templateRows="repeat(2, 0.3fr)"
                         templateColumns="repeat(4, 1fr)"
                         gap={4}
                         className="int-grid"
                       >
-                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                        <GridItem colSpan={{ base: 4, md: 2 }}>
                           <h1>Computer Science & Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                        <GridItem colSpan={{ base: 4, md: 2 }}>
                           <h1>Electrical Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                        <GridItem colSpan={{ base: 4, md: 2 }}>
                           <h1>Mechanical Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                        <GridItem colSpan={{ base: 4, md: 2 }}>
                           <h1>Civil Engineering</h1>
                         </GridItem>
                       </Grid>

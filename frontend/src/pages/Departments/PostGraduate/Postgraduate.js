@@ -5,6 +5,7 @@ import {
   Box,
   useColorModeValue,
   Divider,
+  Image,
 } from "@chakra-ui/react";
 import "./Postgraduate.css";
 import Siders from "../../../components/Siders/siders";
@@ -92,17 +93,24 @@ const PostGraduate = () => {
                     spacing={5}
                     maxW="100%"
                   >
-                    {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
-              Explore TemplatesKart
-            </chakra.h1> */}
-                    <div className="heading-css-1">
+                    <div className="heading-css-1-pg">
                       <h1>Post Graduate</h1>
                     </div>
-                    <div class="heading-css-2">
+                    <div class="heading-css-2-pg">
                       <h1>M-TECH (2 Years)</h1>
                     </div>
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <StatsSec />
+                    <Box textAlign="center">
+                      <Image
+                        src="/assets/images/imagesUpdated/postgraduate.png"
+                        alt="campus-img"
+                        maxW={{ base: "90%", md: "50%" }}
+                        mx="auto"
+                        borderRadius="2rem"
+                        my={4}
+                      />
+                    </Box>
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"

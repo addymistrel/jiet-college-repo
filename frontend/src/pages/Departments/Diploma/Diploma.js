@@ -7,6 +7,7 @@ import {
   GridItem,
   useColorModeValue,
   Divider,
+  Image,
 } from "@chakra-ui/react";
 import "./Diploma.css";
 import Siders from "../../../components/Siders/siders";
@@ -97,7 +98,7 @@ const Diploma = () => {
                     {/* <chakra.h1 fontSize="4xl" lineHeight={1.2} fontWeight="bold">
               Explore TemplatesKart
             </chakra.h1> */}
-                    <div className="heading-css-1">
+                    <div className="heading-css-1-dip">
                       <h1>DIPLOMA IN ENGINEERING</h1>
                     </div>
                     {/* <div class="heading-css-2">
@@ -106,12 +107,12 @@ const Diploma = () => {
                     {/* <ColoredDivider color="red.700" thickness={1.5} /> */}
                     {/* <StatsSec /> */}
                     <Grid
-                      h="200px"
+                      h={{ base: "200px", md: "120px" }}
                       templateRows="repeat(2, 1fr)"
                       templateColumns="repeat(4, 1fr)"
                       gap={4}
                     >
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -119,7 +120,7 @@ const Diploma = () => {
                           color={"#1a3c80"}
                           fontSize={"large"}
                         >
-                          Computer Engineering
+                          &#8680; Computer Engineering
                         </chakra.h2>
                         <chakra.h2
                           textAlign={"start"}
@@ -128,7 +129,7 @@ const Diploma = () => {
                           color={"#1a3c80"}
                           fontSize={"large"}
                         >
-                          Electrical Engineering
+                          &#8680; Electrical Engineering
                         </chakra.h2>
                         <chakra.h2
                           textAlign={"start"}
@@ -137,7 +138,7 @@ const Diploma = () => {
                           color={"#1a3c80"}
                           fontSize={"large"}
                         >
-                          Mechanical Engineering
+                          &#8680; Mechanical Engineering
                         </chakra.h2>
                         <chakra.h2
                           textAlign={"start"}
@@ -146,10 +147,10 @@ const Diploma = () => {
                           color={"#1a3c80"}
                           fontSize={"large"}
                         >
-                          Civil Engineering
+                          &#8680; Civil Engineering
                         </chakra.h2>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                      <GridItem colSpan={{ base: 4, md: 2 }}>
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -157,7 +158,7 @@ const Diploma = () => {
                           color={"#1a3c80"}
                           fontSize={"large"}
                         >
-                          Computer Science & Engineering
+                          &#8680; Computer Science & Engineering
                         </chakra.h2>
                         <chakra.h2
                           textAlign={"start"}
@@ -178,6 +179,16 @@ const Diploma = () => {
                         </chakra.h2>
                       </GridItem>
                     </Grid>
+                    <Box textAlign="center">
+                      <Image
+                        src="/assets/images/imagesUpdated/diploma.png"
+                        alt="campus-img"
+                        maxW={{ base: "90%", md: "50%" }}
+                        mx="auto"
+                        borderRadius="2rem"
+                        mb={4}
+                      />
+                    </Box>
                     <chakra.h2
                       textAlign={"start"}
                       paddingLeft={"4%"}
