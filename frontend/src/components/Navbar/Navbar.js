@@ -516,7 +516,7 @@ export default function Navbar() {
                   </Button>
                   {toggle[4] && (
                     <ul className="internal-nav">
-                      <Link
+                      {/* <Link
                         to={"/campus/scentre"}
                         onClick={() => {
                           setToggle({ 1: false, 2: false, 3: false, 4: false });
@@ -525,7 +525,7 @@ export default function Navbar() {
                         }}
                       >
                         <li>Student Centre</li>
-                      </Link>
+                      </Link> 
                       <Link
                         to={"/campus/rroom"}
                         onClick={() => {
@@ -535,7 +535,7 @@ export default function Navbar() {
                         }}
                       >
                         <li>Recreational Room</li>
-                      </Link>
+                      </Link>*/}
                       <Link
                         to={"/campus/mess"}
                         onClick={() => {
@@ -556,7 +556,7 @@ export default function Navbar() {
                       >
                         <li>Sports at JIET</li>
                       </Link>
-                      <Link
+                      {/* <Link
                         to={"/campus/iexposure"}
                         onClick={() => {
                           setToggle({ 1: false, 2: false, 3: false, 4: false });
@@ -565,7 +565,7 @@ export default function Navbar() {
                         }}
                       >
                         <li>industrial Exposure</li>
-                      </Link>
+                      </Link> */}
                       <Link
                         to={"/admission"}
                         onClick={() => {
@@ -734,24 +734,24 @@ export default function Navbar() {
               <a href="" class="menu">
                 <h2 class="menu-title menu-title_4th">Campus Life</h2>
                 <ul class="menu-dropdown">
-                  <li>
+                  {/* <li>
                     <Link to={"/campus/scentre"}>Student Centre</Link>
-                  </li>
+                  </li> 
                   <li>
                     <Link to={"/campus/rroom"}>Recreational Room</Link>
-                  </li>
+                  </li>*/}
                   <li>
                     <Link to={"/campus/mess"}>Amaya Mess</Link>
                   </li>
                   <li>
                     <Link to={"/campus/sports"}>Sports at JIET</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to={"/campus/iexposure"}>Industrial Exposure</Link>
                   </li>
                   <li>
                     <Link to={"/admission"}>Admission</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </a>
             </li>

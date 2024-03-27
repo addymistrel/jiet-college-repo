@@ -52,11 +52,11 @@ const Mess = () => {
   }, [aicteText, toStart]);
 
   const sideData = [
-    { head: "Student Centre", link: "/campus/scentre" },
+    // { head: "Student Centre", link: "/campus/scentre" },
     { head: "Amaya Mess", link: "/campus/mess" },
     { head: "Sports At JIET", link: "/campus/sports" },
-    { head: "Recreational Room", link: "/campus/rroom" },
-    { head: "Industrial Exposure", link: "/campus/iexposure" },
+    // { head: "Recreational Room", link: "/campus/rroom" },
+    // { head: "Industrial Exposure", link: "/campus/iexposure" },
   ];
 
   return (
