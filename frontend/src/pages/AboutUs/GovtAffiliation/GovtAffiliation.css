@@ -132,7 +132,7 @@ h1 em {
   text-align: center;
   margin: auto;
   white-space: nowrap;
-  padding-bottom: 13px;
+  /* padding-bottom: 13px; */
 }
 .heading-css-txt h1:before {
   background-color: #c50000;

@@ -70,7 +70,7 @@ const Leadership = () => {
         <div className="child-1">
           <Box pb={8} textAlign="center">
             <div>
-              <Stack pos="relative" height="200px" w="100%" />
+              <Stack pos="relative" height="20px" w="100%" />
               <Box
                 boxShadow={useColorModeValue(
                   "0 4px 6px rgba(160, 174, 192, 0.6)",
@@ -106,9 +106,10 @@ const Leadership = () => {
                     lineHeight={1.2}
                     mx="auto"
                     textAlign="left"
-                    textColor="red"
+                    textColor="black"
                     fontStyle={"italic"}
                     fontWeight="bold"
+                    mt={30}
                   >
                     ❝ Decent education is a passport to a good, comfortable, and
                     secured life. It enables youngsters to become contributing
@@ -151,9 +152,10 @@ const Leadership = () => {
                     lineHeight={1.2}
                     mx="auto"
                     textAlign="left"
-                    textColor="red"
+                    textColor="black"
                     fontStyle={"italic"}
                     fontWeight="bold"
+                    mt={30}
                   >
                     Dear Aspirant,
                     <br />
@@ -198,9 +200,10 @@ const Leadership = () => {
                     lineHeight={1.2}
                     mx="auto"
                     textAlign="left"
-                    textColor="red"
+                    textColor="black"
                     fontStyle={"italic"}
                     fontWeight="bold"
+                    mt={30}
                   >
                     ❝ The institute encourages students fo organize different
                     adivities independently or with the support and guidance of
