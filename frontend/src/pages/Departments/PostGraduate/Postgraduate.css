@@ -21,8 +21,8 @@ h1 em {
   font-weight: 600;
 }
 
-.heading-css-1 h1 {
-  font-size: 35px;
+.heading-css-1-pg h1 {
+  font-size: 40px;
   text-align: center;
   line-height: 1.5em;
   padding-bottom: 45px;
@@ -32,7 +32,7 @@ h1 em {
   color: #111;
 }
 
-.heading-css-1 h1:before {
+.heading-css-1-pg h1:before {
   position: absolute;
   left: 0;
   bottom: 20px;
@@ -44,7 +44,7 @@ h1 em {
   background-color: #777;
   z-index: 4;
 }
-.heading-css-1 h1:after {
+.heading-css-1-pg h1:after {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -61,16 +61,16 @@ h1 em {
   background-color: #f8f8f8;
 }
 
-.heading-css-2 h1 {
+.heading-css-2-pg h1 {
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   color: #202020;
   text-transform: uppercase;
   word-spacing: 1px;
   letter-spacing: 2px;
 }
-.heading-css-2 h1 span {
+.heading-css-2-pg h1 span {
   margin-top: 20px;
   text-transform: none;
   font-size: 1em;
@@ -82,7 +82,7 @@ h1 em {
   word-spacing: 1px;
   letter-spacing: none;
 }
-.heading-css-2 h1:before {
+.heading-css-2-pg h1:before {
   position: absolute;
   left: 0;
   bottom: 38px;
