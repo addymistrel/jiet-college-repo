@@ -8,6 +8,7 @@ import {
   Flex,
   Image,
   Text,
+  Heading,
 } from "@chakra-ui/react";
 import "./GovtAffiliation.css";
 import Siders from "../../../components/Siders/siders";
@@ -75,8 +76,8 @@ const GovtAffiliation = () => {
       </Box>
       <div className="main-box">
         <Flex direction={{ base: "column", md: "row" }}>
-          <Box p={4} flex={{ base: "1", md: "1" }}>
-            <Stack spacing={4} direction="row">
+          <Box p={2} flex={{ base: "1", md: "1" }}>
+            <Stack spacing={4} direction="row" justifyContent="space-evenly">
               <Image
                 src="/assets/images/upload/kuk.png"
                 alt="Affiliated by KUK"
@@ -91,12 +92,12 @@ const GovtAffiliation = () => {
               />
             </Stack>
           </Box>
-          <Box p={4} flex={{ base: "1", md: "1" }}>
+          <Box p={2} flex={{ base: "1", md: "1" }}>
             <Stack spacing={4}>
               <Text
                 textAlign="justify"
-                color="gray.600"
-                fontSize={{ base: "md", md: "lg" }}
+                color="gray.700"
+                fontSize={{ base: "15px", md: "20px" }}
               >
                 The JIET College Act has conferred specific powers and functions
                 on various bodies of the college. These bodies play a crucial
@@ -108,8 +109,8 @@ const GovtAffiliation = () => {
               </Text>
               <Text
                 textAlign="justify"
-                color="gray.600"
-                fontSize={{ base: "md", md: "lg" }}
+                color="gray.700"
+                fontSize={{ base: "15px", md: "20px" }}
               >
                 The JIET College Act has empowered various bodies to play vital
                 roles in framing policies, maintaining educational standards,
@@ -121,6 +122,22 @@ const GovtAffiliation = () => {
           </Box>
         </Flex>
       </div>
+      <br />
+      <br />
+      <Heading as="h1" size="2xl" color="green.600" textAlign="center" mt={4}>
+        Welcome to Green Campus
+      </Heading>
+      <br />
+      <Box textAlign="center">
+        <Image
+          src="/assets/images/imagesUpdated/campus2.jpg"
+          alt="campus-img"
+          maxW="60%"
+          mx="auto"
+          borderRadius="2rem"
+          my={4}
+        />
+      </Box>
     </Box>
   );
 };

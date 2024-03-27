@@ -99,7 +99,7 @@ export default function Navbar() {
                 <Image
                   src="/assets/images/logo.jpg"
                   width="42%"
-                  mt={10}
+                  mt={16}
                 ></Image>
               </Link>
             </Box>
