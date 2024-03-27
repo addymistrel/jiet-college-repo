@@ -63,10 +63,21 @@ const ChairmansMessage = () => {
     <>
       <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
-      <div className="main-box">
-        <div className="child-1">
+      <Box
+        className="main-box"
+        // bgImage="../../../../public/assets/images/imagesUpdated/vision.png"
+        // bgSize="cover"
+        // bgPosition="center"
+        // position="relative"
+      >
+        <Box
+          className="child-1"
+          py={8}
+          textAlign="center"
+          // bg="rgba(0, 0, 0, 0.6)"
+        >
           <Box pb={8} textAlign="center">
-            <div>
+            <Box>
               <Stack pos="relative" height="200px" w="100%"></Stack>
               <Box
                 // maxW="8xl"
@@ -116,7 +127,7 @@ const ChairmansMessage = () => {
                           src="/assets/images/images/chairmanpic.jpg"
                           alt="Sh. Anil Kr Bansal"
                           borderRadius="full"
-                          boxSize="120px"
+                          boxSize="130px"
                         />
                       </Box>
                       <Box>
@@ -127,13 +138,14 @@ const ChairmansMessage = () => {
                       </Box>
                     </Box>
                     <chakra.h2
-                      color="gray.600"
+                      color="gray.800"
                       fontSize="25px"
-                      //   maxW="600px"
                       maxW="90%"
                       lineHeight={1.2}
                       mx="auto"
                       textAlign="left"
+                      fontWeight="600"
+                      fontStyle="italic"
                     >
                       "The vision of 1998 has been soaring excellence and JIET
                       dedication since then"
@@ -166,6 +178,16 @@ const ChairmansMessage = () => {
                       School in 2018.
                     </chakra.h2>
                     <br />
+                    <Box textAlign="center">
+                      <Image
+                        src="/assets/images/imagesUpdated/campus3.jpg"
+                        alt="campus-img"
+                        maxW="75%"
+                        mx="auto"
+                        borderRadius="2rem"
+                        my={4}
+                      />
+                    </Box>
                     <chakra.h2
                       color="gray.600"
                       fontSize="20px"
@@ -190,59 +212,17 @@ const ChairmansMessage = () => {
                       endeavours in every walk of their life.
                     </chakra.h2>
                     <br />
-                    {/* <Stack
-                      direction={{ base: "column", md: "row" }}
-                      spacing={3}
-                      mx="auto"
-                    >
-                      <chakra.button
-                        h={10}
-                        px={6}
-                        color="white"
-                        fontSize="md"
-                        variant="solid"
-                        rounded="md"
-                        lineHeight={1}
-                        bg="blue.400"
-                        _hover={{ bg: "blue.600" }}
-                      >
-                        View Components
-                      </chakra.button>
-                      <Button
-                        leftIcon={<FaGithub />}
-                        as={Link}
-                        href="#"
-                        rounded="md"
-                        colorScheme="gray"
-                        variant="solid"
-                      >
-                        Github Discussions
-                      </Button>
-                      <Button
-                        leftIcon={<BsDiscord />}
-                        as={Link}
-                        href="#"
-                        rounded="md"
-                        color="white"
-                        variant="solid"
-                        colorScheme="purple"
-                        _hover={{ bg: "purple.600" }}
-                      >
-                        Discord community
-                      </Button>
-                    </Stack> */}
-                    <br />
                     <br />
                   </Stack>
                 </Box>
               </Box>
-            </div>
+            </Box>
           </Box>
-        </div>
-        <div className="child-2">
+        </Box>
+        <Box className="child-2">
           <Siders sideData={sideData} />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </>
   );
 };
