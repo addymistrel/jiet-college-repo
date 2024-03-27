@@ -50,7 +50,7 @@ const TextVideo = () => {
           </Box>
         </Box>
       </div>
-      <Stack direction="column" spacing={6} justifyContent="center">
+      <Stack direction="column" spacing={6} justifyContent="center" p={2}>
         <chakra.h1
           fontSize="5xl"
           lineHeight={1}
@@ -92,6 +92,7 @@ const Content = ({ children, ...props }) => {
       fontWeight="400"
       color="gray.500"
       {...props}
+      p={2}
     >
       {children}
     </Text>

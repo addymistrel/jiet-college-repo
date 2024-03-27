@@ -7,7 +7,6 @@ import {
   IconButton,
   createIcon,
 } from "@chakra-ui/react";
-import GallerySlider from "../GallerySlider/GallerySlider";
 import NewsSideSlider from "../NewsSideSlider/NewsSideSlider";
 
 const PlayIcon = createIcon({

@@ -8,6 +8,7 @@ import {
   Flex,
   Image,
   Text,
+  Heading,
 } from "@chakra-ui/react";
 import "./GovtAffiliation.css";
 import Siders from "../../../components/Siders/siders";
@@ -62,7 +63,7 @@ const GovtAffiliation = () => {
   ];
 
   return (
-    <>
+    <Box minHeight="100vh" p={5}>
       <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
       <Box p={4} flex="2">
@@ -72,29 +73,32 @@ const GovtAffiliation = () => {
           <h1>Government Affiliation</h1>
         </div>
         <br />
-        <br />
       </Box>
       <div className="main-box">
         <Flex direction={{ base: "column", md: "row" }}>
-          <Box p={4} flex={{ base: "1", md: "1" }}>
-            <Stack spacing={8} direction="row">
+          <Box p={2} flex={{ base: "1", md: "1" }}>
+            <Stack spacing={4} direction="row" justifyContent="space-evenly">
               <Image
                 src="/assets/images/upload/kuk.png"
                 alt="Affiliated by KUK"
                 borderRadius="full"
-                boxSize="12rem"
+                boxSize={{ base: "10rem", md: "12rem" }}
               />
               <Image
                 alt="Affiliated by AICTE"
                 src="/assets/images/upload/aicte.png"
                 borderRadius="full"
-                boxSize="12rem"
+                boxSize={{ base: "10rem", md: "12rem" }}
               />
             </Stack>
           </Box>
-          <Box p={4} flex={{ base: "1", md: "1" }}>
-            <Stack spacing={6}>
-              <Text textAlign="justify" color="gray.600" fontSize="l">
+          <Box p={2} flex={{ base: "1", md: "1" }}>
+            <Stack spacing={4}>
+              <Text
+                textAlign="justify"
+                color="gray.700"
+                fontSize={{ base: "15px", md: "20px" }}
+              >
                 The JIET College Act has conferred specific powers and functions
                 on various bodies of the college. These bodies play a crucial
                 and effective role in framing college policies, maintaining
@@ -103,7 +107,11 @@ const GovtAffiliation = () => {
                 monitor implementation, and take corrective measures when
                 necessary.
               </Text>
-              <Text textAlign="justify" color="gray.600" fontSize="l">
+              <Text
+                textAlign="justify"
+                color="gray.700"
+                fontSize={{ base: "15px", md: "20px" }}
+              >
                 The JIET College Act has empowered various bodies to play vital
                 roles in framing policies, maintaining educational standards,
                 character development, and ensuring financial probity. These
@@ -113,11 +121,24 @@ const GovtAffiliation = () => {
             </Stack>
           </Box>
         </Flex>
-        <div className="child-2">
-          <Siders sideData={sideData} />
-        </div>
       </div>
-    </>
+      <br />
+      <br />
+      <Heading as="h1" size="2xl" color="green.600" textAlign="center" mt={4}>
+        Welcome to Green Campus of JIET
+      </Heading>
+      <br />
+      <Box textAlign="center">
+        <Image
+          src="/assets/images/imagesUpdated/campus2.jpg"
+          alt="campus-img"
+          maxW="60%"
+          mx="auto"
+          borderRadius="2rem"
+          my={4}
+        />
+      </Box>
+    </Box>
   );
 };
 

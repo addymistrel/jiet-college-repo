@@ -96,7 +96,7 @@ const MissionAndVision = () => {
                   >
                     <ColoredDivider color="red.700" thickness={1.5} />
                     <br />
-                    <div className="heading-css-txt image-to-get-1">
+                    <div className="heading-css-txt-mv image-to-get-1">
                       <h1>Vision</h1>
                     </div>
                     <br />
@@ -129,7 +129,7 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt image-to-get-2">
+                    <div className="heading-css-txt-mv image-to-get-2">
                       <h1>Mission</h1>
                     </div>
                     <br />
@@ -163,7 +163,7 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt image-to-get-3">
+                    <div className="heading-css-txt-mv image-to-get-3">
                       <h1>Goals</h1>
                     </div>
                     <br />
@@ -196,7 +196,7 @@ const MissionAndVision = () => {
                     </chakra.h2>
 
                     <br />
-                    <div className="heading-css-txt image-to-get-4">
+                    <div className="heading-css-txt-mv image-to-get-4">
                       <h1>Quality Policy</h1>
                     </div>
                     <br />
