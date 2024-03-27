@@ -112,7 +112,7 @@ export default function Navbar() {
               mt={"1%"}
             >
               <Link to={"/"}>
-                <Image src="/assets/images/logo.jpg" width="42%"></Image>
+                <Image src="/assets/images/logo.jpg" width="42%" mt={10}></Image>
               </Link>
             </Box>
             <HStack
