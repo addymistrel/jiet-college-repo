@@ -7,6 +7,7 @@ import {
   VStack,
   List,
   ListItem,
+  Image,
 } from "@chakra-ui/react";
 import TopHeader from "../../components/TopHeaderAbout/topHeaderAbout";
 import BranchSider from "./BranchSider";
@@ -61,7 +62,16 @@ const ManagementDepartment = () => {
             <Heading as="h1" size="xl" mb={4} color="teal.500">
               Department of Management Studies
             </Heading>
-
+            <Box textAlign="center">
+              <Image
+                src="/assets/images/imagesUpdated/Management.png"
+                alt="branch-img"
+                maxW="75%"
+                mx="auto"
+                borderRadius="2rem"
+                my={4}
+              />
+            </Box>
             <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
               Department of Management Studies offers Graduation in Business
               Administration. It is a 3 year degree course including Management

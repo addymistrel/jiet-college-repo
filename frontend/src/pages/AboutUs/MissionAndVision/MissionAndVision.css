@@ -135,8 +135,14 @@ h1 em {
   padding-bottom: 25px;
   padding-top: 35px;
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
-.heading-css-txt-mv h1:before {
+
+.heading-css-txt-mv h1:before,
+.heading-css-txt-mv h1:after {
   background-color: #c50000;
   content: "";
   display: block;
@@ -144,50 +150,44 @@ h1 em {
   width: 75px;
   margin-bottom: 5px;
 }
+
 .heading-css-txt-mv h1:after {
-  background-color: #c50000;
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  width: 75px;
   margin-bottom: 0.25em;
 }
+
 
 .image-to-get-1,
 .image-to-get-2,
 .image-to-get-3,
 .image-to-get-4 {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
 
 .dark-bg {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
 }
 
 .image-to-get-1 {
   background-image: url("../../../../public/assets/images/imagesUpdated/vision.png");
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
 }
 .image-to-get-2 {
   background-image: url("../../../../public/assets/images/imagesUpdated/mission.png");
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
 }
 .image-to-get-3 {
   background-image: url("../../../../public/assets/images/imagesUpdated/goals.png");
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
 }
 .image-to-get-4 {
   background-image: url("../../../../public/assets/images/imagesUpdated/policy.png");
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
 }

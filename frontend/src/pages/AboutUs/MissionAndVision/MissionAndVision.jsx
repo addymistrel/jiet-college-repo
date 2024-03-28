@@ -69,7 +69,7 @@ const MissionAndVision = () => {
               <Stack pos="relative" height="200px" w="100%"></Stack>
               <Box
                 // maxW="8xl"
-                maxW="100%"
+                // maxW="100%"
                 p={4}
                 isolation="isolate"
                 zIndex={3}

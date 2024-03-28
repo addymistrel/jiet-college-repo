@@ -7,6 +7,7 @@ import {
   VStack,
   List,
   ListItem,
+  Image,
 } from "@chakra-ui/react";
 import TopHeader from "../../components/TopHeaderAbout/topHeaderAbout";
 import BranchSider from "./BranchSider";
@@ -61,7 +62,16 @@ const CseDepartment = () => {
             <Heading as="h1" size="xl" mb={4} color="teal.500">
               Department of Computer Science & Engineering
             </Heading>
-
+            <Box textAlign="center">
+              <Image
+                src="/assets/images/imagesUpdated/cse.png"
+                alt="branch-img"
+                maxW="75%"
+                mx="auto"
+                borderRadius="2rem"
+                my={4}
+              />
+            </Box>
             <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
               Welcome to the Department of Computer Science & Engineering at
               Jind Institute of Engineering and Technology, Jind. Established in
