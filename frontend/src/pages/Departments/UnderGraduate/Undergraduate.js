@@ -111,7 +111,7 @@ const UnderGraduate = () => {
                       templateColumns="repeat(4, 1fr)"
                       gap={4}
                     >
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -179,7 +179,7 @@ const UnderGraduate = () => {
                           Data Science
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -215,7 +215,7 @@ const UnderGraduate = () => {
                           Internet of Things
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -251,7 +251,7 @@ const UnderGraduate = () => {
                           Automobile Engineering
                         </chakra.h4>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -261,7 +261,7 @@ const UnderGraduate = () => {
                         >
                           Civil Engineering
                         </chakra.h2>
-                        {/* <chakra.h2
+                        <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
                           fontWeight={"700"}
@@ -269,8 +269,8 @@ const UnderGraduate = () => {
                           fontSize={"large"}
                         >
                           Specialization in :
-                        </chakra.h2> */}
-                        {/* <chakra.h4
+                        </chakra.h2>
+                        <chakra.h4
                           textAlign={"start"}
                           paddingLeft={"4%"}
                           color={"#000000"}
@@ -284,8 +284,8 @@ const UnderGraduate = () => {
                           >
                             &#8680;
                           </span>{" "}
-                          Software Development Program
-                        </chakra.h4> */}
+                          Archicture
+                        </chakra.h4>
                       </GridItem>
                     </Grid>
                     <br />
@@ -336,7 +336,7 @@ const UnderGraduate = () => {
                           color: "#000000",
                           textAlign: "center",
                           fontSize: "x-large",
-                          fontWeight: "600",
+                          fontWeight: "700",
                         }}
                       >
                         OR
@@ -370,16 +370,16 @@ const UnderGraduate = () => {
                         gap={4}
                         className="int-grid"
                       >
-                        <GridItem colSpan={{ base: 4, md: 2 }}>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                           <h1>Computer Science & Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }}>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                           <h1>Electrical Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }}>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                           <h1>Mechanical Engineering</h1>
                         </GridItem>
-                        <GridItem colSpan={{ base: 4, md: 2 }}>
+                        <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                           <h1>Civil Engineering</h1>
                         </GridItem>
                       </Grid>

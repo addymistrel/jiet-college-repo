@@ -112,7 +112,7 @@ const Diploma = () => {
                       templateColumns="repeat(4, 1fr)"
                       gap={4}
                     >
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}
@@ -150,7 +150,7 @@ const Diploma = () => {
                           &#8680; Civil Engineering
                         </chakra.h2>
                       </GridItem>
-                      <GridItem colSpan={{ base: 4, md: 2 }}>
+                      <GridItem colSpan={{ base: 4, md: 2 }} bg="red.200">
                         <chakra.h2
                           textAlign={"start"}
                           paddingLeft={"4%"}

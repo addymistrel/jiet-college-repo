@@ -50,8 +50,16 @@ const StatsSec = () => {
 };
 
 const Card = ({ data }) => {
+   const bgColor = useColorModeValue("transparent");
+   const hoverColor = useColorModeValue(
+     "rgba(239, 68, 68, 0.2)",
+     "rgba(239, 68, 68, 0.2)"
+   );
   return (
-    <motion.div whileHover={{ translateY: -5 }}>
+    <motion.div
+      bgColor={bgColor}
+      whileHover={{ translateY: -5, backgroundColor: hoverColor }}
+    >
       <Stack
         direction="column"
         rounded="md"
