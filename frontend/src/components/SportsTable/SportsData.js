@@ -3,7 +3,11 @@ const FirstColumnData = [
   { id: 2, url: "/assets/Sports/badminton.png", label: "Badminton" },
   { id: 3, url: "/assets/Sports/basketball.png", label: "Basketball" },
   { id: 4, url: "/assets/Sports/cricket.png", label: "Cricket" },
-  { id: 5, url: "/assets/Sports/football.png", label: "Football" },
+  {
+    id: 5,
+    url: "/assets/Sports/football.webp",
+    label: "Football",
+  },
   { id: 6, url: "/assets/Sports/handball.png", label: "Handball" },
   { id: 7, url: "/assets/Sports/lawn_tennis.png", label: "Lawn Tennis" },
   { id: 8, url: "/assets/Sports/pool.png", label: "Pool" },

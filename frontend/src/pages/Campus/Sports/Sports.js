@@ -152,7 +152,11 @@ const Sports = () => {
                     gap={4}
                     paddingTop={"3%"}
                   >
-                    <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                    <GridItem
+                      colSpan={{ base: 4, md: 2 }}
+                      bg="red.200"
+                      rounded={6}
+                    >
                       <Flex>
                         <img
                           src="/assets/images/images/temp1.svg"
@@ -181,7 +185,11 @@ const Sports = () => {
                         Jiet College.
                       </chakra.h2>
                     </GridItem>
-                    <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                    <GridItem
+                      colSpan={{ base: 4, md: 2 }}
+                      bg="red.200"
+                      rounded={6}
+                    >
                       <Flex>
                         <img
                           src="/assets/images/images/2906496.svg"
@@ -211,7 +219,11 @@ const Sports = () => {
                         lead a less stressful life.
                       </chakra.h2>
                     </GridItem>
-                    <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                    <GridItem
+                      colSpan={{ base: 4, md: 2 }}
+                      bg="red.200"
+                      rounded={6}
+                    >
                       <Flex>
                         <img
                           src="/assets/images/images/3079012.svg"
@@ -241,7 +253,11 @@ const Sports = () => {
                         personal life.
                       </chakra.h2>
                     </GridItem>
-                    <GridItem colSpan={{ base: 4, md: 2 }} bg="papayawhip">
+                    <GridItem
+                      colSpan={{ base: 4, md: 2 }}
+                      bg="red.200"
+                      rounded={6}
+                    >
                       <Flex>
                         <img
                           src="/assets/images/images/753016.svg"

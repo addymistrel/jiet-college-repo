@@ -10,6 +10,7 @@ import {
   TableCaption,
   TableContainer,
   Flex,
+  chakra,
 } from "@chakra-ui/react";
 import { FirstColumnData, SecondColumnData } from "./SportsData";
 
@@ -43,7 +44,18 @@ export default function SportsTable() {
   return (
     <TableContainer>
       <Table variant="striped" colorScheme="teal">
-        <TableCaption>Explore the energy</TableCaption>
+        <chakra.h1
+          textAlign="center"
+          display="flex"
+          justifyContent={"start"}
+          alignItems="start"
+          fontSize="2rem"
+          fontWeight={700}
+          color={"red"}
+          m={12}
+        >
+          Explore the energy
+        </chakra.h1>
         <Thead>
           {FirstColumnData.map((item, index) => {
             return (
