@@ -67,15 +67,50 @@ const Sports = () => {
     {
       id: 1,
       title: "Sports",
-      image: "/assets/images/images/sp6.jpg",
+      image: "/assets/images/images/sp10.jpg",
     },
     {
       id: 2,
       title: "Sports",
-      image: "/assets/images/images/sp4.jpg",
+      image: "/assets/images/images/sp7.jpg",
     },
     {
       id: 3,
+      title: "Sports",
+      image: "/assets/images/images/sp3.jpg",
+    },
+    {
+      id: 4,
+      title: "Sports",
+      image: "/assets/images/images/sp4.jpg",
+    },
+    {
+      id: 5,
+      title: "Sports",
+      image: "/assets/images/images/sp5.jpg",
+    },
+    {
+      id: 6,
+      title: "Sports",
+      image: "/assets/images/images/sp6.jpg",
+    },
+    {
+      id: 7,
+      title: "Sports",
+      image: "/assets/images/images/sp2.jpg",
+    },
+    {
+      id: 8,
+      title: "Sports",
+      image: "/assets/images/images/sp8.jpg",
+    },
+    // {
+    //   id: 9,
+    //   title: "Sports",
+    //   image: "/assets/images/images/sp9.webp",
+    // },
+    {
+      id: 10,
       title: "Sports",
       image: "/assets/images/images/sp1.jpg",
     },
