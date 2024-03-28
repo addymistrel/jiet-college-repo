@@ -7,6 +7,7 @@ import {
   VStack,
   List,
   ListItem,
+  Image,
 } from "@chakra-ui/react";
 import TopHeader from "../../components/TopHeaderAbout/topHeaderAbout";
 import BranchSider from "./BranchSider";
@@ -61,7 +62,16 @@ const EceDepartment = () => {
             <Heading as="h1" size="xl" mb={4} color="teal.500">
               Department Of Electrical Engineering
             </Heading>
-
+            <Box textAlign="center">
+              <Image
+                src="/assets/images/imagesUpdated/ece.png"
+                alt="branch-img"
+                maxW="75%"
+                mx="auto"
+                borderRadius="2rem"
+                my={4}
+              />
+            </Box>
             <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
               The department was established in 1998 with an intake of 60 seats.
               It is the ever demanding and growing branch with excellent

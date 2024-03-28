@@ -7,6 +7,7 @@ import {
   VStack,
   List,
   ListItem,
+  Image
 } from "@chakra-ui/react";
 import TopHeader from "../../components/TopHeaderAbout/topHeaderAbout";
 import BranchSider from "./BranchSider";
@@ -61,7 +62,16 @@ const MechDepartment = () => {
             <Heading as="h1" size="xl" mb={4} color="teal.500">
               Department of Mechanical Engineering
             </Heading>
-
+            <Box textAlign="center">
+              <Image
+                src="/assets/images/imagesUpdated/mech.png"
+                alt="branch-img"
+                maxW="75%"
+                mx="auto"
+                borderRadius="2rem"
+                my={4}
+              />
+            </Box>
             <Text fontSize={{ base: "lg", md: "s" }} mb={6}>
               One of the founding departments of JIET Jind, the mechanical
               engineering department played a leading role in evolving in
@@ -132,7 +142,6 @@ const MechDepartment = () => {
                 </Text>
               </VStack>
             </Flex>
-
             <Flex
               justify="space-between"
               direction={{ base: "column", md: "row" }}
