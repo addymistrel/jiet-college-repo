@@ -63,6 +63,7 @@ const GovtAffiliation = () => {
   ];
 
   return (
+    <>
     <Box minHeight="100vh" p={5}>
       <ScrollToTopOnMount />
       <TopHeader text1={institutionText} text2={aicteText} />
@@ -139,6 +140,8 @@ const GovtAffiliation = () => {
         />
       </Box>
     </Box>
+
+      </>
   );
 };
 
